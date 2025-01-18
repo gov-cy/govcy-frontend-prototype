@@ -73,7 +73,7 @@ To build your prototype run `npm run build`. This will generate the compiled HTM
 
 ### Build to be published under domain's subfolder
 
-To build the site to be published under a domain's subfolder (such as GitHub's Public Pages) run the command `npm run build-github-pages`. This command builds the site and adds the subfolder's name in the site's URLs prefix. You can change the subfolder's name in the [package.json](blob/main/package.json) file by changing the `--pathprefix` attribute of the `build-github-pages script` (see sample below).
+To build the site to be published under a domain's subfolder (such as GitHub's Public Pages) run the command `npm run build-github-pages`. This command builds the site and adds the subfolder's name in the site's URLs prefix. You can change the subfolder's name in the [package.json](package.json) file by changing the `--pathprefix` attribute of the `build-github-pages script` (see sample below).
 
 ```json
 {
@@ -358,8 +358,8 @@ Here's an example of a Nunjucks template page:
 You can combine JSON and Nunjucks templates within the same service or website prototype. This is particularly useful if you want to create complicated pages with elements that might not be supported by the govcy-frontend-renderer.
 
 #### Example of Nunjucks templates
-- Check the [src/task-list-demo](blob/main/src/task-list-demo/) folder for examples of Nunjucks templates under the same subfolder. This is used in training and support sessions while DSF is supporting other teams.
-- Check the [src/crmd-investigation](blob/main/src/crmd-investigation/) folder for an example of nunjucks template creating a page in the same subfolder as a JSON template.
+- Check the [src/task-list-demo](tree/main/src/task-list-demo) folder for examples of Nunjucks templates under the same subfolder. This is used in training and support sessions while DSF is supporting other teams.
+- Check the [src/crmd-investigation](tree/main/src/crmd-investigation/) folder for an example of nunjucks template creating a page in the same subfolder as a JSON template.
 
 ## Create routes
 
