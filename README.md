@@ -37,6 +37,17 @@ It can be used for a wide range of use cases, such as:
 - Static website generation with 
 - Perfect for hosting on GitHub Pages
 
+## Sample prototypes
+
+Check out real examples of prototypes here:
+
+- [CRMD investigation - Cy login route](https://gov-cy.github.io/govcy-frontend-prototype/crmd-investigation/?route=all)
+- [CRMD investigation - Unverified route](https://gov-cy.github.io/govcy-frontend-prototype/crmd-investigation/?route=unverified)
+- [CRMD parental consent](https://gov-cy.github.io/govcy-frontend-prototype/crmd-consent/)
+- [Task list demo](https://gov-cy.github.io/govcy-frontend-prototype/task-list-demo/)
+- [Share component demo](https://gov-cy.github.io/govcy-frontend-prototype/crmd-consent/consent-ask/)
+- [Single digital platform](https://gov-cy.github.io/govcy-frontend-prototype/stg/v2/) (also showcases error handling)
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/download/). We recommend Nodejs 19+
