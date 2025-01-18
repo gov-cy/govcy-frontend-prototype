@@ -358,8 +358,8 @@ Here's an example of a Nunjucks template page:
 You can combine JSON and Nunjucks templates within the same service or website prototype. This is particularly useful if you want to create complicated pages with elements that might not be supported by the govcy-frontend-renderer.
 
 #### Example of Nunjucks templates
-- Check the [src/task-list-demo](tree/main/src/task-list-demo) folder for examples of Nunjucks templates under the same subfolder. This is used in training and support sessions while DSF is supporting other teams.
-- Check the [src/crmd-investigation](tree/main/src/crmd-investigation/) folder for an example of nunjucks template creating a page in the same subfolder as a JSON template.
+- Check the [src/task-list-demo](https://github.com/gov-cy/govcy-frontend-prototype/tree/main/src/task-list-demo) folder for examples of Nunjucks templates under the same subfolder. This is used in training and support sessions while DSF is supporting other teams.
+- Check the [src/crmd-investigation](https://github.com/gov-cy/govcy-frontend-prototype/tree/main/src/crmd-investigation) folder for an example of nunjucks template creating a page in the same subfolder as a JSON template.
 
 ## Create routes
 
