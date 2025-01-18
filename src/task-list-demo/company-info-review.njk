@@ -1,0 +1,87 @@
+---js
+{
+  title: "Contact information",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block beforeMain %}
+{{ govcyElement("backLink",{lang:"en"}) }}
+{% endblock %}
+{% block main %}
+{% markdown %}
+# Company information
+{% endmarkdown %}
+
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+    {{ 
+    govcyElement(
+        "summaryList",
+        {
+            "lang":site.lang,
+            "items":[
+                {
+                    "key":{"en":"Registration number","el":"el Registration number"},
+                    "value":
+                    [
+                        {"element":"htmlElement","params":{"text":{"en":"123456789","el":"el 123456789"} } }
+                    ]
+                },
+                {
+                    "key":{"en":"Name","el":"el Company name"},
+                    "value":
+                    [
+                        {"element":"htmlElement","params":{"text":{"en":"ABC Company","el":"EL ABC Company"} } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Change"},
+                            "href": "javascript:alert('Prototype for this action not implemented.')",
+                            "visuallyHiddenText": {"en":"Date of birth","el":"Name"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Sector","el":"el Sector"},
+                    "value":
+                    [
+                        {"element":"htmlElement","params":{"text":{"en":"Banking services","el":"Banking services"} } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Change"},
+                            "href": "javascript:alert('Prototype for this action not implemented.')",
+                            "visuallyHiddenText": {"en":"Address","el":"el Address"}
+                        }
+                    ]
+                }
+            ]
+        }
+    ) 
+}}
+    {{govcyElement("button",{lang:site.lang,text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+
+{% endblock %}
+{% block bodyEnd %}
+<script>
+    const DSFpathPrefix = '{{ pathPrefixValue }}';
+    const DSFroutes={
+        "company-info":[
+                "task-list-demo/company-info-review/",
+                "task-list-demo/"
+            ],
+        "company-info-contact-full":[
+                "task-list-demo/company-info-review/",
+                "task-list-demo/task-list-with-contact/"
+            ]
+        };
+</script>
+
+<script src="{{"/js/route.js" | url}}"></script>
+{% endblock %}

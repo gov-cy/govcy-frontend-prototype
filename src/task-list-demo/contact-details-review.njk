@@ -1,0 +1,74 @@
+---js
+{
+  title: "Contact details",
+    "pageData": {
+        "title": {"en": "Contact details", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block beforeMain %}
+{{ govcyElement("backLink",{lang:"en"}) }}
+{% endblock %}
+{% block main %}
+<div id="errorSummary" class="govcy-d-none govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+    <h2 role="alert" id="errorSummaryTitle">There is a problem</h2>
+    <p class="govcy-mb-0"><a href="../contact-details-phone/">Provide your telephone number</a></p>
+    <p>You can continue with other sections of your application, but you will have to complete the missing information before you can submit.</p>
+    <a href="../">Back to home page</a>
+</div>
+{% markdown %}
+# Contact details
+{% endmarkdown %}
+
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+    {{ 
+    govcyElement(
+        "summaryList",
+        {
+            "lang":site.lang,
+            "items":[
+                {
+                    "key":{"en":"Address","el":"el Address"},
+                    "value":
+                    [
+                        {"element":"htmlElement","params":{"text":{"en":"50 Enton Street<br>Nicosia<br>2066","el":"50 Enton Street<br>Nicosia<br>2066"} } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Change"},
+                            "href": "../contact-details-address/",
+                            "visuallyHiddenText": {"en":"Address","el":"Address"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Telephone","el":"el Telephone"},
+                    "actions":[
+                        {
+                            "text":{"en":"Enter your telephone number","el":"Enter your telephone number"},
+                            "href": "../contact-details-phone/",
+                            "visuallyHiddenText": {"en":"Telephone","el":"Telephone"}
+                        }
+                    ]
+                }
+            ]
+        }
+    ) 
+}}
+    <a href="javascript:checkHasErrors()" class="govcy-btn-primary">Continue</a>
+{% endcall %}
+
+{% endblock %}
+{% block bodyEnd %}
+<script>
+    function checkHasErrors()
+    {
+        document.getElementById("errorSummary").classList.remove("govcy-d-none");
+        location.href="#errorSummaryTitle";
+    }
+</script>
+{% endblock %}

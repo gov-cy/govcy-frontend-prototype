@@ -1,0 +1,38 @@
+{
+    "name": "@gov-cy/govcy-frontend-prototype",
+    "version": "1.0.0",
+    "description": "Build prototypes of gov.cy services and websites using the Unified Design System of gov.cy without coding",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clear-build": "node clear-build.mjs",
+        "build-github-pages": "node clear-build.mjs && npx @11ty/eleventy --pathprefix=/govcy-frontend-prototype",
+        "build": "npx @11ty/eleventy",
+        "start": "npx @11ty/eleventy --serve"
+    },
+    "keywords": [
+        "govcy",
+        "prototypes",
+        "user research",
+        "cyprus",
+        "unified design system",
+        "uds",
+        "dsf",
+        "digital service factory",
+        "template",
+        "renderer",
+        "frontend",
+        "builder"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/gov-cy/govcy-frontend-prototype.git"
+    },
+    "homepage": "https://github.com/gov-cy/govcy-frontend-prototype",
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@11ty/eleventy": "^2.0.1"
+        ,"@gov-cy/govcy-frontend-renderer": "^1.0.1"
+    }
+}

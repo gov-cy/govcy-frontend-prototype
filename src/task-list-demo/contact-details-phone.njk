@@ -1,0 +1,40 @@
+---js
+{
+  title: "Your telephone number",
+    "pageData": {
+        "title": {"en": "Your  telephone number", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block beforeMain %}
+{{ govcyElement("backLink",{lang:"en"}) }}
+{% endblock %}
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+{{ 
+    govcyElement(
+        "textInput",
+        {
+            "label": {
+                "en": "What is your telephone number?"
+            },
+            "id": "telephone-in",
+            "name": "telephone-in",
+            "hint": {
+                "en": "We’ll only use this for this application"
+            },
+            "type": "tel",
+            "isPageHeading": true,
+            "fixedWidth": "20",
+            "lang": "en"
+        }
+    ) 
+}}
+    <a href="../contact-details-review-full" class="govcy-btn-primary">Continue</a>
+{% endcall %}
+
+{% endblock %}

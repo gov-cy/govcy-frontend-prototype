@@ -1,0 +1,119 @@
+---js
+{
+  title: "Service XYZ",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+
+{% block main %}
+<div id="errorSummary" class="govcy-d-none govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+    <h2 role="alert" id="errorSummaryTitle">There is a problem</h2>
+    <p>All sections must be completed before you can submit</p>
+    <p class="govcy-mb-0"><a href="#link-to-contact">Complete the section on contact details</a></p>
+    <p class="govcy-mb-0"><a href="#link-to-convictions">Complete the section on list of convictions</a></p>
+</div>
+{% markdown %}
+# Service XYZ
+
+<p class="govcy-fs-5 govcy-fw-700">Application incomplete</p>
+
+You’ve completed 1 of 5 sections.
+{% endmarkdown %}
+<form id="DSFPrototypeForm">
+    <table class="govcy-table">
+        <tbody>
+            <tr>
+                <td><a id="link-to-company" href="company-info-review/?route=company-info&next=1">Company information <span class="govcy-visually-hidden"> with status COMPLETED </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag">COMPLETED</span></td>
+            </tr>
+            <tr>
+                <td><a id="link-to-contact" href="contact-details-review/?route=contact-details&next=1">Your contact details <span class="govcy-visually-hidden"> with status IN PROGRESS </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag govcy-tag-cyan">IN PROGRESS</span></td>
+            </tr>
+            <tr>
+                <td><a id="link-to-convictions" href="javascript:alert('Prototype for this action not implemented at this state. Will work after your contact details are completed.')">List convictions <span class="govcy-visually-hidden"> with status NOT STARTED </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag govcy-tag-gray">NOT STARTED</span></td>
+            </tr>
+            <tr>
+                <td>Provide financial evidence</td>
+                <td class="govcy-text-end"><span class="govcy-tag govcy-tag-gray">CANNOT START YET</span></td>
+            </tr>
+            <tr>
+                <td>Give medical information</td>
+                <td class="govcy-text-end"><span class="govcy-tag govcy-tag-gray">CANNOT START YET</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="govcy-btn-primary" type="button" onclick="checkHasErrors()">Continue</button>
+</form>
+{% endblock %}
+
+{% block bodyEnd %}
+<script>
+    const DSFpathPrefix = '{{ pathPrefixValue }}';
+    const DSFroutes={
+        "company-info":[
+                "task-list-demo/company-info-review/",
+                "task-list-demo/"
+            ],
+        "contact-details":[
+                "task-list-demo/contact-details-review/",
+                "task-list-demo/contact-details-review-error/#errorSummaryTitle",
+                "task-list-demo/"
+            ]
+        };
+
+
+    function checkHasErrors()
+    {
+        document.getElementById("errorSummary").classList.remove("govcy-d-none");
+        location.href="#errorSummaryTitle";
+    }
+</script>
+
+<script src="{{"/js/route.js" | url}}"></script>
+<script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-frontend-renderer@v1.x.x/dist/govcyCompiledTemplates.browser.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-frontend-renderer@v1.x.x/dist/govcyFrontendRenderer.browser.js"></script>
+<script>
+     document.addEventListener("DOMContentLoaded", async function() {
+     if (typeof GovcyFrontendRendererBrowser === 'undefined') {
+        console.error('GovcyFrontendRendererBrowser is not defined');
+      } else {
+        console.log('GovcyFrontendRendererBrowser is loaded');
+    
+
+        // Create an instance of GovcyFrontendRendererBrowser
+        const renderer = new GovcyFrontendRendererBrowser();
+       const input = {
+          elements: [
+            {
+                 "element": "button",
+                 "params": {
+                     "text": {
+                         "en": "Continue",
+                         "el": "Συνέχεια"
+                     },
+                     "variant": "success",
+                     "id": "success-button"
+                 }
+             }
+          ]
+       };
+       
+       const inputData = 
+         {    
+             "site" : {
+                 "lang" : "en"
+             }
+         };
+       const renderedHTML = renderer.renderFromJSON(input,inputData);
+       console.log(renderedHTML);
+      }
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,40 @@
+---js
+{
+  title: "Your address",
+    "pageData": {
+        "title": {"en": "Your address", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block beforeMain %}
+{{ govcyElement("backLink",{lang:"en"}) }}
+{% endblock %}
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+    <fieldset class="govcy-fieldset">
+        <legend class="govcy-legend"><h1>What is your address?</h1></legend>
+        <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="cyManualAddressLine1">Address line 1</label>
+               <input id="cyManualAddressLine1" name="cyManualAddressLine1" type="text" class="govcy-text-input" autocomplete="address-line1"> 
+        </div>
+        <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="cyManualAddressLine2">Address line 2 (optional)</label>
+                <input id="cyManualAddressLine2" name="cyManualAddressLine2" type="text" class="govcy-text-input" autocomplete="address-line2">  
+        </div>
+        <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="cyManualTownOrCity">Town or city</label>
+                <input id="cyManualTownOrCity" name="cyManualTownOrCity" type="text" class="govcy-text-input" autocomplete="address-level2">
+        </div>
+        <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="cyManualPostalCode">Postcode</label>
+            <input id="cyManualPostalCode" name="cyManualPostalCode" type="text" class="govcy-text-input govcy-text-input-char_4 " autocomplete="postal-code">
+        </div>
+    </fieldset>
+    <a href="../contact-details-review/?route=contact-details&next=1" class="govcy-btn-primary">Continue</a>
+{% endcall %}
+
+{% endblock %}

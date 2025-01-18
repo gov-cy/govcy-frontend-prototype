@@ -1,0 +1,78 @@
+---js
+{
+  title: "Service XYZ",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+
+{% block main %}
+{% markdown %}
+<div id="errorSummary" class="govcy-d-none govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+    <h2 role="alert" id="errorSummaryTitle">There is a problem</h2>
+    <p>All sections must be completed before you can submit</p>
+    <p class="govcy-mb-0"><a href="#link-to-financial">Complete the section on financial evidence</a></p>
+</div>
+
+# Service XYZ
+
+<p class="govcy-fs-5 govcy-fw-700">Application incomplete</p>
+
+You’ve completed 3 of 5 sections.
+{% endmarkdown %}
+<form id="DSFPrototypeForm">
+    <table class="govcy-table">
+        <tbody>
+            <tr>
+                <td><a href="javascript:alert('Prototype for this action not implemented at this state.')">Company information <span class="govcy-visually-hidden"> with status COMPLETED </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag">COMPLETED</span></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:alert('Prototype for this action not implemented at this state.')">Your contact details <span class="govcy-visually-hidden"> with status COMPLETED </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag">COMPLETED</span></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:alert('Prototype for this action not implemented at this state.')">List convictions <span class="govcy-visually-hidden"> with status COMPLETED </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag">COMPLETED</span></td>
+            </tr>
+            <tr>
+                <td><a id="link-to-financial" href="javascript:alert('Prototype for this action not implemented.')"> Provide financial evidence <span class="govcy-visually-hidden"> with status NOT STARTED </span></a></td>
+                <td class="govcy-text-end"><span class="govcy-tag govcy-tag-gray">NOT STARTED</span></td>
+            </tr>
+            <tr>
+                <td>Give medical information</td>
+                <td class="govcy-text-end"><span class="govcy-tag govcy-tag-gray">CANNOT START YET</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="govcy-btn-primary" type="button" onclick="checkHasErrors()">Continue</button>
+</form>
+{% endblock %}
+
+{% block bodyEnd %}
+<script>
+    const DSFpathPrefix = '{{ pathPrefixValue }}';
+    const DSFroutes={
+        "company-info":[
+                "task-list-demo/company-info-review/",
+                "task-list-demo/"
+            ],
+        "company-info-contact-full":[
+                "task-list-demo/company-info-review/",
+                "task-list-demo/task-list-with-contact/"
+            ]
+        };
+    
+    function checkHasErrors()
+    {
+        document.getElementById("errorSummary").classList.remove("govcy-d-none");
+        location.href="#errorSummaryTitle";
+    }
+</script>
+
+<script src="{{"/js/route.js" | url}}"></script>
+{% endblock %}

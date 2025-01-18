@@ -1,0 +1,63 @@
+---js
+{
+  title: "Contact details",
+    "pageData": {
+        "title": {"en": "Contact details", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block beforeMain %}
+{{ govcyElement("backLink",{lang:"en"}) }}
+{% endblock %}
+{% block main %}
+{% markdown %}
+# Contact details
+{% endmarkdown %}
+
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+    {{ 
+    govcyElement(
+        "summaryList",
+        {
+            "lang":site.lang,
+            "items":[
+                {
+                    "key":{"en":"Address","el":"el Address"},
+                    "value":
+                    [
+                        {"element":"htmlElement","params":{"text":{"en":"50 Enton Street<br>Nicosia<br>2066","el":"50 Enton Street<br>Nicosia<br>2066"} } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Change"},
+                            "href": "../contact-details-address/",
+                            "visuallyHiddenText": {"en":"Address","el":"Address"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Telephone","el":"el Telephone"},
+                    "value":
+                    [
+                        {"element":"htmlElement","params":{"text":{"en":"99123456","el":"99123456"} } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Αλλαγή"},
+                            "href": "../contact-details-phone/",
+                            "visuallyHiddenText": {"en":"Telephone","el":"Telephone"}
+                        }
+                    ]
+                }
+            ]
+        }
+    ) 
+}}
+    <a href="../task-list-with-contact/" class="govcy-btn-primary">Continue</a>
+{% endcall %}
+
+{% endblock %}

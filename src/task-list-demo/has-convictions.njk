@@ -1,0 +1,67 @@
+---js
+{
+  title: "Do you have any convictions?",
+    "pageData": {
+        "title": {"en": "Your  telephone number", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block beforeMain %}
+{{ govcyElement("backLink",{lang:"en"}) }}
+{% endblock %}
+{% block main %}
+<div id="errorSummary" class="govcy-d-none govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+    <h2 role="alert" id="errorSummaryTitle">There is a problem</h2>
+    <p class="govcy-mb-0"><a href="#has-convictions-option-1">Select yes if you have any convictions</a></p>
+</div>
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+{{ 
+    govcyElement(
+        "radios",
+        {
+            "id":"has-convictions"
+            ,"name":"has-convictions"
+            ,"lang":"en"
+            ,"legend":{"en":"Do you have any convictions?","el":"Do you have any convictions?"}
+            ,"isPageHeading": true
+            ,"items":[
+                {
+                    "value": "yes",
+                    "text": {"en":"Yes","el":"Ναι"}
+                },
+                {
+                    "value": "no",
+                    "text": {"en":"No","el":"Όχι"}
+                }
+            ]
+        }
+    ) 
+}}
+    <a href="javascript:checkHasConvictions()" class="govcy-btn-primary">Continue</a>
+{% endcall %}
+
+{% endblock %}
+{% block bodyEnd %}
+<script>
+    function checkHasConvictions()
+    {
+        const radios =document.getElementsByName('has-convictions');
+         // Check for the selected radio button
+        const selectedRadio = Array.from(radios).find(radio => radio.checked);
+        if (selectedRadio) {
+            if (selectedRadio.value == "yes") {
+                alert('Prototype for this action not implemented.');
+            } else {
+                location.href="../task-list-with-convictions";
+            }
+        } else {
+            document.getElementById("errorSummary").classList.remove("govcy-d-none");
+            location.href="#errorSummaryTitle";
+        }
+    }
+</script>
+{% endblock %}
