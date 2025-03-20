@@ -1,0 +1,86 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Αποτελέσματα έρευνας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+<fieldset class="govcy-fieldset" aria-describedby="employer-hint">
+    <legend class="govcy-legend"><h1>List of employers you are working for</h1></legend>
+    <div class="govcy-form-control">
+        <span id="employer-hint" class="govcy-hint">Check the employers you are currently working for</span>
+        <table class="govcy-table govcy-table-responsive-vertical">
+            <thead>
+                <tr>
+                    <th>Company No</th>
+                    <th>Name</th>
+                    <th>Active?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Company No</div>
+                        234
+                    </td>
+                    <td>
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Company Name</div>
+                        Alpha beta
+                    </td>
+                    <td>
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Active?</div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" value="234" name="comp" type="checkbox" id="check-234">
+                            <label class="govcy-label" for="check-234"><span class="govcy-visually-hidden">Alpha beta</span></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Company No</div>
+                        235
+                    </td>
+                    <td>
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Name</div>
+                        Gamma Delta Epislon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron
+                    </td>
+                    <td>
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Active?</div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" value="235" name="comp" type="checkbox" id="check-235">
+                            <label class="govcy-label" for="check-235"><span class="govcy-visually-hidden">Gamma Delta Epislon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron</span></label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+
+<fieldset class="govcy-fieldset" aria-describedby="employer-hint1">
+    <legend class="govcy-legend"><h1>List of employers you are working for</h1></legend>
+    <div class="govcy-form-control">
+        <span id="employer-hint1" class="govcy-hint">Please check the employers you are currently working for</span>
+            <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" value="234" name="comp" type="checkbox" id="check1-234">
+                <label class="govcy-label" for="check1-234">Alpha beta</label>
+            </div>
+            <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" value="235" name="comp" type="checkbox" id="check1-235">
+                <label class="govcy-label" for="check1-235"> Gamma Delta Epislon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron</label>
+            </div>
+    </div>
+</fieldset>
+
+{{govcyElement("button",{lang:"en",text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+{% endblock %}

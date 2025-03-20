@@ -1,0 +1,136 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Αποτελέσματα έρευνας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% markdown %}
+# Αποτελέσματα έρευνας 
+Ερευνήσαμε την αίτησή σας στα αρχεία των Τραπεζών και βρήκαμε τα εξής αποτελέσματα:	
+
+{% endmarkdown %}
+<div class="govcy-mb-6">
+<h2>Καταθέσεις</h2>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-pt-5 govcy-fs-5 govcy-fw-700">Τράπεζα Κύπρου</div>
+            <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€100.000.000,22</div>
+        </div>
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€100.000.000,22</div>
+        </div>
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€210.000</div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-100 govcy-d-table-cell govcy-pb-3 govcy-text-end"><a href="#1">Απάντηση</a></div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-pt-5 govcy-fs-5 govcy-fw-700">Λαϊκή Τράπεζα</div>
+            <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€100.000.000,22</div>
+        </div>
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€210.000</div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-100 govcy-d-table-cell govcy-pb-3 govcy-text-end"><a href="#1">Απάντηση</a></div>
+        </div>
+    </div>
+</div>
+<div class="govcy-mb-6">
+<h2>Aξιόγραφα</h2>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-pt-5 govcy-fs-5 govcy-fw-700">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</div>
+            <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ</span></div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€100.000</div>
+        </div>
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€210.000</div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-100 govcy-d-table-cell govcy-pb-3 govcy-text-end"><a href="#1">Απάντηση</a></div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-pt-5 govcy-fs-5 govcy-fw-700">Αξιόγραφα Λαϊκής Τράπεζα</div>
+            <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€100.000</div>
+        </div>
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+            <div class="govcy-w-50 govcy-d-table-cell govcy-pb-3">€210.000</div>
+        </div>
+    </div>
+    <div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+        <div class="govcy-d-table-row">
+            <div class="govcy-w-100 govcy-d-table-cell govcy-pb-3 govcy-text-end"><a href="#1">Απάντηση</a></div>
+        </div>
+    </div>
+</div>
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+{{govcyElement("button",{text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+<script>
+    const DSFpathPrefix = '{{ pathPrefixValue }}';
+    const DSFroutes={
+        "all":[
+                "crmd-investigation/login/",
+                "crmd-investigation/relation/",
+                "crmd-investigation/person-search-name/",
+                "crmd-investigation/person-search-id-pass/",
+                "crmd-investigation/person-search-optional/",
+                "crmd-investigation/person-search-other/",
+                "crmd-investigation/review/",
+                "crmd-investigation/payment/",
+                "crmd-investigation/application-response/"
+            ]
+        };
+</script>
+
+<script src="{{"/js/route.js" | url}}"></script>
+{% endblock %}

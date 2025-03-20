@@ -1,0 +1,67 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τίτλός σελίδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+{{ govcyElement(
+    "errorSummary",
+        {
+            "id":"govcy-test-97"
+            ,"lang":"en"
+            ,"header":{"en":"Error","el":"Σφάλμα"}
+            ,"errors":[
+                {
+                    "link":"#tel-no",
+                    "text":{"en":"Enter your mobile number","el":"Εισαγάγετε τον αριθμο κινητού τηλεφωνου σας"} 
+                }  
+            ]
+        }
+    ) 
+}}
+
+<link rel="stylesheet" href="../../css/progress.css">
+<div class="govcy-step-indicator">
+    <ol class="govcy-step-indicator__segments" aria-hidden="true">
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"></li>
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"></li>
+        <li class="govcy-step-indicator__segment"></li>
+        <li class="govcy-step-indicator__segment"></li>
+    </ol>
+</div>
+<div class="govcy-step-indicator__counter"><span class="govcy-visually-hidden">Step </span><span class="govcy-step-indicator__current-counter">2</span> of 4</div>
+{{ 
+    govcyElement(
+        "textInput",
+        {
+            "label": {
+                "en": "What is your phone number?",
+                "el": "Σε ποιο τηλέφωνο μπορούμε να επικοινωνήσουμε μαζί σας;"
+            },
+            "id": "tel-no",
+            "name": "tel-no",
+            "hint": {
+                "en": "For Cypriot phone number no country code is needed",
+                "el": "Για κυπριακό τηλέφωνο δεν χρειάζεται κωδικός χώρας"
+            },
+            "type": "tel",
+            "isPageHeading": true,
+            "error":{"en":"Enter your mobile number","el":"Εισαγάγετε τον αριθμο κινητού τηλεφωνου σας"} , 
+            "fixedWidth": "50",
+            "lang": "en"
+        }
+    ) 
+}}
+
+{{govcyElement("button",{lang:"en",text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+{% endblock %}

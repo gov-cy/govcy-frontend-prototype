@@ -76,18 +76,11 @@
 
         <legend class="govcy-legend">Ταυτοποίηση</legend>
         <div class="govcy-form-control">
-    
-            <span id="idType-hint" class="govcy-hint">Επιλέξτε τρόπο ταυτοποίησης</span>
+    <span id="idType-hint" class="govcy-hint">Επιλέξτε τρόπο ταυτοποίησης</span>
             <div class="govcy-radio">
     <input class="govcy-radio-input" name="idType" value="id" type="radio" id="idType-option-1"  data-aria-controls="idType-option-1-conditional">
     <label class="govcy-label" for="idType-option-1"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Ταυτότητα</label>
-</div><style>
-            .govcy-radio__conditional label,
-            .govcy-radio__conditional legend {
-                font-size: 1rem !important;
-            }
-        </style>
-        <div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-1-conditional">
+</div><div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-1-conditional">
             <div class="govcy-form-control">
     <label id="inId-label" class="govcy-label govcy-label-primary" for="inId">Εισαγάγετε αριθμό ταυτότητας</label><span id="inId-hint" class="govcy-hint">Κυπριακή ή άλλη</span><input id="inId" name="inId" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10" aria-describedby="inId-hint ">
     </div><div class="govcy-form-control">
@@ -100,26 +93,14 @@
         </div><div class="govcy-radio">
     <input class="govcy-radio-input" name="idType" value="arc" type="radio" id="idType-option-2"  data-aria-controls="idType-option-2-conditional">
     <label class="govcy-label" for="idType-option-2"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Δελτίο Εγγραφής Αλλοδαπού (ARC)</label>
-</div><style>
-            .govcy-radio__conditional label,
-            .govcy-radio__conditional legend {
-                font-size: 1rem !important;
-            }
-        </style>
-        <div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-2-conditional">
+</div><div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-2-conditional">
             <div class="govcy-form-control">
     <label id="inArc-label" class="govcy-label govcy-label-primary" for="inArc">Εισαγάγετε αριθμό ARC</label><input id="inArc" name="inArc" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
     </div>
         </div><div class="govcy-radio">
     <input class="govcy-radio-input" name="idType" value="passport" type="radio" id="idType-option-3"  data-aria-controls="idType-option-3-conditional">
     <label class="govcy-label" for="idType-option-3"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Διαβατήριο</label>
-</div><style>
-            .govcy-radio__conditional label,
-            .govcy-radio__conditional legend {
-                font-size: 1rem !important;
-            }
-        </style>
-        <div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-3-conditional">
+</div><div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-3-conditional">
             <div class="govcy-form-control">
     <label id="inPassport-label" class="govcy-label govcy-label-primary" for="inPassport">Εισαγάγετε αριθμό διαβατηρίου</label><input id="inPassport" name="inPassport" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
     </div><div class="govcy-form-control">
@@ -143,8 +124,7 @@
     <!--bodyEnd-->
     <section  class="govcy-container-fluid" id="bodyEndContainer">
         
-    </section>    
-    <script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/govcy.uds.min.js" integrity="sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+" crossorigin="anonymous"></script>
+    </section><script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/locales/govcy.datepicker.el.min.js"></script><script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/govcy.uds.min.js" integrity="sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+" crossorigin="anonymous"></script>
   <script>
                                 const DSFpathPrefix = '/govcy-frontend-prototype';
                                 const DSFroutes={"all":["crmd-investigation/login/","crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"],"unverified":["crmd-investigation/login/","crmd-investigation/applicant/","crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"],"review":["crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"]};

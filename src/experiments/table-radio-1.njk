@@ -1,0 +1,113 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Αποτελέσματα έρευνας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+{{ govcyElement(
+    "errorSummary",
+        {
+            "id":"govcy-test-97"
+            ,"header":{"en":"Error","el":"Σφάλμα"}
+            ,"errors":[
+                {
+                    "link":"#input1",
+                    "text":{"en":"Enter your full name","el":"Επιλέξτε το μέγεθος της στολής σας"} 
+                }
+            ]
+        }
+    ) 
+}}
+<fieldset class="govcy-fieldset" aria-describedby="">
+    <legend class="govcy-legend"><h1>Επιλογή μεγέθους στολής</h1></legend>
+    {{ govcyElement(
+    "details",
+        {
+            "id":"govcy-test-99"
+            ,"classes":"govcy-test-class"
+            ,"summary":{"en":"How to control cookies","el":"Επεξήγηση μεγέθους στολής"}	 
+            ,"elements":[
+                {
+                    "element":"htmlElement",
+                    "params":{
+                        "text":{"en":"We use cookies to store information ...","el":"<img src='../../img/size1.png' alt='Εικόνα με alt text'>"}
+                    }
+                }
+            ]
+        }
+    ) 
+}}
+    <div class="govcy-form-control govcy-form-control-error">
+        <p id="option7-error" class="govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Σφάλμα:</span>Επιλέξτε το μέγεθος της στολής σας
+            </p>
+        <table class="govcy-table govcy-table-responsive-vertical">
+            <thead>
+                <tr>
+                    <th>Μέγεθος</th>
+                    <th>Μέση</th>
+                    <th>Λεκάνη</th>
+                    <th>Επιλογή</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Μέγεθος</div>
+                        XS
+                    </td>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Μέση</div>
+                        38 (76 εκ.) 
+                    </td>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Λεκάνη</div>
+                        51 (102 εκ.)  
+                    </td>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Επιλογή</div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-radio-input" value="234" name="comp" type="radio" id="radio-xs">
+                            <label class="govcy-label" for="radio-xs"><span class="govcy-visually-hidden">XS</span></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Μέγεθος</div>
+                        XS
+                    </td>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Μέση</div>
+                        38 (76 εκ.) 
+                    </td>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2 govcy-valign-">Λεκάνη</div>
+                        51 (102 εκ.)  
+                    </td>
+                    <td class="govcy-valign-middle">
+                        <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Επιλογή</div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-radio-input" value="234" name="comp" type="radio" id="radio-xs1">
+                            <label class="govcy-label" for="radio-xs1"><span class="govcy-visually-hidden">XS</span></label>
+                        </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+
+{{govcyElement("button",{lang:"en",text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+{% endblock %}
