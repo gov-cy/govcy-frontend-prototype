@@ -1,0 +1,620 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Αποτελέσματα έρευνας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% markdown %}
+# Αποτελέσματα έρευνας 
+Ερευνήσαμε την αίτησή σας στα αρχεία των Τραπεζών και βρήκαμε τα εξής αποτελέσματα:	
+
+{% endmarkdown %}
+
+
+
+
+<h2>Option 1</h2>
+<p>Link in title, each value has a line</p>
+<table class="govcy-w-100">
+    <tr>
+        <td><a href="#1">Τράπεζα Κύπρου</a></td>
+        <td class=""><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <dl class="govcy-summary-list">
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#1">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</a></td>
+        <td class=""><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <dl class="govcy-summary-list">
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#1">Αξιόγραφα Λαϊκής Τράπεζα</a></td>
+        <td class=""><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <dl class="govcy-summary-list">
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </td>
+    </tr>
+</table>
+
+
+
+<h2 style="margin-top: 7rem">Option 2</h2>
+<p>Link in title, each type line</p>
+<table class="govcy-w-100">
+    <tr>
+        <td><a href="#1">Τράπεζα Κύπρου</a></th>
+        <td class=""><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <dl class="govcy-summary-list govcy-br-bottom-1 govcy-br-bottom-standard">
+                <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#1">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</a></th>
+        <td class=""><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <dl class="govcy-summary-list govcy-br-bottom-1 govcy-br-bottom-standard">
+                <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#1">Αξιόγραφα Λαϊκής Τράπεζα</a></th>
+        <td class=""><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <dl class="govcy-summary-list govcy-br-bottom-1 govcy-br-bottom-standard">
+                <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </td>
+    </tr>
+</table>
+
+<h2 style="margin-top: 7rem">Option 2.1 (No Tables)</h2>
+
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-2"><a href="#1">Τράπεζα Κύπρου</a></div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-2 govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></div>
+    </div>
+</div>
+ <dl class="govcy-summary-list govcy-br-bottom-1 govcy-br-bottom-standard">
+    <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+            Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+    </div>
+    <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+            Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+    </div>
+</dl>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-2"><a href="#1">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</a></div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-2 govcy-text-end"><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></div>
+    </div>
+</div>
+ <dl class="govcy-summary-list govcy-br-bottom-1 govcy-br-bottom-standard">
+    <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+            Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+    </div>
+    <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+            Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+    </div>
+</dl>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-2"><a href="#1">Αξιόγραφα Λαϊκής Τράπεζα</a></div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-2 govcy-text-end"><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></div>
+    </div>
+</div>
+ <dl class="govcy-summary-list govcy-br-bottom-1 govcy-br-bottom-standard">
+    <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+            Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+    </div>
+    <div class="govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+            Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+    </div>
+</dl>
+
+
+<h2 style="margin-top: 7rem">Option 3 (Bullets, no table)</h2>
+
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-2"><a href="#1">Τράπεζα Κύπρου</a></div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-2 govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></div>
+    </div>
+</div>
+<div class="govcy-mb-6 govcy-br-bottom-1 govcy-br-bottom-standard">
+    <ul class="govcy-list-unstyled">
+        <li><b>Ασφαλισμένο Ποσό:</b> €100.000</li>
+        <li><b>Ανασφάλιστο Ποσό asdasd as ada:</b> €210.000</li>
+    </ul>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-2"><a href="#1">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</a></div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-2 govcy-text-end"><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></div>
+    </div>
+</div>
+<div class="govcy-mb-6 govcy-br-bottom-1 govcy-br-bottom-standard">
+    <ul class="govcy-list-unstyled">
+        <li><b>Ασφαλισμένο Ποσό:</b> €100.000</li>
+        <li><b>Ανασφάλιστο Ποσό asdasd as ada:</b> €210.000</li>
+    </ul>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-2"><a href="#1">Αξιόγραφα Λαϊκής Τράπεζα</a></div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-2 govcy-text-end"><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></div>
+    </div>
+</div>
+<div class="govcy-mb-6 govcy-br-bottom-1 govcy-br-bottom-standard">
+    <ul class="govcy-list-unstyled">
+        <li><b>Ασφαλισμένο Ποσό:</b> €100.000</li>
+        <li><b>Ανασφάλιστο Ποσό asdasd as ada:</b> €210.000</li>
+    </ul>
+</div>
+
+
+<h2 style="margin-top: 7rem">Option 4</h2>
+<p>Link below instead of title</p>
+<table class="govcy-w-100">
+    <tr>
+        <th scope="row"><h3>Τράπεζα Κύπρου</h3></th>
+        <td class=""><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div class="govcy-br-bottom-1 govcy-br-bottom-standard">
+            <dl class="govcy-summary-list govcy-mb-0">
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+            <div class="govcy-mb-2"><a href="#1">Απάντηση</a></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row"><h3>Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</h3></th>
+        <td class=""><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div class="govcy-br-bottom-1 govcy-br-bottom-standard">
+            <dl class="govcy-summary-list govcy-mb-0">
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+            
+            <div class="govcy-mb-2"><a href="#1">Απάντηση</a></div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h2 style="margin-top: 7rem">Option 4.1 (Answer right) </h2>
+<table class="govcy-w-100">
+    <tr>
+        <th scope="row"><h3>Τράπεζα Κύπρου</h3></th>
+        <td class="govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div class="govcy-br-bottom-1 govcy-br-bottom-standard">
+                <dl class="govcy-summary-list govcy-mb-0">
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+            <div class="govcy-mb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row"><h3>Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</h3></th>
+        <td class="govcy-text-end"><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div class="govcy-br-bottom-1 govcy-br-bottom-standard">
+                <dl class="govcy-summary-list govcy-mb-0">
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row govcy-summary-list-row govcy-br-0"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+            <div class="govcy-mb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h2 style="margin-top: 7rem">Option 4.2 (Answer right, bullers) </h2>
+<table class="govcy-w-100">
+    <tr>
+        <th scope="row"><h3>Τράπεζα Κύπρου</h3></th>
+        <td class="govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div class="govcy-br-bottom-1 govcy-br-bottom-standard">
+                <ul class="govcy-list-unstyled">
+                    <li><b>Ασφαλισμένο Ποσό:</b> €100.000</li>
+                    <li><b>Ανασφάλιστο Ποσό asdasd as ada:</b> €210.000</li>
+                </ul>
+            
+            <div class="govcy-mb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row"><h3>Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</h3></th>
+        <td class="govcy-text-end"><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div class="govcy-br-bottom-1 govcy-br-bottom-standard">
+                <ul class="govcy-list-unstyled">
+                    <li><b>Ασφαλισμένο Ποσό:</b> €100.000</li>
+                    <li><b>Ανασφάλιστο Ποσό asdasd as ada:</b> €210.000</li>
+                </ul>
+            <div class="govcy-mb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+            </div>
+        </td>
+    </tr>
+
+</table>
+<h2 style="margin-top: 7rem">Option 4.3 (Answer right, only table) </h2>
+<table class="govcy-w-100">
+    <tr>
+        <th scope="row" colspan="2" class="govcy-mb-6 govcy-fs-4 govcy-fw-700">Τράπεζα Κύπρου</th>
+        <td class="govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <th scope="row">Ασφαλισμένο Ποσό</th>
+        <td >€100.000</td>
+    </tr>
+    <tr>
+        <th scope="row">Ανασφάλιστο Ποσό asdasd as ada:</th>
+        <td >€210.000</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="govcy-br-bottom-1 govcy-br-bottom-standard govcy-mb-2 govcy-text-end"> 
+            <a href="#1">Απάντηση</a>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row" colspan="2" class="govcy-mb-6 govcy-fs-4 govcy-fw-700">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</th>
+        <td class="govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></td>
+    </tr>
+    <tr>
+        <th scope="row">Ασφαλισμένο Ποσό</th>
+        <td >€100.000</td>
+    </tr>
+    <tr>
+        <th scope="row">Ανασφάλιστο Ποσό asdasd as ada:</th>
+        <td >€210.000</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="govcy-br-bottom-1 govcy-br-bottom-standard govcy-mb-2 govcy-text-end"> 
+            <a href="#1">Απάντηση</a>
+        </td>
+    </tr>
+</table>
+
+<h2 style="margin-top: 7rem">Option 4.4 (Answer right, divs)</h2>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-fs-4 govcy-fw-700">Τράπεζα Κύπρου</div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-gray">Δεν έχει απάντηση</span></div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-60 govcy-d-table-cell govcy-pb-2 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+        <div class="govcy-w-40 govcy-d-table-cell govcy-pb-2">€100.000.000,22</div>
+    </div>
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-60 govcy-d-table-cell govcy-pb-2 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+        <div class="govcy-w-40 govcy-d-table-cell govcy-pb-2">€210.000</div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-100 govcy-d-table-cell govcy-pb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-fs-4 govcy-fw-700">Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-red">Δεν Συμφωνώ με τίποτε</span></div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-60 govcy-d-table-cell govcy-pb-2 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+        <div class="govcy-w-40 govcy-d-table-cell govcy-pb-2">€100.000</div>
+    </div>
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-60 govcy-d-table-cell govcy-pb-2 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+        <div class="govcy-w-40 govcy-d-table-cell govcy-pb-2">€210.000</div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-100 govcy-d-table-cell govcy-pb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-70 govcy-d-table-cell govcy-pb-6 govcy-mb-6 govcy-fs-4 govcy-fw-700">Αξιόγραφα Λαϊκής Τράπεζα</div>
+        <div class="govcy-w-30 govcy-d-table-cell govcy-pb-6 govcy-text-end"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-60 govcy-d-table-cell govcy-pb-2 govcy-pr-1 govcy-fw-500">Ασφαλισμένο Ποσό</div>
+        <div class="govcy-w-40 govcy-d-table-cell govcy-pb-2">€100.000</div>
+    </div>
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-60 govcy-d-table-cell govcy-pb-2 govcy-pr-1 govcy-fw-500">Ανασφάλιστο Ποσό asdasd as ada:</div>
+        <div class="govcy-w-40 govcy-d-table-cell govcy-pb-2">€210.000</div>
+    </div>
+</div>
+<div class="govcy-d-table govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+    <div class="govcy-d-table-row">
+        <div class="govcy-w-100 govcy-d-table-cell govcy-pb-2 govcy-text-end"><a href="#1">Απάντηση</a></div>
+    </div>
+</div>
+
+<h2 style="margin-top: 7rem">Option 5</h2>
+<dl class="govcy-summary-list">
+    <div class="govcy-summary-list-row">
+        <dt class="govcy-summary-list-key">
+            <a href="#1">Τράπεζα Κύπρου</a>
+        </dt>
+        <dd class="govcy-summary-list-value">
+            <ul class="govcy-list-unstyled">
+                <li><b>Ασφαλισμένο Ποσό:</b> €100.000</li>
+                <li><b>Ανασφάλιστο Ποσό asdasd as ada:</b> €210.000</li>
+            </ul>
+        </dd>
+        <dd class="govcy-summary-list-actions">
+            <span class="govcy-tag govcy-tag-green">Συμφωνώ</span>
+        </dd>
+    </div>
+</dl>
+
+<h2 style="margin-top: 7rem">Option 6</h2>
+
+<div class="govcy-row">
+    <div class="govcy-col-auto govcy-w-70">
+        <a href="#1">Τράπεζα Κύπρου</a>
+        <table class="govcy-table">
+            <tr>
+                <th scope="row">Ασφαλισμένο Ποσό</th>
+                <td>€100.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Ανασφάλιστο Ποσό asdasd as ada</th>
+                <td>€210.000</td>
+            </tr>
+        </table>
+    </div>
+    <div class="govcy-col-auto govcy-w-30 govcy-text-end">
+        <span class="govcy-tag govcy-tag-green">Συμφωνώ</span>
+    </div>
+</div>
+
+<hr>
+
+<div class="govcy-d-table govcy-w-100">
+    <div class="govcy-d-table-row">
+        <div class="govcy-d-table-cell govcy-pb-2">
+            <a href="#1">1. Τράπεζα Κύπρου</a>
+        </div>
+        <div class="d-table-cell govcy-pb-2"><span class="govcy-tag govcy-tag-green">Συμφωνώ</span></div>
+    </div>
+    <div class="govcy-d-table-row govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+        <div class="govcy-d-table-cell govcy-pb-2 govcy-w-100">
+            <dl class="govcy-summary-list">
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό asdasd as ada</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+    <div class="govcy-d-table-row">
+        <div class="govcy-d-table-cell govcy-pb-2">
+            <a href="#1">2. Αξιόγραφα Τράπεζα Κύπρου Επενδύσεων</a>
+        </div>
+        <div class="d-table-cell govcy-pb-2"><span class="govcy-tag govcy-tag-orange">Δεν Συμφωνώ Καθόλου</span></div>
+    </div>
+    <div class="govcy-d-table-row govcy-w-100 govcy-br-bottom-1 govcy-br-bottom-standard">
+        <div class="govcy-d-table-cell govcy-pb-2 govcy-w-100">
+            <dl class="govcy-summary-list">
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ασφαλισμένο Ποσό</dt><dd class="govcy-summary-list-value">€100.000</dd>
+                </div>
+                <div class="govcy-summary-list-row"><dt class="govcy-summary-list-key">
+                        Ανασφάλιστο Ποσό</dt><dd class="govcy-summary-list-value">€210.000</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+{% call 
+    govcyElement(
+        "table",
+        {
+            "rows": [
+                [
+                    {
+                        "elements": 
+                        [
+                            { "element": "htmlElement","params": {"text": {"en": "<p><a href=\"#1\">1. Bank of Cyprus</a></p>","el": "<p><a href=\"#1\">1. Τράπεζα Κύπρου</a></p>"} } },
+                            {
+                                "element": "hint",
+                                "params": {
+                                    "hint": {"en": "This is a hint en","el": "This is a hint el"}
+                                }
+                            }
+                        ],
+                        "classes": "govcy-valign-top govcy-w-100"
+                    },
+                    {
+                        "elements": 
+                        [
+                            { "element": "tag", "params": { "text": {"en": "Accepted","el": "Συμφωνώ"},"classes": "govcy-tag-green"} }
+                        ],
+                        "classes": "govcy-valign-top govcy-w-100"
+                    }
+                ],
+                [
+                    {
+                        "elements": 
+                        [
+                            { "element": "htmlElement","params": {"text": {"en": "<p><a href=\"#1\">1. Bank of Cyprus</a>","el": "<a href=\"#1\">2. Λαϊκή Τράπεζα</a></p>"} } },
+                            {
+                                "element": "hint",
+                                "params": {
+                                    "hint": {"en": "This is a hint en","el": "This is a hint el"}
+                                }
+                            }
+                        ],
+                        "classes": "govcy-valign-top govcy-w-100"
+                    },
+                    {
+                        "elements": 
+                        [
+                            { "element": "tag", "params": { "text": {"en": "Accepted","el": "Δεν Συμφωνώ Καθόλου"},"classes": "govcy-tag-orange"} }
+                        ],
+                        "classes": "govcy-valign-top govcy-w-100"
+                    }
+                ]
+            ]
+        }
+    ) 
+ %}{% endcall %}
+<div class="govcy-form">
+ {{ 
+    govcyElement(
+        "dateInput",
+        {
+            "id":"govcy-test-87",
+            "name":"govcy-test-87",
+            "isPageHeading":true,
+            "variant":"desktop",
+            "hasDayError":false,
+            "hasMonthError":true,
+            "hasYearError":true,
+            "isBirthday":true,
+            "classes":"govcy-test-class",
+            "hint": {"en":"This is a hint","el":"This is a hint el"},
+            "error": {"en":"This is an error","el":"This is an error el"},
+            "legend": {"en":"This is a date input","el":"This is a date input"}
+        }
+    ) 
+}}
+</div>
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+{{govcyElement("button",{text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+<script>
+    const DSFpathPrefix = '{{ pathPrefixValue }}';
+    const DSFroutes={
+        "all":[
+                "crmd-investigation/login/",
+                "crmd-investigation/relation/",
+                "crmd-investigation/person-search-name/",
+                "crmd-investigation/person-search-id-pass/",
+                "crmd-investigation/person-search-optional/",
+                "crmd-investigation/person-search-other/",
+                "crmd-investigation/review/",
+                "crmd-investigation/payment/",
+                "crmd-investigation/application-response/"
+            ]
+        };
+</script>
+
+<script src="{{"/js/route.js" | url}}"></script>
+{% endblock %}

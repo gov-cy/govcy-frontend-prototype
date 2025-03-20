@@ -1,6 +1,6 @@
 {
     "name": "@gov-cy/govcy-frontend-prototype",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Build prototypes of gov.cy services and websites using the Unified Design System of gov.cy without coding",
     "main": "index.js",
     "scripts": {
@@ -25,14 +25,14 @@
         "builder"
     ],
     "repository": {
-      "type": "git",
-      "url": "https://github.com/gov-cy/govcy-frontend-prototype.git"
+        "type": "git",
+        "url": "https://github.com/gov-cy/govcy-frontend-prototype.git"
     },
     "homepage": "https://github.com/gov-cy/govcy-frontend-prototype",
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "@11ty/eleventy": "^2.0.1"
-        ,"@gov-cy/govcy-frontend-renderer": "^1.0.1"
+        "@11ty/eleventy": "^2.0.1",
+        "@gov-cy/govcy-frontend-renderer": "^1.11.0"
     }
 }

@@ -1,0 +1,33 @@
+---js
+{
+  title: "Date picker range",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Date picker range"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+<div class="govcy-form-control">
+        <label class="govcy-label govcy-label-primary" for="appointment2-date">Appointment Date</label>
+        <span id="appointment2-date-hint" class="govcy-hint">For example, 13/8/2007</span>
+        <div class="govcy-date-picker"  
+            data-min-date="2025-03-25"
+            data-max-date="2025-03-29"
+            >
+            <input type="text" class="govcy-text-input" 
+                id="appointment2-date"
+                name="appointment2-date"
+                aria-describedby="appointment2-date-hint"/>
+        </div>
+    </div>
+
+{{govcyElement("button",{lang:"en",text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+{% endblock %}

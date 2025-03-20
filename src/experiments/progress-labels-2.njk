@@ -1,0 +1,72 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τίτλός σελίδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+<link rel="stylesheet" href="../../css/progress.css">
+<div class="govcy-step-indicator">
+    <ol class="govcy-step-indicator__segments">
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete">
+            <span class="govcy-step-indicator__label">
+                Personal information <span class="govcy-visually-hidden">completed</span>
+            </span>
+        </li>
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step">
+            <span class="govcy-step-indicator__label">
+                Phone number
+            </span>
+        </li>
+        <li class="govcy-step-indicator__segment">
+            <span class="govcy-step-indicator__label">
+                Address <span class="govcy-visually-hidden">not completed</span>
+            </span>
+        </li>
+        <li class="govcy-step-indicator__segment">
+            <span class="govcy-step-indicator__label">
+                Other details <span class="govcy-visually-hidden">not completed</span>
+            </span>
+        </li>
+        <li class="govcy-step-indicator__segment">
+            <span class="govcy-step-indicator__label">
+                Consent <span class="govcy-visually-hidden">not completed</span>
+            </span>
+        </li>
+    </ol>
+</div>
+<div class="govcy-step-indicator__counter"><span class="govcy-visually-hidden">Step </span><span class="govcy-step-indicator__current-counter">2</span> of 5</div>
+{{ 
+    govcyElement(
+        "textInput",
+        {
+            "label": {
+                "en": "What is your phone number?",
+                "el": "Σε ποιο τηλέφωνο μπορούμε να επικοινωνήσουμε μαζί σας;"
+            },
+            "id": "tel-no",
+            "name": "tel-no",
+            "hint": {
+                "en": "For Cypriot phone number no country code is needed",
+                "el": "Για κυπριακό τηλέφωνο δεν χρειάζεται κωδικός χώρας"
+            },
+            "type": "tel",
+            "isPageHeading": true,
+            "fixedWidth": "50",
+            "lang": "en"
+        }
+    ) 
+}}
+
+{{govcyElement("button",{lang:"en",text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+{% endblock %}

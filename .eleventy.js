@@ -102,6 +102,10 @@ module.exports = function (eleventyConfig) {
 
     //copy `js`
     eleventyConfig.addPassthroughCopy("./src/js");
+    //copy `img`
+    eleventyConfig.addPassthroughCopy("./src/img");
+    //copy `css`
+    eleventyConfig.addPassthroughCopy("./src/css");
 
     //add markdown support for njk files
     const markdownIt = require("markdown-it");
