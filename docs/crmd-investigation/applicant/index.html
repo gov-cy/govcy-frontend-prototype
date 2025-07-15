@@ -47,6 +47,7 @@
 
     <!--Header-->
     <header class="govcy-header govcy-d-print-none" id="headerContainer">
+        
         <div class="govcy-header-top-area"><div class="govcy-container"><div class="govcy-header-top-area-wrapper"><ul class="govcy-sign-in"><li>Firstname Lastname</li><li><span>|</span></li><li><a href="#">Sign Out</a></li></ul></div></div></div><div class="govcy-header-main-area"><div class="govcy-container govcy-main-area-items"><div class="govcy-navigation-container"><div class="govcy-service-container"><a href="https://www.gov.cy/" class="govcy-logo" title="Μεταβείτε στην αρχική σελίδα του gov.cy"><img alt="Λογότυπο gov.cy"></a><span class="govcy-service-name">Έρευνα στο μητρώο πληθυσμού</span></div><ul class="govcy-menu-items govcy-ms-auto"><li class="govcy-desktop-menu-only"><span><a href="#" aria-current="true" class="govcy-menu-item active" aria-label="Ελληνικά">EL</a></span></li><li class="govcy-desktop-menu-only"><span class="govcy-menu-language-last-item"><a href="#" class="govcy-menu-item" aria-label="English" lang="en">EN</a></span></li><li class="govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto" hidden=""><span><a href="#" class="govcy-menu-item govcy-expand-btn" aria-expanded="false">Μενού</a></span></li></ul></div></div></div><div class="govcy-header-menu-area"><nav class="govcy-mainmenu" aria-label="Main Menu"><div class="govcy-container"><ul class="govcy-menu-items govcy-header-language-area govcy-mobile-menu-only" hidden=""><li><a href="#" class="govcy-menu-item active" aria-current="true">EL</a></li><li><a href="#" class="govcy-menu-item" lang="en">EN</a></li></ul></div><div class="govcy-container"><ul class="govcy-menu-items" aria-label="Main Menu"><li><a href="/govcy-frontend-prototype/crmd-investigation/?route=all" class="govcy-menu-item">Αρχική</a></li><li><a href="/govcy-frontend-prototype/crmd-investigation/transaction-history" class="govcy-menu-item">Οι συναλλαγές μου</a></li></ul></div></nav></div>
     </header>
 
@@ -69,9 +70,9 @@
     <h1>
             Δώστε μας τα στοιχεία σας
         </h1><div class="govcy-form-control">
-    <label id="firstName-label" class="govcy-label govcy-label-primary" for="firstName">Όνομα</label><input id="firstName" name="firstName" type="text" spellcheck="false" autocomplete="given-name" class="govcy-text-input">
+    <label id="firstName-label" class="govcy-label govcy-label-primary" for="firstName">Όνομα</label><input id="firstName"  name="firstName" type="text" spellcheck="false" autocomplete="given-name" class="govcy-text-input">
     </div><div class="govcy-form-control">
-    <label id="lastName-label" class="govcy-label govcy-label-primary" for="lastName">Επώνυμο</label><input id="lastName" name="lastName" type="text" spellcheck="false" autocomplete="family-name" class="govcy-text-input">
+    <label id="lastName-label" class="govcy-label govcy-label-primary" for="lastName">Επώνυμο</label><input id="lastName"  name="lastName" type="text" spellcheck="false" autocomplete="family-name" class="govcy-text-input">
     </div><fieldset class="govcy-fieldset" aria-describedby="idType-hint ">
 
         <legend class="govcy-legend">Ταυτοποίηση</legend>
@@ -82,7 +83,7 @@
     <label class="govcy-label" for="idType-option-1"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Ταυτότητα</label>
 </div><div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-1-conditional">
             <div class="govcy-form-control">
-    <label id="inId-label" class="govcy-label govcy-label-primary" for="inId">Εισαγάγετε αριθμό ταυτότητας</label><span id="inId-hint" class="govcy-hint">Κυπριακή ή άλλη</span><input id="inId" name="inId" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10" aria-describedby="inId-hint ">
+    <label id="inId-label" class="govcy-label govcy-label-primary" for="inId">Εισαγάγετε αριθμό ταυτότητας</label><span id="inId-hint" class="govcy-hint">Κυπριακή ή άλλη</span><input id="inId"  name="inId" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10" aria-describedby="inId-hint ">
     </div><div class="govcy-form-control">
     
         <label class="govcy-label govcy-label-primary" for="inIdCountry">Επιλέξτε χώρα έκδοσης</label>
@@ -95,14 +96,14 @@
     <label class="govcy-label" for="idType-option-2"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Δελτίο Εγγραφής Αλλοδαπού (ARC)</label>
 </div><div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-2-conditional">
             <div class="govcy-form-control">
-    <label id="inArc-label" class="govcy-label govcy-label-primary" for="inArc">Εισαγάγετε αριθμό ARC</label><input id="inArc" name="inArc" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
+    <label id="inArc-label" class="govcy-label govcy-label-primary" for="inArc">Εισαγάγετε αριθμό ARC</label><input id="inArc"  name="inArc" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
     </div>
         </div><div class="govcy-radio">
     <input class="govcy-radio-input" name="idType" value="passport" type="radio" id="idType-option-3"  data-aria-controls="idType-option-3-conditional">
     <label class="govcy-label" for="idType-option-3"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Διαβατήριο</label>
 </div><div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="idType-option-3-conditional">
             <div class="govcy-form-control">
-    <label id="inPassport-label" class="govcy-label govcy-label-primary" for="inPassport">Εισαγάγετε αριθμό διαβατηρίου</label><input id="inPassport" name="inPassport" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
+    <label id="inPassport-label" class="govcy-label govcy-label-primary" for="inPassport">Εισαγάγετε αριθμό διαβατηρίου</label><input id="inPassport"  name="inPassport" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
     </div><div class="govcy-form-control">
     
         <label class="govcy-label govcy-label-primary" for="inPassportCountry">Επιλέξτε χώρα έκδοσης</label>
