@@ -1,0 +1,86 @@
+
+{
+    "site": {
+      "id": "dsf-plugin-v3",
+      "lang": "el",
+      "languages": [
+        {
+          "code": "el",
+          "label": "EL",
+          "alt": "Ελληνική γλώσσα",
+          "href": "?lang=el"
+        },
+        {
+          "code": "en",
+          "label": "EN",
+          "alt": "English language",
+          "href": "?lang=en"
+        }
+      ],
+      "footerLinks": [
+        {
+          "label": {
+            "el": "Δήλωση απορρήτου",
+            "en": "Privacy statement",
+            "tr": ""
+          },
+          "href": "#"
+        },
+        {
+          "label": {
+            "el": "Cookies",
+            "en": "Cookies",
+            "tr": ""
+          },
+          "href": "#"
+        },
+        {
+          "label": {
+            "el": "Προσβασιμότητα",
+            "en": "Accessibility",
+            "tr": ""
+          },
+          "href": "#"
+        },
+        {
+          "label": {
+            "el": "Βοηθήστε μας να βελτιώσουμε αυτή την υπηρεσία",
+            "en": "Help us improve this service",
+            "tr": ""
+          },
+          "href": "#"
+        }
+      ],
+      "menu": {
+        "el": "Μενού",
+        "en": "Menu",
+        "tr": "Menu"
+      },
+      "title": {
+        "el": "Τίτλος υπηρεσιας",
+        "en": "Service title",
+        "tr": ""
+      },
+      "headerTitle": {
+        "el": "Τίτλος επικεφαλίδας",
+        "en": "Header title",
+        "tr": ""
+      },
+      "description": {
+        "el": "Περιγραφή υπηρεσίας",
+        "en": "Service description",
+        "tr": ""
+      },
+      "url": "https://gov.cy",
+      "isTesting": true,
+      "cdn": {
+        "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.1.0/dist",
+        "cssIntegrity": "sha384-Py9pPShU3OUzcQ3dAfZLkJI0Fgyv9fWKmAdK8f7dS9caBKuKs5z/ZpyERuh0ujm0",
+        "jsIntegrity": "sha384-g1c/YT97MWPoo9pbyFgQcxvB2MYLdsOgI2+ldxkEXAbhTzKfyYXCEjk9EVkOP5hp"
+      }
+    },
+    "pages": [],
+    "routes": [],
+    "localizations": {}
+  }
+  

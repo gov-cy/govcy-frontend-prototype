@@ -1,0 +1,200 @@
+---js
+{
+ "site": {
+        "lang": "el",
+        "title" : {"en":"Experiments", "el":"Δήλωση παραγωγής οίνων και γλεύκων"}, 
+        "headerTitle" : {"en":"Experiments", "el":"Δήλωση παραγωγής οίνων και γλεύκων"},
+        "description" : {"en":"Service description", "el":"Περιγραφή υπηρεσίας"},
+        "isTesting" : true,
+        "url": "https://gov.cy",
+        "cdn": {
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist"
+        }   
+    },
+  title: "Print friendly large review scroll",
+    "pageData": {
+        "title": {"en": "Large review", "el": "Μεγάλη ανασκόπηση"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "max-width"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{# {{ govcyElement(
+    "errorSummary",
+        {
+            "id":"govcy-test-97"
+            ,"header":{"en":"Error","el":"Σφάλμα"}
+            ,"errors":[
+                {
+                    "link":"#input1",
+                    "text":{"en":"Enter your full name","el":"Επιλέξτε το μέγεθος της στολής σας"} 
+                }
+            ]
+        }
+    ) 
+}} #}
+<h1>Ελέξτε τις απαντήσεις σας πριν υποβάλετε την δήλώσης σας</h1>
+<div class="govcy-warning-text govcy-d-none govcy-d-print-inline-block">
+    <span class="govcy-warning-text-icon" aria-hidden="true">!</span>
+    <span class="govcy-warning-text-message">
+        Κατάσταση - Δεν έχει υποβληθεί</span>
+</div>
+<h2>Ποσότητα παραγωγής</h2>
+<div class="govcy-table-responsive">
+    <table class="govcy-table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Τοποθεσία κατοχής</th>
+                <th scope="col">Κατηγορία προϊόντος</th>
+                <th scope="col">Τύποι προϊόντων</th>
+                <th scope="col">Χρώμα</th>
+                <th scope="col">Παραγωγή</th>
+                <th scope="col" class="govcy-d-print-none">Ενέργειες</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Αγγλισίδες</td>
+                <td>Γλεύκος</td>
+                <td>Οίνος με ΠΟΠ</td>
+                <td>Ερυθρωπό</td>
+                <td>100 Kg</td>
+                <td class="govcy-d-print-none">
+                    <ul class="list-inline govcy-my-0">
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 1">Αλλαγή</a></li>
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 1">Διαγραφή</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Αποθήκη 1, δίπλα από το εργοστάσιο, στην οδό Αθηνών 3, Ταχυδρομικός Κώδικας 1010, Λευκωσία, Κύπρος</td>
+                <td>Γλεύκος</td>
+                <td>Οίνος με ΠΟΠ</td>
+                <td>Ερυθρωπό</td>
+                <td>100 Kg</td>
+                <td class="govcy-d-print-none">
+                    <ul class="list-inline govcy-my-0">
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 2">Αλλαγή</a></li>
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 2">Διαγραφή</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h2>Δελτία παραλαβής ή συνοδευτικά εγγράφα</h2>
+<h3>Αριθμός δελτίου παραλαβής ή συνοδευτικού εγγράφου: 12345</h3>
+<p><b>Όνομα προμηθευτή</b>: A.S.Xinaris & Sons Ltd</p>
+<div class="govcy-table-responsive">
+    <table class="govcy-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Κατηγορία προϊόντος</th>
+                <th>Κοινότητα </th>
+                <th>Κωδικός τεμαχίου - Καλλιεργητής - Ποικιλία - 'Ετος φύτευσης - Έκταση</th>
+                <th>Ποσότητα</th>
+                <th class="govcy-d-print-none">Ενέργειες</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Σταφύλι</td>
+                <td>Αγγλισίδες</td>
+                <td>4127-50/33--321 ( ΠΣ ) - ΞΥΝΙΣΤΕΡΙ - 2000 - 4 Δεκ</td>
+                <td>100 Kg</td>
+                <td class="govcy-d-print-none">
+                    <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                    <ul class="list-inline govcy-my-0">
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 1">Αλλαγή</a></li>
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 1">Διαγραφή</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Σταφύλι</td>
+                <td>Αγγλισίδες</td>
+                <td>4127-50/33--321 ( ΠΣ ) - ΞΥΝΙΣΤΕΡΙ - 2000 - 4 Δεκ</td>
+                <td>100 Kg</td>
+                <td class="govcy-d-print-none">
+                    <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                    <ul class="list-inline govcy-my-0">
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 2">Αλλαγή</a></li>
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 2">Διαγραφή</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h3>Αριθμός δελτίου παραλαβής ή συνοδευτικού εγγράφου: 25671</h3>
+<p><b>Όνομα προμηθευτή</b>:  K & K VASILIKON WINERY (KATHIKAS) LIMITED</p>
+<div class="govcy-table-responsive">
+    <table class="govcy-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Κατηγορία προϊόντος</th>
+                <th>Κοινότητα </th>
+                <th>Κωδικός τεμαχίου - Καλλιεργητής - Ποικιλία - 'Ετος φύτευσης - Έκταση</th>
+                <th>Ποσότητα</th>
+                <th class="govcy-d-print-none">Ενέργειες</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Σταφύλι</td>
+                <td>Αγγλισίδες</td>
+                <td>4127-50/33--321 ( ΠΣ ) - ΞΥΝΙΣΤΕΡΙ - 2000 - 4 Δεκ</td>
+                <td>100 Kg</td>
+                <td class="govcy-d-print-none">
+                    <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                    <ul class="list-inline govcy-my-0">
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 1">Αλλαγή</a></li>
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 1">Διαγραφή</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Σταφύλι</td>
+                <td>Αγγλισίδες</td>
+                <td>4127-50/33--321 ( ΠΣ ) - ΞΥΝΙΣΤΕΡΙ - 2000 - 4 Δεκ</td>
+                <td>100 Kg</td>
+                <td class="govcy-d-print-none">
+                    <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                    <ul class="list-inline govcy-my-0">
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 2">Αλλαγή</a></li>
+                        <li class="list-inline-item"><a href="#" aria-description="Καταχώρηση 2">Διαγραφή</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+<p>
+    <ul class="list-inline govcy-my-0 govcy-d-print-none">
+        <li class="list-inline-item"><a href="javascript:window.print()">Εκτύπωση δήλώσης</a></li>
+        <li class="list-inline-item"><a href="#">Φύλαξη σε excel</a></li>
+    </ul>
+</p>
+<div class="govcy-form-control">
+    <div class="govcy-checkbox">
+        <input class="govcy-checkbox-input" name="check1-checkbox-group" type="checkbox" id="check1-option1">
+        <label class="govcy-label" for="check1-option1">Δηλώνω υπεύθυνα και εν γνώσει ότι τα πιο πάνω στοιχεία είναι ορθά και αληθή.</label>
+    </div>
+</div>
+{{govcyElement("button",{text:{en:"Submit",el:"Υποβολή"},variant:"success",type:"submit", classes:"govcy-d-print-none"} ) }}
+{% endcall %}
+{% endblock %}
