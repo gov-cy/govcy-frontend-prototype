@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
     const argv = process.argv.slice(2); // Remove node and script path
     const pathPrefixArg = argv.find(arg => arg.startsWith('--pathprefix='));
     const pathPrefix = pathPrefixArg ? pathPrefixArg.split('=')[1] : '';
-    console.log('pathPrefix:', );
+    console.log('pathPrefix:', pathPrefix);
     // Add a custom global value
     eleventyConfig.addGlobalData("pathPrefixValue", pathPrefix);
 
