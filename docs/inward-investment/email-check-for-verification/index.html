@@ -96,21 +96,36 @@
     
         <div id="steps" class="govcy-step-indicator">
             <ol class="govcy-step-indicator__segments">
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
-                        Notification Details
-                                <span class="govcy-visually-hidden">Completed</span>
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
+                        Contact email
                     </span>
                 </li>
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
-                        Email confirmation
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Applicant details
+                                <span class="govcy-visually-hidden">Not completed</span>
+                    </span>
+                </li>
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Notification form
+                                <span class="govcy-visually-hidden">Not completed</span>
+                    </span>
+                </li>
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Additional details
+                                <span class="govcy-visually-hidden">Not completed</span>
+                    </span>
+                </li>
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Other files
+                                <span class="govcy-visually-hidden">Not completed</span>
                     </span>
                 </li>
             </ol>
         </div>
     <div id="steps-counter" class="govcy-step-indicator__counter">
         <span class="govcy-visually-hidden">Step </span>
-        <span class="govcy-step-indicator__current-counter">2</span> of 2
-    </div><h1 id="title">You’ve confirmed access to your email</h1><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../review'">Continue</button></form>
+        <span class="govcy-step-indicator__current-counter">1</span> of 5
+    </div><h1 id="title">You’ve confirmed access to your email</h1><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../applicant-details'">Continue</button></form>
                 </article>
             </div>
         </main>

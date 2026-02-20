@@ -96,20 +96,35 @@
     
         <div id="steps" class="govcy-step-indicator">
             <ol class="govcy-step-indicator__segments">
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
-                        Notification Details
-                                <span class="govcy-visually-hidden">Completed</span>
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
+                        Contact email
                     </span>
                 </li>
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
-                        Email confirmation
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Applicant details
+                                <span class="govcy-visually-hidden">Not completed</span>
+                    </span>
+                </li>
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Notification form
+                                <span class="govcy-visually-hidden">Not completed</span>
+                    </span>
+                </li>
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Additional details
+                                <span class="govcy-visually-hidden">Not completed</span>
+                    </span>
+                </li>
+                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                        Other files
+                                <span class="govcy-visually-hidden">Not completed</span>
                     </span>
                 </li>
             </ol>
         </div>
     <div id="steps-counter" class="govcy-step-indicator__counter">
         <span class="govcy-visually-hidden">Step </span>
-        <span class="govcy-step-indicator__current-counter">2</span> of 2
+        <span class="govcy-step-indicator__current-counter">1</span> of 5
     </div><h1 id="title">Check your email</h1><p>We’ve emailed a security code to <strong>{0}</strong> so that we know that you can access your email.</p><div class="govcy-form-control">
     <label id="otp-label" class="govcy-label govcy-label-primary" for="otp">Enter the security code</label><input id="otp"  name="otp" type="text" spellcheck="false"  class="govcy-text-input govcy-text-input-char_10">
     </div><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../email-check-for-verification'">Continue</button><p>If you have not received the security code after a few minutes:</p><ul><li>check the email address above is correct</li><li>look in the folder where your unwanted, ‘spam’ or ‘junk’ email goes</li></ul><p>You can <a href="../">enter the email address again or try a different email address</a>.</p></form>
