@@ -1,6 +1,6 @@
 {
     "name": "@gov-cy/govcy-frontend-prototype",
-    "version": "1.4.0",
+    "version": "v1.4.1",
     "description": "Build prototypes of gov.cy services and websites using the Unified Design System of gov.cy without coding",
     "main": "index.js",
     "scripts": {

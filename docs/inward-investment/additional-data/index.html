@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Social -->
     <meta property="og:description" content="Submit an inward investment notification">
-    <meta property="og:title" content="Contact email - Inward investment notification - gov.cy">
+    <meta property="og:title" content="Additional files - Inward investment notification - gov.cy">
     <meta property="og:url" content="https://gov.cy">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist/img/icons-512.png">
@@ -14,7 +14,7 @@
  
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://gov.cy">
-    <meta property="twitter:title" content="Contact email - Inward investment notification - gov.cy">
+    <meta property="twitter:title" content="Additional files - Inward investment notification - gov.cy">
     <meta property="twitter:description" content="Submit an inward investment notification">
     <meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist/img/icons-512.png">
  
@@ -33,7 +33,7 @@
  
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist/css/govcy.uds.min.css" integrity="sha384-qjx16YXHG+Vq/NVtwU2aDTc7DoLOyaVNuOHrwA3aTrckpM/ycxZoR5dx7ezNJ/Lv" crossorigin="anonymous">
-    <title>Contact email - Inward investment notification - gov.cy</title>
+    <title>Additional files - Inward investment notification - gov.cy</title>
     <meta name="description" content="Submit an inward investment notification">
     
   </head>
@@ -96,23 +96,23 @@
     
         <div id="steps" class="govcy-step-indicator">
             <ol class="govcy-step-indicator__segments">
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
                         Contact email
+                                <span class="govcy-visually-hidden">Completed</span>
                     </span>
                 </li>
-                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
                         Applicant details
-                                <span class="govcy-visually-hidden">Not completed</span>
+                                <span class="govcy-visually-hidden">Completed</span>
                     </span>
                 </li>
-                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
                         Notification form
-                                <span class="govcy-visually-hidden">Not completed</span>
+                                <span class="govcy-visually-hidden">Completed</span>
                     </span>
                 </li>
-                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
                         Additional details
-                                <span class="govcy-visually-hidden">Not completed</span>
                     </span>
                 </li>
                 <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
@@ -124,10 +124,26 @@
         </div>
     <div id="steps-counter" class="govcy-step-indicator__counter">
         <span class="govcy-visually-hidden">Step </span>
-        <span class="govcy-step-indicator__current-counter">1</span> of 5
-    </div><div class="govcy-form-control">
-    <h1><label id="contactEmail-label" class="govcy-label govcy-label-primary" for="contactEmail">Contact email</label></h1><span id="contactEmail-hint" class="govcy-hint">You will receive an email to confirm your email address</span><input id="contactEmail"  name="contactEmail" type="email" spellcheck="false" autocomplete="email" class="govcy-text-input" aria-describedby="contactEmail-hint ">
-    </div><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../inward-investment/email-verification'">Continue</button></form>
+        <span class="govcy-step-indicator__current-counter">4</span> of 5
+    </div><h1 id="header">Additional details</h1><div class="govcy-form-control">
+    <label id="question1-label" class="govcy-label govcy-label-primary" for="question1">Question 1</label><span id="question1-hint" class="govcy-hint">Hint</span><textarea id="question1" name="question1" rows="5" spellcheck="false"  class="govcy-text-area" aria-describedby="question1-char-count question1-hint"></textarea>
+        <div id="question1-char-count" class="govcy-character-count"data-maxchars="150">
+                <div class="govcy-character-remaining-counter">You have <span></span> characters remaining</div>
+                <div class="govcy-character-more-counter">You have entered <span></span> characters more</div>
+            </div></div><div class="govcy-form-control">
+    <label id="question2-label" class="govcy-label govcy-label-primary" for="question2">Question 2</label><span id="question2-hint" class="govcy-hint">Hint</span><textarea id="question2" name="question2" rows="5" spellcheck="false"  class="govcy-text-area" aria-describedby="question2-char-count question2-hint"></textarea>
+        <div id="question2-char-count" class="govcy-character-count"data-maxchars="150">
+                <div class="govcy-character-remaining-counter">You have <span></span> characters remaining</div>
+                <div class="govcy-character-more-counter">You have entered <span></span> characters more</div>
+            </div></div><div id="additionalFile1-input-control" class="govcy-form-control">
+    <label id="additionalFile1-label" class="govcy-label govcy-label-primary" for="additionalFile1">File 1</label><span id="additionalFile1-hint" class="govcy-hint">PDF, JPG, JPEG, PNG  are the only acceptable formats</span><input id="additionalFile1" name="additionalFile1" type="file" class="govcy-file-upload" aria-describedby="additionalFile1-hint ">
+        <input type="hidden" name="additionalFile1Attachment[fileId]" value="">
+        <input type="hidden" name="additionalFile1Attachment[sha256]" value="">
+    </div><div id="additionalFile2-input-control" class="govcy-form-control">
+    <label id="additionalFile2-label" class="govcy-label govcy-label-primary" for="additionalFile2">File 2</label><span id="additionalFile2-hint" class="govcy-hint">PDF, JPG, JPEG, PNG  are the only acceptable formats</span><input id="additionalFile2" name="additionalFile2" type="file" class="govcy-file-upload" aria-describedby="additionalFile2-hint ">
+        <input type="hidden" name="additionalFile2Attachment[fileId]" value="">
+        <input type="hidden" name="additionalFile2Attachment[sha256]" value="">
+    </div><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../other-files'">Continue</button></form>
                 </article>
             </div>
         </main>
