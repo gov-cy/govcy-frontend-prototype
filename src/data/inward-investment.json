@@ -1,15 +1,9 @@
+
 {
   "site": {
     "id": "inward-investment",
     "lang": "en",
-    "languages": [
-      {
-        "code": "en",
-        "label": "EN",
-        "alt": "English language",
-        "href": "?lang=en"
-      }
-    ],
+    "languages": [],
     "footerLinks": [
       {
         "label": {
@@ -54,9 +48,9 @@
         "tr": "Inward investment notification"
       },
       "href": {
-        "el": "/inward-investment",
-        "en": "/inward-investment",
-        "tr": "/inward-investment"
+        "el": "/govcy-frontend-prototype/inward-investment",
+        "en": "/govcy-frontend-prototype/inward-investment",
+        "tr": "/govcy-frontend-prototype/inward-investment"
       }
     },
     "description": {
@@ -129,8 +123,8 @@
                 "params": {
                   "id": "instructions",
                   "text": {
-                    "el": "<p>Αυτή η πολιτική απορρήτου εξηγεί πώς SERVICE_OWNER χρησιμοποιεί πληροφορίες σχετικά με εσάς, για να διεκπεραιώσει την αίτησή σας.</p><h2>Τύποι πληροφοριών που συλλέγουμε και χρησιμοποιούμε</h2><p>Συλλέγουμε τις ακόλουθες πληροφορίες απευθείας από εσάς:</p><ul><li>διεύθυνση επικοινωνίας</li><li>διεύθυνση email</li><li>αριθμός τηλεφώνου</li></ul><p>Συλλέγουμε τις ακόλουθες πληροφορίες για εσάς από το CY Login:</p><ul><li>όνομα χρήστη στο Cy Login\r</li><li>διεύθυνση email</li><li>αριθμός ταυτότητας ή ARC</li></ul><p>Χρησιμοποιούμε τις ακόλουθες πληροφορίες για εσάς από τα δικά μας αρχεία:</p><ul><li>ονοματεπώνυμο\r</li><li>ημερομηνία γέννησης, φύλο, εθνικότητα και κοινότητα στην οποία ανήκετε\r</li><li>διεύθυνση επικοινωνίας και email\r(αν ισχύει)</li><li>αριθμός τηλεφώνου\r(αν ισχύει)</li><li>ημερομηνία θανάτου\r(αν ισχύει)</li><li>ονοματεπώνυμο, πατρικό επώνυμο, υπηκοότητα, τόπος και ημερομηνία γέννησης, φύλο, σχέση με αιτητή και ημερομηνία θανάτου για: παιδιά, γονείς, παππούδες, γιαγιάδες και εάν ο αιτητής είναι άρρενας, εγγόνια (αν ισχύει).</li></ul><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, συλλέγουμε επίσης αυτές τις πληροφορίες:</p><ul><li>ο βαθμός ικανοποίησής σας με τη χρήση της υπηρεσίας</li><li>η γνώμη και οι εισηγήσεις σας για το πώς μπορούμε να βελτιώσουμε την υπηρεσία.</li></ul><h2>Γιατί χρησιμοποιούμε τις πληροφορίες σας</h2><p>Συλλέγουμε και χρησιμοποιούμε τις πληροφορίες αυτές για την έκδοση του εγγράφου που επιλέξατε. Στην περίπτωση αίτησης, οι εξεταστές μας τις χρησιμοποιούν για να επεξεργαστούν την αίτησή σας.</p><p>Χωρίς πρόσβαση στις πληροφορίες αυτές, δεν μπορούμε να εκδώόσουμε το έγγραφο που επιλέξατε ή να επεξεργαστούμε την αίτησή σας.</p><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, θα τα χρησιμοποιήσουμε για να αξιολογήσουμε πώς αισθάνονται οι χρήστες για την εμπειρία τους από τη χρήση της υπηρεσίας. Αυτό γίνεται για να βρούμε και να προτεραιοποιήσουμε τομείς βελτίωσης και να πάρουμε ιδέες για νέες εξελίξεις.</p><h2>Πώς αποθηκεύονται οι προσωπικές σας πληροφορίες</h2><p>Οι πληροφορίες σας αποθηκεύονται με ασφάλεια σε διακομιστές με έδρα την Κύπρο.</p><h2>Τα δικαιώματά σας</h2><p>Επικοινωνήστε στο <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> εάν θέλετε:</p><ul><li>να λάβετε αντίγραφο των πληροφοριών που διατηρούνται για εσάς </li><li>να περιορίσετε την επεξεργασία των δεδομένων σας </li><li>να διορθώσετε ή να ενημερώσετε τις προσωπικές σας πληροφορίες </li><li>να υποβάλετε ένσταση για την επεξεργασία των προσωπικών σας πληροφοριών </li><li>να μεταφερθούν τα στοιχεία σας σε άλλο οργανισμό ή σε εσάς.</li></ul><h2>Παράπονα</h2><p>Μπορείτε να υποβάλετε παράπονο για τον τρόπο με τον οποίο χρησιμοποιήθηκαν οι προσωπικές σας πληροφορίες <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_gr/page1i_gr?opendocument\" target=\"_blank\">επικοινωνώντας με το Γραφείο του Επιτρόπου Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</a>.</p>",
-                    "en": "<p>This privacy policy explains how SERVICE_OWNER uses information about you, in order to process your application.</p><h2>Types of information we collect and use</h2><p>We collect the following information from you directly:</p><ul><li>postal address</li><li>email address</li><li>phone number</li></ul><p>We collect the following information about you from CY Login:</p><ul><li>CY Login user name</li><li>email address</li><li>ID or ARC number</li></ul><p>We use the following information about you from our own records:</p><ul><li>full name\r</li><li>date of birth, gender, nationality and community where you belong\r</li><li>postal and email address\r(if it applies)\r</li><li>phone number (if it applies)\r</li><li>date of death (if it applies)</li><li>full name, paternal surname, citizenship, place and date of birth, gender, relation to applicant and date of death for: children, parents, grandparents, and if the applicant is male, grandchildren (if it applies).</li></ul><p>If you leave feedback in Help us improve this service, we also collect this information:</p><ul><li>the degree of your satisfaction while using the service\r</li><li>your opinion and suggestions on how we could improve the service.</li></ul><h2>Why we use your information</h2><p>We collect and use this information to issue the document you selected. In case of an application, our examiners use it to process your application.</p><p>Without access to this information, we cannot issue the document you selected or process your application.</p><p>If you leave feedback in Help us improve this service, we will use it to evaluate how users feel about their experience using the service. This is so that we can identify and prioritize areas for improvement, and get ideas for new developments.</p><h2>How your personal information is stored</h2><p>Your information is stored securely on servers based in Cyprus.</p><h2>Your rights</h2><p>Contact <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> if you want to:</p><ul><li>get a copy of the information held about you </li><li>restrict the processing of your data</li><li>correct or update your personal information </li><li>object to the processing of your personal information</li><li>have your information transferred to another organisation or to you.</li></ul><h2>Complaints</h2><p>You can complain about the way your personal information has been used by <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_en/page1i_en?opendocument\" target=\"_blank\">contacting the Office of the Commissioner for Personal Data Protection</a>.</p>"
+                    "el": "<p>Αυτή η πολιτική απορρήτου εξηγεί πώς SERVICE_OWNER χρησιμοποιεί πληροφορίες σχετικά με εσάς, για να διεκπεραιώσει την αίτησή σας.</p><h2>Τύποι πληροφοριών που συλλέγουμε και χρησιμοποιούμε</h2><p>Συλλέγουμε τις ακόλουθες πληροφορίες απευθείας από εσάς:</p><ul><li>διεύθυνση επικοινωνίας</li><li>διεύθυνση email</li><li>αριθμός τηλεφώνου</li></ul><p>Συλλέγουμε τις ακόλουθες πληροφορίες για εσάς από το CY Login:</p><ul><li>όνομα χρήστη στο Cy Login\r</li><li>διεύθυνση email</li><li>αριθμός ταυτότητας ή ARC</li></ul><p>Χρησιμοποιούμε τις ακόλουθες πληροφορίες για εσάς από τα δικά μας αρχεία:</p><ul><li>ονοματεπώνυμο\r</li><li>ημερομηνία γέννησης, φύλο, εθνικότητα και κοινότητα στην οποία ανήκετε\r</li><li>διεύθυνση επικοινωνίας και email\r(αν ισχύει)</li><li>αριθμός τηλεφώνου\r(αν ισχύει)</li><li>ημερομηνία θανάτου\r(αν ισχύει)</li><li>ονοματεπώνυμο, πατρικό επώνυμο, υπηκοότητα, τόπος και ημερομηνία γέννησης, φύλο, σχέση με αιτητή και ημερομηνία θανάτου για: παιδιά, γονείς, παππούδες, γιαγιάδες και εάν ο αιτητής είναι άρρενας, εγγόνια (αν ισχύει).</li></ul><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, συλλέγουμε επίσης αυτές τις πληροφορίες:</p><ul><li>ο βαθμός ικανοποίησής σας με τη χρήση της υπηρεσίας</li><li>η γνώμη και οι εισηγήσεις σας για το πώς μπορούμε να βελτιώσουμε την υπηρεσία.</li></ul><h2>Γιατί χρησιμοποιούμε τις πληροφορίες σας</h2><p>Συλλέγουμε και χρησιμοποιούμε τις πληροφορίες αυτές για την έκδοση του εγγράφου που επιλέξατε. Στην περίπτωση αίτησης, οι εξεταστές μας τις χρησιμοποιούν για να επεξεργαστούν την αίτησή σας.</p><p>Χωρίς πρόσβαση στις πληροφορίες αυτές, δεν μπορούμε να εκδώόσουμε το έγγραφο που επιλέξατε ή να επεξεργαστούμε την αίτησή σας.</p><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, θα τα χρησιμοποιήσουμε για να αξιολογήσουμε πώς αισθάνονται οι χρήστες για την εμπειρία τους από τη χρήση της υπηρεσίας. Αυτό γίνεται για να βρούμε και να προτεραιοποιήσουμε τομείς βελτίωσης και να πάρουμε ιδέες για νέες εξελίξεις.</p><h2>Πώς αποθηκεύονται οι προσωπικές σας πληροφορίες</h2><p>Οι πληροφορίες σας αποθηκεύονται με ασφάλεια σε διακομιστές με έδρα την Κύπρο.</p><h2>Τα δικαιώματά σας</h2><p>Επικοινωνήστε στο <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> εάν θέλετε:</p><ul><li>να λάβετε αντίγραφο των πληροφοριών που διατηρούνται για εσάς </li><li>να περιορίσετε την επεξεργασία των δεδομένων σας </li><li>να διορθώσετε ή να ενημερώσετε τις προσωπικές σας πληροφορίες </li><li>να υποβάλετε ένσταση για την επεξεργασία των προσωπικών σας πληροφοριών </li><li>να μεταφερθούν τα στοιχεία σας σε άλλο οργανισμό ή σε εσάς.</li></ul><h2>Παράπονα</h2><p>Μπορείτε να υποβάλετε παράπονο για τον τρόπο με τον οποίο χρησιμοποιήθηκαν οι προσωπικές σας πληροφορίες <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_gr/page1i_gr?opendocument\" target=\"_blank\">επικοινωνώντας με το Γραφείο του Επιτρόπου Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</a>.</p>",
+                    "en": "<p>This privacy policy explains how SERVICE_OWNER uses information about you, in order to process your application.</p><h2>Types of information we collect and use</h2><p>We collect the following information from you directly:</p><ul><li>postal address</li><li>email address</li><li>phone number</li></ul><p>We collect the following information about you from CY Login:</p><ul><li>CY Login user name</li><li>email address</li><li>ID or ARC number</li></ul><p>We use the following information about you from our own records:</p><ul><li>full name\r</li><li>date of birth, gender, nationality and community where you belong\r</li><li>postal and email address\r(if it applies)\r</li><li>phone number (if it applies)\r</li><li>date of death (if it applies)</li><li>full name, paternal surname, citizenship, place and date of birth, gender, relation to applicant and date of death for: children, parents, grandparents, and if the applicant is male, grandchildren (if it applies).</li></ul><p>If you leave feedback in Help us improve this service, we also collect this information:</p><ul><li>the degree of your satisfaction while using the service\r</li><li>your opinion and suggestions on how we could improve the service.</li></ul><h2>Why we use your information</h2><p>We collect and use this information to issue the document you selected. In case of an application, our examiners use it to process your application.</p><p>Without access to this information, we cannot issue the document you selected or process your application.</p><p>If you leave feedback in Help us improve this service, we will use it to evaluate how users feel about their experience using the service. This is so that we can identify and prioritize areas for improvement, and get ideas for new developments.</p><h2>How your personal information is stored</h2><p>Your information is stored securely on servers based in Cyprus.</p><h2>Your rights</h2><p>Contact <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> if you want to:</p><ul><li>get a copy of the information held about you </li><li>restrict the processing of your data</li><li>correct or update your personal information </li><li>object to the processing of your personal information</li><li>have your information transferred to another organisation or to you.</li></ul><h2>Complaints</h2><p>You can complain about the way your personal information has been used by <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_en/page1i_en?opendocument\" target=\"_blank\">contacting the Office of the Commissioner for Personal Data Protection</a>.</p>"
                   }
                 }
               }
@@ -291,50 +285,8 @@
                       "params": {
                         "id": "steps",
                         "current": "1",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
-                          {
-                            "id": "step1",
-                            "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step2",
-                            "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step3",
-                            "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step4",
-                            "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step5",
-                            "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
-                              "tr": ""
-                            }
-                          }
-                        ]
+                        "total": "7",
+                        "showSteps": true
                       }
                     },
                     {
@@ -444,50 +396,8 @@
                       "params": {
                         "id": "steps",
                         "current": "1",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
-                          {
-                            "id": "step1",
-                            "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step2",
-                            "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step3",
-                            "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step4",
-                            "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step5",
-                            "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
-                              "tr": ""
-                            }
-                          }
-                        ]
+                        "total": "7",
+                        "showSteps": true
                       }
                     },
                     {
@@ -647,50 +557,8 @@
                       "params": {
                         "id": "steps",
                         "current": "1",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
-                          {
-                            "id": "step1",
-                            "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step2",
-                            "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step3",
-                            "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step4",
-                            "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step5",
-                            "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
-                              "tr": ""
-                            }
-                          }
-                        ]
+                        "total": "7",
+                        "showSteps": true
                       }
                     },
                     {
@@ -740,7 +608,12 @@
         "sections": [
           {
             "name": "beforeMain",
-            "elements": []
+            "elements": [
+              {
+                "element": "backLink",
+                "params": {}
+              }
+            ]
           },
           {
             "name": "main",
@@ -754,50 +627,8 @@
                       "params": {
                         "id": "steps",
                         "current": "2",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
-                          {
-                            "id": "step1",
-                            "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step2",
-                            "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step3",
-                            "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step4",
-                            "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step5",
-                            "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
-                              "tr": ""
-                            }
-                          }
-                        ]
+                        "total": "7",
+                        "showSteps": true
                       }
                     },
                     {
@@ -2915,6 +2746,134 @@
                                     }
                                   }
                                 ]
+                              },
+                              {
+                                "element": "textInput",
+                                "params": {
+                                  "id": "emailOfRepresenative",
+                                  "name": "emailOfRepresenative",
+                                  "label": {
+                                    "el": "Email εκπροσώπου",
+                                    "en": "Representative email"
+                                  },
+                                  "isPageHeading": false,
+                                  "type": "email"
+                                },
+                                "validations": [
+                                  {
+                                    "check": "required",
+                                    "params": {
+                                      "checkValue": "",
+                                      "message": {
+                                        "el": "Εισαγάγετε το ....",
+                                        "en": "Enter the representative email",
+                                        "tr": ""
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "check": "valid",
+                                    "params": {
+                                      "checkValue": "email",
+                                      "message": {
+                                        "el": "... πρέπει να είναι email ...",
+                                        "en": "The representative email must have an email format",
+                                        "tr": ""
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "check": "length",
+                                    "params": {
+                                      "checkValue": "300",
+                                      "message": {
+                                        "el": ".... πρέπει να είναι 300 χαρακτήρες ή λιγότεροι",
+                                        "en": "The representative email must be 300 characters or less",
+                                        "tr": ""
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "element": "textInput",
+                                "params": {
+                                  "id": "phoneOfRepresenative",
+                                  "name": "phoneOfRepresenative",
+                                  "label": {
+                                    "el": "Τηλέφωνο εκπροσώπου",
+                                    "en": "Representative phone number"
+                                  },
+                                  "isPageHeading": false,
+                                  "fixedWidth": "20",
+                                  "type": "tel"
+                                },
+                                "validations": [
+                                  {
+                                    "check": "required",
+                                    "params": {
+                                      "checkValue": "",
+                                      "message": {
+                                        "el": "Εισαγάγετε το ....",
+                                        "en": "Enter the representative telephone",
+                                        "tr": ""
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "check": "valid",
+                                    "params": {
+                                      "checkValue": "tel",
+                                      "message": {
+                                        "el": "... πρέπει να είναι αριθμός τηλεφώνου ...",
+                                        "en": "The representative telephone must have a telephone number format. For example “+44 1234 567”",
+                                        "tr": ""
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "check": "length",
+                                    "params": {
+                                      "checkValue": "15",
+                                      "message": {
+                                        "el": ".... πρέπει να είναι 15 χαρακτήρες ή λιγότεροι",
+                                        "en": "The representative telephone must be 15 characters or less",
+                                        "tr": ""
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "element": "fileInput",
+                                "params": {
+                                  "id": "representativePOA",
+                                  "name": "representativePOA",
+                                  "label": {
+                                    "el": "Power of \nattorney or authorisation document",
+                                    "en": "Power of \nattorney or authorisation document",
+                                    "tr": ""
+                                  },
+                                  "isPageHeading": false,
+                                  "hint": {
+                                    "el": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
+                                    "en": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
+                                    "tr": ""
+                                  }
+                                },
+                                "validations": [
+                                  {
+                                    "check": "required",
+                                    "params": {
+                                      "checkValue": "",
+                                      "message": {
+                                        "el": "Ανεβάστε τον αρχείο ...",
+                                        "en": "Upload the power of attorney or authorisation document",
+                                        "tr": ""
+                                      }
+                                    }
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -5011,6 +4970,103 @@
                       ]
                     },
                     {
+                      "element": "textInput",
+                      "params": {
+                        "id": "emailOfInvestor",
+                        "name": "emailOfInvestor",
+                        "label": {
+                          "el": "Email επενδυτή",
+                          "en": "Investor email"
+                        },
+                        "isPageHeading": false,
+                        "type": "email"
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "Εισαγάγετε το ....",
+                              "en": "Enter the investor email",
+                              "tr": ""
+                            }
+                          }
+                        },
+                        {
+                          "check": "valid",
+                          "params": {
+                            "checkValue": "email",
+                            "message": {
+                              "el": "... πρέπει να είναι email ...",
+                              "en": "The investor email must have an email format",
+                              "tr": ""
+                            }
+                          }
+                        },
+                        {
+                          "check": "length",
+                          "params": {
+                            "checkValue": "300",
+                            "message": {
+                              "el": ".... πρέπει να είναι 300 χαρακτήρες ή λιγότεροι",
+                              "en": "The investor email must be 300 characters or less",
+                              "tr": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "element": "textInput",
+                      "params": {
+                        "id": "phoneOfInvestor",
+                        "name": "phoneOfInvestor",
+                        "label": {
+                          "el": "Τηλέφωνο επενδυτή",
+                          "en": "Investor telephone number"
+                        },
+                        "isPageHeading": false,
+                        "fixedWidth": "20",
+                        "type": "tel"
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "Εισαγάγετε το ....",
+                              "en": "Enter the investor telephone",
+                              "tr": ""
+                            }
+                          }
+                        },
+                        {
+                          "check": "valid",
+                          "params": {
+                            "checkValue": "tel",
+                            "message": {
+                              "el": "... πρέπει να είναι αριθμός τηλεφώνου ...",
+                              "en": "The investor telephone must have a telephone number format. For example “+44 1234 567”",
+                              "tr": ""
+                            }
+                          }
+                        },
+                        {
+                          "check": "length",
+                          "params": {
+                            "checkValue": "15",
+                            "message": {
+                              "el": ".... πρέπει να είναι 15 χαρακτήρες ή λιγότεροι",
+                              "en": "The investor telephone must be 15 characters or less",
+                              "tr": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
                       "element": "button",
                       "params": {
                         "id": "continue",
@@ -5040,13 +5096,18 @@
         },
         "layout": "layouts/govcyBase.njk",
         "mainLayout": "two-third",
-        "nextPage": "additional-data"
+        "nextPage": "structure-target-undertaking"
       },
       "pageTemplate": {
         "sections": [
           {
             "name": "beforeMain",
-            "elements": []
+            "elements": [
+              {
+                "element": "backLink",
+                "params": {}
+              }
+            ]
           },
           {
             "name": "main",
@@ -5060,50 +5121,29 @@
                       "params": {
                         "id": "steps",
                         "current": "3",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
-                          {
-                            "id": "step1",
-                            "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step2",
-                            "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step3",
-                            "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step4",
-                            "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step5",
-                            "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
-                              "tr": ""
-                            }
-                          }
-                        ]
+                        "total": "7",
+                        "showSteps": true
+                      }
+                    },
+                    {
+                      "element": "textElement",
+                      "params": {
+                        "id": "header",
+                        "type": "h1",
+                        "text": {
+                          "el": "Inward investment notification form",
+                          "en": "Inward investment notification form"
+                        }
+                      }
+                    },
+                    {
+                      "element": "htmlElement",
+                      "params": {
+                        "id": "instructions",
+                        "text": {
+                          "el": "<p>Upload the <strong>completed</strong> Inward investment notification form.</p><p>You must upload the official editable PDF that you downloaded from the gov.cy website.</p><p>We will not accept:</p><ul><li>“scanned copies”</li><li>“printed and re-scanned forms”</li><li>“modified templates”</li><li>“any other PDF file”</li></ul>",
+                          "en": "<p>Upload the <strong>completed</strong> Inward investment notification form.</p><p>You must upload the official editable PDF that you downloaded from the gov.cy website.</p><p>We will not accept:</p><ul><li>“scanned copies”</li><li>“printed and re-scanned forms”</li><li>“modified templates”</li><li>“any other PDF file”</li></ul>"
+                        }
                       }
                     },
                     {
@@ -5112,13 +5152,13 @@
                         "id": "notificationAttachment",
                         "name": "notificationAttachment",
                         "label": {
-                          "el": "Φόρμα ειδοποίηση για εισερχόμενη επένδυση",
-                          "en": "Inward investment notification form",
+                          "el": "Inward investment notification form document",
+                          "en": "Inward investment notification form document",
                           "tr": ""
                         },
-                        "isPageHeading": true,
+                        "isPageHeading": false,
                         "hint": {
-                          "el": "Γίνενται δεκτό μόνο αρχείο PDF",
+                          "el": "PDF is the only acceptable format",
                           "en": "PDF is the only acceptable format",
                           "tr": ""
                         }
@@ -5146,7 +5186,7 @@
                           "el": "Συνέχεια",
                           "en": "Continue"
                         },
-                        "prototypeNavigate": "../additional-data"
+                        "prototypeNavigate": "../structure-target-undertaking"
                       }
                     }
                   ]
@@ -5159,21 +5199,26 @@
     },
     {
       "pageData": {
-        "url": "additional-data",
+        "url": "structure-target-undertaking",
         "title": {
-          "el": "Συμπληρωματικά αρχεία",
-          "en": "Additional files",
+          "el": "Ownership structure of the Target Undertaking (Pre-Investment)",
+          "en": "Ownership structure of the Target Undertaking (Pre-Investment)",
           "tr": ""
         },
         "layout": "layouts/govcyBase.njk",
         "mainLayout": "two-third",
-        "nextPage": "other-files"
+        "nextPage": "structure-foreign-investor"
       },
       "pageTemplate": {
         "sections": [
           {
             "name": "beforeMain",
-            "elements": []
+            "elements": [
+              {
+                "element": "backLink",
+                "params": {}
+              }
+            ]
           },
           {
             "name": "main",
@@ -5187,50 +5232,8 @@
                       "params": {
                         "id": "steps",
                         "current": "4",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
-                          {
-                            "id": "step1",
-                            "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step2",
-                            "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step3",
-                            "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step4",
-                            "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
-                              "tr": ""
-                            }
-                          },
-                          {
-                            "id": "step5",
-                            "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
-                              "tr": ""
-                            }
-                          }
-                        ]
+                        "total": "7",
+                        "showSteps": true
                       }
                     },
                     {
@@ -5239,84 +5242,287 @@
                         "id": "header",
                         "type": "h1",
                         "text": {
-                          "el": "Συμπληρωματικά στοιχεία",
-                          "en": "Additional details"
+                          "el": "Ownership structure of the Target Undertaking (Pre-Investment)",
+                          "en": "Ownership structure of the Target Undertaking (Pre-Investment)"
                         }
                       }
                     },
                     {
-                      "element": "textArea",
+                      "element": "htmlElement",
                       "params": {
-                        "id": "question1",
-                        "name": "question1",
-                        "rows": 5,
-                        "label": {
-                          "el": "Ερώτηση 1",
-                          "en": "Question 1"
-                        },
-                        "isPageHeading": false,
-                        "hint": {
-                          "el": "Hint",
-                          "en": "Hint"
-                        },
-                        "characterCount": {
-                          "type": "char",
-                          "max": 150
-                        }
-                      }
-                    },
-                    {
-                      "element": "textArea",
-                      "params": {
-                        "id": "question2",
-                        "name": "question2",
-                        "rows": 5,
-                        "label": {
-                          "el": "Ερώτηση 2",
-                          "en": "Question 2"
-                        },
-                        "isPageHeading": false,
-                        "hint": {
-                          "el": "Hint",
-                          "en": "Hint"
-                        },
-                        "characterCount": {
-                          "type": "char",
-                          "max": 150
+                        "id": "instructions",
+                        "text": {
+                          "el": "<p>Upload an organisational chart illustrating the ownership structure of the target undertaking prior to the notified investment (current ownership structure).</p><p>The chart must include all legal entities and/or natural persons in the ownership chain, their respective ownership percentages, and the ultimate controlling entity and/or ultimate beneficial owner.</p>",
+                          "en": "<p>Upload an organisational chart illustrating the ownership structure of the target undertaking prior to the notified investment (current ownership structure).</p><p>The chart must include all legal entities and/or natural persons in the ownership chain, their respective ownership percentages, and the ultimate controlling entity and/or ultimate beneficial owner.</p>"
                         }
                       }
                     },
                     {
                       "element": "fileInput",
                       "params": {
-                        "id": "additionalFile1",
-                        "name": "additionalFile1",
+                        "id": "structureTargetAttachment",
+                        "name": "structureTargetAttachment",
                         "label": {
-                          "el": "Αρχείο 1",
-                          "en": "File 1",
+                          "el": "Target ownership structure - Pre-Investment document",
+                          "en": "Target ownership structure - Pre-Investment document",
                           "tr": ""
                         },
                         "isPageHeading": false,
                         "hint": {
-                          "el": "PDF, JPG, JPEG, PNG, είναι οι αποδεκτές μορφές",
+                          "el": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
                           "en": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
                           "tr": ""
                         }
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "Ανεβάστε τον αρχείο",
+                              "en": "Upload the target ownership structure - Pre-Investment document",
+                              "tr": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "element": "button",
+                      "params": {
+                        "id": "continue",
+                        "variant": "primary",
+                        "text": {
+                          "el": "Συνέχεια",
+                          "en": "Continue"
+                        },
+                        "prototypeNavigate": "../structure-foreign-investor"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pageData": {
+        "url": "structure-foreign-investor",
+        "title": {
+          "el": "Ownership structure of the foreign Investor",
+          "en": "Ownership structure of the foreign Investor",
+          "tr": ""
+        },
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-third",
+        "nextPage": "transaction-document"
+      },
+      "pageTemplate": {
+        "sections": [
+          {
+            "name": "beforeMain",
+            "elements": [
+              {
+                "element": "backLink",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "name": "main",
+            "elements": [
+              {
+                "element": "form",
+                "params": {
+                  "elements": [
+                    {
+                      "element": "progressList",
+                      "params": {
+                        "id": "steps",
+                        "current": "5",
+                        "total": "7",
+                        "showSteps": true
+                      }
+                    },
+                    {
+                      "element": "textElement",
+                      "params": {
+                        "id": "header",
+                        "type": "h1",
+                        "text": {
+                          "el": "Ownership structure of the Foreign Investor",
+                          "en": "Ownership structure of the Foreign Investor"
+                        }
+                      }
+                    },
+                    {
+                      "element": "htmlElement",
+                      "params": {
+                        "id": "instructions",
+                        "text": {
+                          "el": "<p>Upload organisational charts illustrating the ownership structure of the foreign investor both prior to the notified investment (current ownership structure) and following the notified investment (post-transaction ownership structure).</p><p>The post-investment chart must clearly show the target undertaking as part of the foreign investor’s ownership structure, including the percentage of shares or voting rights acquired.</p><p>Both charts must include all legal entities and/or natural persons in the ownership chain, their respective ownership percentages, and the ultimate controlling entity and/or ultimate beneficial owner.</p>",
+                          "en": "<p>Upload organisational charts illustrating the ownership structure of the foreign investor both prior to the notified investment (current ownership structure) and following the notified investment (post-transaction ownership structure).</p><p>The post-investment chart must clearly show the target undertaking as part of the foreign investor’s ownership structure, including the percentage of shares or voting rights acquired.</p><p>Both charts must include all legal entities and/or natural persons in the ownership chain, their respective ownership percentages, and the ultimate controlling entity and/or ultimate beneficial owner.</p>"
+                        }
                       }
                     },
                     {
                       "element": "fileInput",
                       "params": {
-                        "id": "additionalFile2",
-                        "name": "additionalFile2",
+                        "id": "structureInvestorPreAttachment",
+                        "name": "structureInvestorPreAttachment",
                         "label": {
-                          "el": "Αρχείο 2",
-                          "en": "File 2",
+                          "el": "Foreign Investor ownership structure - Pre-Investment document",
+                          "en": "Foreign Investor ownership structure - Pre-Investment document",
                           "tr": ""
                         },
                         "isPageHeading": false,
                         "hint": {
-                          "el": "PDF, JPG, JPEG, PNG, είναι οι αποδεκτές μορφές",
+                          "el": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
+                          "en": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
+                          "tr": ""
+                        }
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "Ανεβάστε τον αρχείο",
+                              "en": "Upload the foreign Investor ownership structure - Pre-Investment document",
+                              "tr": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "element": "fileInput",
+                      "params": {
+                        "id": "structureInvestorPostAttachment",
+                        "name": "structureInvestorPostAttachment",
+                        "label": {
+                          "el": "Foreign Investor ownership structure - Post-Investment document",
+                          "en": "Foreign Investor ownership structure - Post-Investment document",
+                          "tr": ""
+                        },
+                        "isPageHeading": false,
+                        "hint": {
+                          "el": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
+                          "en": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
+                          "tr": ""
+                        }
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "Ανεβάστε τον αρχείο",
+                              "en": "Upload the foreign Investor ownership structure - Post-Investment document",
+                              "tr": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "element": "button",
+                      "params": {
+                        "id": "continue",
+                        "variant": "primary",
+                        "text": {
+                          "el": "Συνέχεια",
+                          "en": "Continue"
+                        },
+                        "prototypeNavigate": "../transaction-document"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "pageData": {
+        "url": "transaction-document",
+        "title": {
+          "el": "Transaction document",
+          "en": "Transaction document",
+          "tr": ""
+        },
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-third",
+        "nextPage": "declarations"
+      },
+      "pageTemplate": {
+        "sections": [
+          {
+            "name": "beforeMain",
+            "elements": [
+              {
+                "element": "backLink",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "name": "main",
+            "elements": [
+              {
+                "element": "form",
+                "params": {
+                  "elements": [
+                    {
+                      "element": "progressList",
+                      "params": {
+                        "id": "steps",
+                        "current": "6",
+                        "total": "7",
+                        "showSteps": true
+                      }
+                    },
+                    {
+                      "element": "textElement",
+                      "params": {
+                        "id": "header",
+                        "type": "h1",
+                        "text": {
+                          "el": "Transaction document (optional)",
+                          "en": "Transaction document (optional)"
+                        }
+                      }
+                    },
+                    {
+                      "element": "htmlElement",
+                      "params": {
+                        "id": "instructions",
+                        "text": {
+                          "el": "<p>Upload any agreement, letter of intent, memorandum of understanding, or other document relating to the notified investment.</p><p>This may include the investment agreement and any side letters or supplementary agreements setting out the rights and obligations of the parties involved.</p><p>If no agreement has been signed, please upload any document demonstrating a sufficiently developed investment project.</p>",
+                          "en": "<p>Upload any agreement, letter of intent, memorandum of understanding, or other document relating to the notified investment.</p><p>This may include the investment agreement and any side letters or supplementary agreements setting out the rights and obligations of the parties involved.</p><p>If no agreement has been signed, please upload any document demonstrating a sufficiently developed investment project.</p>"
+                        }
+                      }
+                    },
+                    {
+                      "element": "fileInput",
+                      "params": {
+                        "id": "investmentAgreementAttachment",
+                        "name": "investmentAgreementAttachment",
+                        "label": {
+                          "el": "Investment agreement, letter of intent, or other transaction document (optional)",
+                          "en": "Investment agreement, letter of intent, or other transaction document (optional)",
+                          "tr": ""
+                        },
+                        "isPageHeading": false,
+                        "hint": {
+                          "el": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
                           "en": "PDF, JPG, JPEG, PNG  are the only acceptable formats",
                           "tr": ""
                         }
@@ -5331,7 +5537,7 @@
                           "el": "Συνέχεια",
                           "en": "Continue"
                         },
-                        "prototypeNavigate": "../other-files"
+                        "prototypeNavigate": "../declarations"
                       }
                     }
                   ]
@@ -5344,10 +5550,10 @@
     },
     {
       "pageData": {
-        "url": "other-files",
+        "url": "declarations",
         "title": {
-          "el": "Άλλα αρχεία",
-          "en": "Other files",
+          "el": "Declarations",
+          "en": "Declarations",
           "tr": ""
         },
         "layout": "layouts/govcyBase.njk",
@@ -5358,7 +5564,12 @@
         "sections": [
           {
             "name": "beforeMain",
-            "elements": []
+            "elements": [
+              {
+                "element": "backLink",
+                "params": {}
+              }
+            ]
           },
           {
             "name": "main",
@@ -5371,138 +5582,85 @@
                       "element": "progressList",
                       "params": {
                         "id": "steps",
-                        "current": "5",
-                        "total": "5",
-                        "showSteps": true,
-                        "steps": [
+                        "current": "7",
+                        "total": "7",
+                        "showSteps": true
+                      }
+                    },
+                    {
+                      "element": "checkboxes",
+                      "params": {
+                        "id": "declarationsChecks",
+                        "name": "declarationsChecks",
+                        "legend": {
+                          "el": "Confirm the following statements",
+                          "en": "Confirm the following statements"
+                        },
+                        "items": [
                           {
-                            "id": "step1",
+                            "value": "declare1",
                             "text": {
-                              "el": "Email επικοινωνίας",
-                              "en": "Contact email",
+                              "el": "I confirm that all relevant parties involved in the foreign direct investment have given their express and irrevocable approval for this notification to be submitted, and that I have explained the purpose and consequences of this process to them",
+                              "en": "I confirm that all relevant parties involved in the foreign direct investment have given their express and irrevocable approval for this notification to be submitted, and that I have explained the purpose and consequences of this process to them",
                               "tr": ""
                             }
                           },
                           {
-                            "id": "step2",
+                            "value": "declare2",
                             "text": {
-                              "el": "Στοιχεία αιτητή",
-                              "en": "Applicant details",
+                              "el": "I understand that the Foreign Direct Investment Screening Authority may request additional information or supporting documents",
+                              "en": "I understand that the Foreign Direct Investment Screening Authority may request additional information or supporting documents",
                               "tr": ""
                             }
                           },
                           {
-                            "id": "step3",
+                            "value": "declare3",
                             "text": {
-                              "el": "Φόρμα ειδοποίηση",
-                              "en": "Notification form",
+                              "el": "I confirm that I have read the applicable legislation and that, to the best of my knowledge, the information provided in this form is complete and correct",
+                              "en": "I confirm that I have read the applicable legislation and that, to the best of my knowledge, the information provided in this form is complete and correct",
                               "tr": ""
                             }
                           },
                           {
-                            "id": "step4",
+                            "value": "declare4",
                             "text": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional details",
+                              "el": "I understand that further checks may be carried out by the Foreign Direct Investment Screening Authority or its appointees, and that providing incorrect or incomplete information may result in administrative penalties or other procedures",
+                              "en": "I understand that further checks may be carried out by the Foreign Direct Investment Screening Authority or its appointees, and that providing incorrect or incomplete information may result in administrative penalties or other procedures",
                               "tr": ""
                             }
                           },
                           {
-                            "id": "step5",
+                            "value": "declare5",
                             "text": {
-                              "el": "Άλλα αρχεία",
-                              "en": "Other files",
+                              "el": "I confirm that the data subjects have been informed about the processing of their personal data under Articles 6 and 7 of Regulation (EU) 2019/452, including the exchange of information with the European Commission and other Member States",
+                              "en": "I confirm that the data subjects have been informed about the processing of their personal data under Articles 6 and 7 of Regulation (EU) 2019/452, including the exchange of information with the European Commission and other Member States",
+                              "tr": ""
+                            }
+                          },
+                          {
+                            "value": "declare6",
+                            "text": {
+                              "el": "I confirm that the data subjects have been informed that their personal data will be processed in accordance with applicable data protection laws",
+                              "en": "I confirm that the data subjects have been informed that their personal data will be processed in accordance with applicable data protection laws",
                               "tr": ""
                             }
                           }
-                        ]
-                      }
-                    },
-                    {
-                      "element": "textElement",
-                      "params": {
-                        "id": "header",
-                        "type": "h1",
-                        "text": {
-                          "el": "Άλλα αρχεία (προαιρετικό)",
-                          "en": "Other files (optional)"
+                        ],
+                        "isPageHeading": true
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "...",
+                              "en": "Confirm all the statements in order to continue",
+                              "tr": ""
+                            }
+                          }
                         }
-                      }
-                    },
-                    {
-                      "element": "htmlElement",
-                      "params": {
-                        "id": "instructions",
-                        "text": {
-                          "el": "<p>Ανεβάστε επιπλέον αρχεία που θα μας βοηθήσουν να επεξεργαστούμε την ειδοποίηση για εισερχόμενη επένδυση</p><p>JPG, JPEG, PNG και PDF είναι οι αποδεκτές μορφές. Ανεβάστε μέχρι 5</p>",
-                          "en": "<p>Upload any additional files that can help process the investment notification form</p><p>JPG, JPEG, PNG and PDF are the acceptable formats. Upload up to 5</p>"
-                        }
-                      }
-                    },
-                    {
-                      "element": "fileInput",
-                      "params": {
-                        "id": "file1",
-                        "name": "file1",
-                        "label": {
-                          "el": "Αρχείο 1",
-                          "en": "File 1",
-                          "tr": ""
-                        },
-                        "isPageHeading": false
-                      }
-                    },
-                    {
-                      "element": "fileInput",
-                      "params": {
-                        "id": "file2",
-                        "name": "file2",
-                        "label": {
-                          "el": "Αρχείο 2",
-                          "en": "File 2",
-                          "tr": ""
-                        },
-                        "isPageHeading": false
-                      }
-                    },
-                    {
-                      "element": "fileInput",
-                      "params": {
-                        "id": "file3",
-                        "name": "file3",
-                        "label": {
-                          "el": "Αρχείο 3",
-                          "en": "File 3",
-                          "tr": ""
-                        },
-                        "isPageHeading": false
-                      }
-                    },
-                    {
-                      "element": "fileInput",
-                      "params": {
-                        "id": "file4",
-                        "name": "file4",
-                        "label": {
-                          "el": "Αρχείο 4",
-                          "en": "File 4",
-                          "tr": ""
-                        },
-                        "isPageHeading": false
-                      }
-                    },
-                    {
-                      "element": "fileInput",
-                      "params": {
-                        "id": "file5",
-                        "name": "file5",
-                        "label": {
-                          "el": "Αρχείο 5",
-                          "en": "File 5",
-                          "tr": ""
-                        },
-                        "isPageHeading": false
-                      }
+                      ]
                     },
                     {
                       "element": "button",
@@ -5573,7 +5731,7 @@
                           {
                             "id": "table_contactEmail",
                             "key": {
-                              "el": "Email επικοινωνίας",
+                              "el": "Contact email",
                               "en": "Contact email",
                               "tr": ""
                             },
@@ -5593,19 +5751,19 @@
                             "actions": [
                               {
                                 "text": {
-                                  "el": "Αλλαγή",
+                                  "el": "Change",
                                   "en": "Change",
                                   "tr": ""
                                 },
                                 "id": "CHANGE",
-                                "href": "#"
+                                "href": "review.table.contactEmail.CHANGE_URL"
                               }
                             ]
                           },
                           {
                             "id": "table_applicantDetails",
                             "key": {
-                              "el": "Στοιχεία αιτητή",
+                              "el": "Applicant details",
                               "en": "Applicant details",
                               "tr": ""
                             },
@@ -5613,12 +5771,12 @@
                               {
                                 "element": "summaryList",
                                 "params": {
-                                  "id": "table_otherData_summaryList",
+                                  "id": "table_declarations_summaryList",
                                   "items": [
                                     {
-                                      "id": "table_otherData_whoSubmits",
+                                      "id": "table_declarations_whoSubmits",
                                       "key": {
-                                        "el": "Ποιος υποβάλλει την ειδοποίηση",
+                                        "el": "Who is submitting this notification?",
                                         "en": "Who is submitting this notification?",
                                         "tr": ""
                                       },
@@ -5627,7 +5785,7 @@
                                           "element": "htmlElement",
                                           "params": {
                                             "text": {
-                                              "el": "Νομικός (ή άλλος) εκπρόσωπος",
+                                              "el": "Legal (or other) representative",
                                               "en": "Legal (or other) representative",
                                               "tr": ""
                                             }
@@ -5638,9 +5796,9 @@
                                       "actions": []
                                     },
                                     {
-                                      "id": "table_otherData_nameOfRepresenative",
+                                      "id": "table_declarations_nameOfRepresenative",
                                       "key": {
-                                        "el": "Όνομα εκπροσώπου",
+                                        "el": "Representative name",
                                         "en": "Representative name",
                                         "tr": ""
                                       },
@@ -5660,9 +5818,9 @@
                                       "actions": []
                                     },
                                     {
-                                      "id": "table_otherData_countryOfRepresenative",
+                                      "id": "table_declarations_countryOfRepresenative",
                                       "key": {
-                                        "el": "Χώρα εκπροσώπου",
+                                        "el": "Representative country",
                                         "en": "Representative country",
                                         "tr": ""
                                       },
@@ -5671,7 +5829,7 @@
                                           "element": "htmlElement",
                                           "params": {
                                             "text": {
-                                              "el": "Κύπρος",
+                                              "el": "Cyprus",
                                               "en": "Cyprus",
                                               "tr": ""
                                             }
@@ -5682,9 +5840,75 @@
                                       "actions": []
                                     },
                                     {
-                                      "id": "table_otherData_nameOfInvestor",
+                                      "id": "table_declarations_emailOfRepresenative",
                                       "key": {
-                                        "el": "Όνομα επενδυτή",
+                                        "el": "Representative email",
+                                        "en": "Representative email",
+                                        "tr": ""
+                                      },
+                                      "value": [
+                                        {
+                                          "element": "htmlElement",
+                                          "params": {
+                                            "text": {
+                                              "el": "some@example.test.com",
+                                              "en": "some@example.test.com",
+                                              "tr": ""
+                                            }
+                                          },
+                                          "id": "Value"
+                                        }
+                                      ],
+                                      "actions": []
+                                    },
+                                    {
+                                      "id": "table_declarations_phoneOfRepresenative",
+                                      "key": {
+                                        "el": "Representative telephone number",
+                                        "en": "Representative telephone number",
+                                        "tr": ""
+                                      },
+                                      "value": [
+                                        {
+                                          "element": "htmlElement",
+                                          "params": {
+                                            "text": {
+                                              "el": "+35722123456",
+                                              "en": "+35722123456",
+                                              "tr": ""
+                                            }
+                                          },
+                                          "id": "Value"
+                                        }
+                                      ],
+                                      "actions": []
+                                    },
+                                    {
+                                      "id": "table_declarations_notificationAttachment",
+                                      "key": {
+                                        "el": "Power of \nattorney or authorisation document",
+                                        "en": "Power of \nattorney or authorisation document",
+                                        "tr": ""
+                                      },
+                                      "value": [
+                                        {
+                                          "element": "htmlElement",
+                                          "params": {
+                                            "text": {
+                                              "el": "View file",
+                                              "en": "View file",
+                                              "tr": ""
+                                            }
+                                          },
+                                          "id": "Value"
+                                        }
+                                      ],
+                                      "actions": []
+                                    },
+                                    {
+                                      "id": "table_declarations_nameOfInvestor",
+                                      "key": {
+                                        "el": "Investor name",
                                         "en": "Investor name",
                                         "tr": ""
                                       },
@@ -5704,9 +5928,9 @@
                                       "actions": []
                                     },
                                     {
-                                      "id": "table_otherData_countryOfInvestor",
+                                      "id": "table_declarations_countryOfInvestor",
                                       "key": {
-                                        "el": "Χώρα επενδυτή",
+                                        "el": "Investor country",
                                         "en": "Investor country",
                                         "tr": ""
                                       },
@@ -5715,8 +5939,52 @@
                                           "element": "htmlElement",
                                           "params": {
                                             "text": {
-                                              "el": "Ελλάδα",
+                                              "el": "Greece",
                                               "en": "Greece",
+                                              "tr": ""
+                                            }
+                                          },
+                                          "id": "Value"
+                                        }
+                                      ],
+                                      "actions": []
+                                    },
+                                    {
+                                      "id": "table_declarations_emailOfInvestor",
+                                      "key": {
+                                        "el": "Investor email",
+                                        "en": "Investor email",
+                                        "tr": ""
+                                      },
+                                      "value": [
+                                        {
+                                          "element": "htmlElement",
+                                          "params": {
+                                            "text": {
+                                              "el": "some.other@example.test.com",
+                                              "en": "some.other@example.test.com",
+                                              "tr": ""
+                                            }
+                                          },
+                                          "id": "Value"
+                                        }
+                                      ],
+                                      "actions": []
+                                    },
+                                    {
+                                      "id": "table_declarations_phoneOfInvestor",
+                                      "key": {
+                                        "el": "Investor telephone number",
+                                        "en": "Investor telephone number",
+                                        "tr": ""
+                                      },
+                                      "value": [
+                                        {
+                                          "element": "htmlElement",
+                                          "params": {
+                                            "text": {
+                                              "el": "+44123456789",
+                                              "en": "+44123456789",
                                               "tr": ""
                                             }
                                           },
@@ -5732,19 +6000,19 @@
                             "actions": [
                               {
                                 "text": {
-                                  "el": "Αλλαγή",
+                                  "el": "Change",
                                   "en": "Change",
                                   "tr": ""
                                 },
                                 "id": "CHANGE",
-                                "href": "#"
+                                "href": "review.table.applicantDetails.CHANGE_URL"
                               }
                             ]
                           },
                           {
                             "id": "table_notificationAttachment",
                             "key": {
-                              "el": "Φόρμα ειδοποίησης εισερχώμενης επένδυσης",
+                              "el": "Inward investment notification form",
                               "en": "Inward investment notification form",
                               "tr": ""
                             },
@@ -5753,7 +6021,7 @@
                                 "element": "htmlElement",
                                 "params": {
                                   "text": {
-                                    "el": "Προβολή αρχείου",
+                                    "el": "View file",
                                     "en": "View file",
                                     "tr": ""
                                   }
@@ -5764,150 +6032,65 @@
                             "actions": [
                               {
                                 "text": {
-                                  "el": "Αλλαγή",
+                                  "el": "Change",
                                   "en": "Change",
                                   "tr": ""
                                 },
                                 "id": "CHANGE",
-                                "href": "#"
+                                "href": "review.table.notificationAttachment.CHANGE_URL"
                               }
                             ]
                           },
                           {
-                            "id": "table_additionalData",
+                            "id": "table_structureTargetUndertaking",
                             "key": {
-                              "el": "Συμπληρωματικά στοιχεία",
-                              "en": "Additional data",
+                              "el": "Ownership structure of the Target Undertaking (Pre-Investment)",
+                              "en": "Ownership structure of the Target Undertaking (Pre-Investment)",
                               "tr": ""
                             },
                             "value": [
                               {
-                                "element": "summaryList",
+                                "element": "htmlElement",
                                 "params": {
-                                  "id": "table_otherData_summaryList",
-                                  "items": [
-                                    {
-                                      "id": "table_otherData_question1",
-                                      "key": {
-                                        "el": "Ερώτηση 1",
-                                        "en": "Question 1",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-                                              "en": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    },
-                                    {
-                                      "id": "table_otherData_question2",
-                                      "key": {
-                                        "el": "Ερώτηση 2",
-                                        "en": "Question 2",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-                                              "en": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    },
-                                    {
-                                      "id": "table_otherData_additionalFile1",
-                                      "key": {
-                                        "el": "Αρχείο 1",
-                                        "en": "File 1",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Προβολή αρχείου",
-                                              "en": "View file",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    },
-                                    {
-                                      "id": "table_otherData_additionalFile2",
-                                      "key": {
-                                        "el": "Αρχείο 2",
-                                        "en": "File 2",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Προβολή αρχείου",
-                                              "en": "View file",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    }
-                                  ]
-                                }
+                                  "text": {
+                                    "el": "View file",
+                                    "en": "View file",
+                                    "tr": ""
+                                  }
+                                },
+                                "id": "Value"
                               }
                             ],
                             "actions": [
                               {
                                 "text": {
-                                  "el": "Αλλαγή",
+                                  "el": "Change",
                                   "en": "Change",
                                   "tr": ""
                                 },
                                 "id": "CHANGE",
-                                "href": "#"
+                                "href": "review.table.structureTargetUndertaking.CHANGE_URL"
                               }
                             ]
                           },
                           {
-                            "id": "table_otherData",
+                            "id": "table_structureForeignInvestor",
                             "key": {
-                              "el": "Άλλα αρχεία (προαιρετικό)",
-                              "en": "Other files (optional)",
+                              "el": "Ownership structure of the Foreign Investor",
+                              "en": "Ownership structure of the Foreign Investor",
                               "tr": ""
                             },
                             "value": [
                               {
                                 "element": "summaryList",
                                 "params": {
-                                  "id": "table_otherData_summaryList",
+                                  "id": "table_declarations_summaryList",
                                   "items": [
                                     {
-                                      "id": "table_otherData_file1",
+                                      "id": "table_declarations_structureInvestorPreAttachment",
                                       "key": {
-                                        "el": "Αρχείο 1",
-                                        "en": "File 1",
+                                        "el": "Foreign Investor ownership structure - Pre-Investment document",
+                                        "en": "Foreign Investor ownership structure - Pre-Investment document",
                                         "tr": ""
                                       },
                                       "value": [
@@ -5915,7 +6098,7 @@
                                           "element": "htmlElement",
                                           "params": {
                                             "text": {
-                                              "el": "Προβολή αρχείου",
+                                              "el": "View file",
                                               "en": "View file",
                                               "tr": ""
                                             }
@@ -5926,76 +6109,10 @@
                                       "actions": []
                                     },
                                     {
-                                      "id": "table_otherData_file2",
+                                      "id": "table_declarations_structureInvestorPostAttachment",
                                       "key": {
-                                        "el": "Αρχείο 2",
-                                        "en": "File 2",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Προβολή αρχείου",
-                                              "en": "View file",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    },
-                                    {
-                                      "id": "table_otherData_file3",
-                                      "key": {
-                                        "el": "Αρχείο 3",
-                                        "en": "File 3",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Προβολή αρχείου",
-                                              "en": "View file",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    },
-                                    {
-                                      "id": "table_otherData_file4",
-                                      "key": {
-                                        "el": "Αρχείο 4",
-                                        "en": "File 4",
-                                        "tr": ""
-                                      },
-                                      "value": [
-                                        {
-                                          "element": "htmlElement",
-                                          "params": {
-                                            "text": {
-                                              "el": "Προβολή αρχείου",
-                                              "en": "View file",
-                                              "tr": ""
-                                            }
-                                          },
-                                          "id": "Value"
-                                        }
-                                      ],
-                                      "actions": []
-                                    },
-                                    {
-                                      "id": "table_otherData_file5",
-                                      "key": {
-                                        "el": "Προβολή αρχείου",
-                                        "en": "File 5",
+                                        "el": "Foreign Investor ownership structure - Post-Investment document",
+                                        "en": "Foreign Investor ownership structure - Post-Investment document",
                                         "tr": ""
                                       },
                                       "value": [
@@ -6020,12 +6137,76 @@
                             "actions": [
                               {
                                 "text": {
-                                  "el": "Αλλαγή",
+                                  "el": "Change",
                                   "en": "Change",
                                   "tr": ""
                                 },
                                 "id": "CHANGE",
-                                "href": "#"
+                                "href": "review.table.structureForeignInvestor.CHANGE_URL"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "table_transactionDocument",
+                            "key": {
+                              "el": "Transaction document (optional)",
+                              "en": "Transaction document (optional)",
+                              "tr": ""
+                            },
+                            "value": [
+                              {
+                                "element": "htmlElement",
+                                "params": {
+                                  "text": {
+                                    "el": "View file",
+                                    "en": "View file",
+                                    "tr": ""
+                                  }
+                                },
+                                "id": "Value"
+                              }
+                            ],
+                            "actions": [
+                              {
+                                "text": {
+                                  "el": "Change",
+                                  "en": "Change",
+                                  "tr": ""
+                                },
+                                "id": "CHANGE",
+                                "href": "review.table.transactionDocument.CHANGE_URL"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "table_declarations",
+                            "key": {
+                              "el": "Confirm all statements",
+                              "en": "Confirm all statements",
+                              "tr": ""
+                            },
+                            "value": [
+                              {
+                                "element": "htmlElement",
+                                "params": {
+                                  "text": {
+                                    "el": "Confirmed",
+                                    "en": "Confirmed",
+                                    "tr": ""
+                                  }
+                                },
+                                "id": "Value"
+                              }
+                            ],
+                            "actions": [
+                              {
+                                "text": {
+                                  "el": "Change",
+                                  "en": "Change",
+                                  "tr": ""
+                                },
+                                "id": "CHANGE",
+                                "href": "review.table.declarations.CHANGE_URL"
                               }
                             ]
                           }
@@ -6223,14 +6404,9 @@
     }
   ],
   "localizations": {
-    "additional-data.question1": {
-      "el": "Ερώτηση 1",
-      "en": "Question 1",
-      "tr": ""
-    },
-    "additional-data.question2": {
-      "el": "Ερώτηση 2",
-      "en": "Question 2",
+    "declarations.declarationsChecks": {
+      "el": "Confirm the following statements",
+      "en": "Confirm the following statements",
       "tr": ""
     },
     "applicant-details.whoSubmits": {
@@ -6248,6 +6424,16 @@
       "en": "Representative country",
       "tr": ""
     },
+    "applicant-details.emailOfRepresenative": {
+      "el": "Email εκπροσώπου",
+      "en": "Representative email",
+      "tr": ""
+    },
+    "applicant-details.phoneOfRepresenative": {
+      "el": "Τηλέφωνο εκπροσώπου",
+      "en": "Representative phone number",
+      "tr": ""
+    },
     "applicant-details.nameOfInvestor": {
       "el": "Όνομα επενδυτή",
       "en": "Investor name",
@@ -6256,6 +6442,16 @@
     "applicant-details.countryOfInvestor": {
       "el": "Χώρα επενδυτή",
       "en": "Investor country",
+      "tr": ""
+    },
+    "applicant-details.emailOfInvestor": {
+      "el": "Email επενδυτή",
+      "en": "Investor email",
+      "tr": ""
+    },
+    "applicant-details.phoneOfInvestor": {
+      "el": "Τηλέφωνο επενδυτή",
+      "en": "Investor telephone number",
       "tr": ""
     },
     "email-verification.otp": {

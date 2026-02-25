@@ -54,13 +54,8 @@
                     <div class="govcy-navigation-container">
                         <div class="govcy-service-container">
                             <a href="https://gov.cy" class="govcy-logo" title="Go to the gov.cy homepage"><img alt="gov.cy Logo"></a>
-                            <span class="govcy-service-name"><a class="govcy-pl-0" href="/inward-investment">Inward investment notification</a></span>
+                            <span class="govcy-service-name"><a class="govcy-pl-0" href="/govcy-frontend-prototype/inward-investment">Inward investment notification</a></span>
                         </div><ul class="govcy-menu-items">
-                            <li class="govcy-desktop-menu-only"><span><a href="?lang=en"
-                                class="govcy-menu-item active" 
-                                 aria-current="true"
-                                aria-label="English language" lang="en">EN</a></span>
-                            </li>
                             <li class="govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto"><span><a href="#" class="govcy-menu-item govcy-expand-btn"></a></span></li>
                         </ul>
                     </div>
@@ -69,7 +64,6 @@
                 <nav class="govcy-mainmenu" aria-label="">
                     <div class="govcy-container">
                         <ul class="govcy-menu-items govcy-header-language-area govcy-mobile-menu-only">
-                            <li><a href="?lang=en" class="govcy-menu-item active"  aria-current="true" aria-label="English language" lang="en">EN</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -79,7 +73,7 @@
 
         <!--beforeMain-->
         <section class="govcy-container" id="beforeMainContainer">
-            
+            <a class="govcy-back-link" href="javascript:history.back()">Back</a>
             
                 <div class="govcy-phase-banner">
                     <span class="govcy-tag">TESTING</span>
@@ -96,40 +90,30 @@
     
         <div id="steps" class="govcy-step-indicator">
             <ol class="govcy-step-indicator__segments">
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
-                        Contact email
-                                <span class="govcy-visually-hidden">Completed</span>
-                    </span>
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete">
                 </li>
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete"><span class="govcy-step-indicator__label">
-                        Applicant details
-                                <span class="govcy-visually-hidden">Completed</span>
-                    </span>
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete">
                 </li>
-                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step"><span class="govcy-step-indicator__label">
-                        Notification form
-                    </span>
+                <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step">
                 </li>
-                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
-                        Additional details
-                                <span class="govcy-visually-hidden">Not completed</span>
-                    </span>
+                <li class="govcy-step-indicator__segment">
                 </li>
-                <li class="govcy-step-indicator__segment"><span class="govcy-step-indicator__label">
-                        Other files
-                                <span class="govcy-visually-hidden">Not completed</span>
-                    </span>
+                <li class="govcy-step-indicator__segment">
+                </li>
+                <li class="govcy-step-indicator__segment">
+                </li>
+                <li class="govcy-step-indicator__segment">
                 </li>
             </ol>
         </div>
     <div id="steps-counter" class="govcy-step-indicator__counter">
         <span class="govcy-visually-hidden">Step </span>
-        <span class="govcy-step-indicator__current-counter">3</span> of 5
-    </div><div id="notificationAttachment-input-control" class="govcy-form-control">
-    <h1><label id="notificationAttachment-label" class="govcy-label govcy-label-primary" for="notificationAttachment">Inward investment notification form</label></h1><span id="notificationAttachment-hint" class="govcy-hint">PDF is the only acceptable format</span><input id="notificationAttachment" name="notificationAttachment" type="file" class="govcy-file-upload" aria-describedby="notificationAttachment-hint ">
+        <span class="govcy-step-indicator__current-counter">3</span> of 7
+    </div><h1 id="header">Inward investment notification form</h1><p>Upload the <strong>completed</strong> Inward investment notification form.</p><p>You must upload the official editable PDF that you downloaded from the gov.cy website.</p><p>We will not accept:</p><ul><li>“scanned copies”</li><li>“printed and re-scanned forms”</li><li>“modified templates”</li><li>“any other PDF file”</li></ul><div id="notificationAttachment-input-control" class="govcy-form-control">
+    <label id="notificationAttachment-label" class="govcy-label govcy-label-primary" for="notificationAttachment">Inward investment notification form document</label><span id="notificationAttachment-hint" class="govcy-hint">PDF is the only acceptable format</span><input id="notificationAttachment" name="notificationAttachment" type="file" class="govcy-file-upload" aria-describedby="notificationAttachment-hint ">
         <input type="hidden" name="notificationAttachmentAttachment[fileId]" value="">
         <input type="hidden" name="notificationAttachmentAttachment[sha256]" value="">
-    </div><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../additional-data'">Continue</button></form>
+    </div><button type="button"  id="continue" class="govcy-btn-primary" onclick="location.href='../structure-target-undertaking'">Continue</button></form>
                 </article>
             </div>
         </main>
