@@ -638,7 +638,7 @@
                         "type": "h1",
                         "text": {
                           "el": "Στοιχεία αιτητή",
-                          "en": "Applicant details"
+                          "en": "Application details"
                         }
                       }
                     },
@@ -9051,6 +9051,58 @@
                       ]
                     },
                     {
+                      "element": "textArea",
+                      "params": {
+                        "id": "investmentTarget",
+                        "name": "investmentTarget",
+                        "rows": 5,
+                        "label": {
+                          "el": "Investment Target",
+                          "en": "Investment Target"
+                        },
+                        "isPageHeading": false,
+                        "characterCount": {
+                          "type": "char",
+                          "max": 300
+                        }
+                      },
+                      "validations": [
+                        {
+                          "check": "required",
+                          "params": {
+                            "checkValue": "",
+                            "message": {
+                              "el": "Εισαγάγετε το ....",
+                              "en": "Enter the name of the investment target",
+                              "tr": ""
+                            }
+                          }
+                        },
+                        {
+                          "check": "valid",
+                          "params": {
+                            "checkValue": "textWide_EL_Latn",
+                            "message": {
+                              "el": "Εισαγάγετε .... με χαρακτήρες, αριθμούς και συνηθισμένα σημεία στίξης",
+                              "en": "Enter the investment target with Greek or Latin characters and common punctuation marks",
+                              "tr": ""
+                            }
+                          }
+                        },
+                        {
+                          "check": "length",
+                          "params": {
+                            "checkValue": "300",
+                            "message": {
+                              "el": ".... πρέπει να είναι 300 χαρακτήρες ή λιγότεροι",
+                              "en": "The investment target must be 300 characters or less",
+                              "tr": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
                       "element": "button",
                       "params": {
                         "id": "continue",
@@ -10252,8 +10304,8 @@
                       "params": {
                         "id": "instructions",
                         "text": {
-                          "el": "<h2>Επόμενα βήματα</h2>",
-                          "en": "<h2>Next steps</h2>"
+                          "el": "<h2>Investment details</h2><p><strong>Investor name</strong></p><p>%investorName%</p><p><strong>Investment target</strong></p><p>%ivestmentTarger%</p><h2>Next steps</h2>",
+                          "en": "<h2>Investment details</h2><p><strong>Investor name</strong></p><p>%investorName%</p><p><strong>Investment target</strong></p><p>%ivestmentTarger%</p><h2>Next steps</h2>"
                         }
                       }
                     },
@@ -10407,6 +10459,11 @@
     "applicant-details.phoneOfInvestor": {
       "el": "Τηλέφωνο επενδυτή",
       "en": "Investor telephone number",
+      "tr": ""
+    },
+    "applicant-details.investmentTarget": {
+      "el": "Investment Target",
+      "en": "Investment Target",
       "tr": ""
     },
     "email-verification.otp": {
