@@ -195,7 +195,7 @@
                   "id": "instructions",
                   "text": {
                     "el": "<h2>Χρήση του CY Login</h2><p>Όταν συνδέεστε χρησιμοποιώντας το CY Login για πρόσβαση στην υπηρεσία, θα αποθηκεύονται <a href=\"https://cge.cyprus.gov.cy/cyloginregistration/knowledgebase/privacy\" target=\"_blank\">επιπλέον cookies στη συσκευή σας</a>.</p><h2>Πώς να ελέγχετε τα cookies</h2><p><a href=\"https://www.aboutcookies.org/how-to-manage-and-delete-cookies\" target=\"_blank\">Μάθετε πώς να ελέγχετε και να διαγράφετε τα cookies στη συσκευή σας</a>.</p><p>Μπορείτε να διαγράψετε όλα τα cookies που υπάρχουν ήδη στον υπολογιστή σας και μπορείτε να ρυθμίσετε τους περισσότερους φυλλομετρητές (browsers) ώστε να αποτρέπουν την τοποθέτησή τους. Εάν το κάνετε αυτό, ωστόσο, ίσως χρειαστεί να προσαρμόζετε με μη αυτόματο τρόπο ορισμένες επιλογές κάθε φορά που επισκέπτεστε έναν διαδικτυακό τόπο και ορισμένες υπηρεσίες και λειτουργίες ενδέχεται να μην λειτουργούν.</p><h2>Έλεγχος πολιτικής</h2><p>Η πολιτική cookie θα ελέγχεται όταν υπάρξουν σημαντικές αλλαγές σε αυτήν.</p><h2>Πώς να επικοινωνήσετε μαζί μας σχετικά με αυτήν την πολιτική</h2><p>Μπορείτε να επικοινωνήσετε με τον υπεύθυνο προστασίας δεδομένων στη διεύθυνση:</p><ul class=\"govcy-list-unstyled\"><li>Τηλέφωνο: <a href=\"tel:+35722123456\">22123456</a></li><li>Email: <a href=\"mailto:name@example.com\" target=\"_blank\">name@example.com</a></li><li>Δευτέρα έως Παρασκευή, 9 π.μ. έως 5 μ.μ. (εκτός επίσημων αργιών)</li></ul>",
-                    "en": "<h2>Using CY Login</h2><p>When you sign in using CY Login to use the service, it will save <a href=\"https://cge.cyprus.gov.cy/cyloginregistration/knowledgebase/privacy\" target=\"_blank\">additional cookies on your device</a>.</p><h2>How to control cookies</h2><p><a href=\"https://www.aboutcookies.org/how-to-manage-and-delete-cookies\" target=\"_blank\">Find out how to control and delete cookies on your device</a>.</p><p>You can delete all cookies that are already on your device and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p><h2>Review of policy</h2><p>The cookie policy will be reviewed when there are significant changes to it.</p><h2>How to contact us regarding this policy</h2><p>You can contact our data protection officer at:</p><ul class=\"govcy-list-unstyled\"><li>Telephone: <a href=\"tel:+35722123456\">22123456</a></li><li>Email: <a href=\"mailto:name@example.com\" target=\"_blank\">name@example.com</a></li><li>Monday to Friday, 9am to 5pm (except public holidays)</li></ul>"
+                    "en": "<h2>Using CY Login</h2><p>When you sign in using CY Login to use the service, it will save <a href=\"https://cge.cyprus.gov.cy/cyloginregistration/knowledgebase/privacy\" target=\"_blank\">additional cookies on your device</a>.</p><h2>How to control cookies</h2><p><a href=\"https://www.aboutcookies.org/how-to-manage-and-delete-cookies\" target=\"_blank\">Find out how to control and delete cookies on your device</a>.</p><p>You can delete all cookies that are already on your device and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p><h2>Review of policy</h2><p>The cookie policy will be reviewed when there are significant changes to it.</p><h2>How to contact us regarding this policy</h2><p>You can contact our data protection officer at:</p><ul class=\"govcy-list-unstyled\"><li>Phone: <a href=\"tel:+35722123456\">22123456</a></li><li>Email: <a href=\"mailto:name@example.com\" target=\"_blank\">name@example.com</a></li><li>Monday to Friday, 9am to 5pm (except public holidays)</li></ul>"
                   }
                 }
               }
@@ -4807,7 +4807,7 @@
                                       "checkValue": "",
                                       "message": {
                                         "el": "Εισαγάγετε το ....",
-                                        "en": "Enter the representative telephone",
+                                        "en": "Enter the representative phone",
                                         "tr": ""
                                       }
                                     }
@@ -4818,7 +4818,7 @@
                                       "checkValue": "tel",
                                       "message": {
                                         "el": "... πρέπει να είναι αριθμός τηλεφώνου ...",
-                                        "en": "The representative telephone must have a telephone number format. For example “+44 1234 567”",
+                                        "en": "The representative phone must have a phone number format. For example “+44 1234 567”",
                                         "tr": ""
                                       }
                                     }
@@ -4829,7 +4829,7 @@
                                       "checkValue": "15",
                                       "message": {
                                         "el": ".... πρέπει να είναι 15 χαρακτήρες ή λιγότεροι",
-                                        "en": "The representative telephone must be 15 characters or less",
+                                        "en": "The representative phone must be 15 characters or less",
                                         "tr": ""
                                       }
                                     }
@@ -9008,7 +9008,7 @@
                         "name": "phoneOfInvestor",
                         "label": {
                           "el": "Τηλέφωνο επενδυτή",
-                          "en": "Investor telephone number"
+                          "en": "Investor phone number"
                         },
                         "isPageHeading": false,
                         "fixedWidth": "20",
@@ -9021,7 +9021,7 @@
                             "checkValue": "",
                             "message": {
                               "el": "Εισαγάγετε το ....",
-                              "en": "Enter the investor telephone",
+                              "en": "Enter the investor phone",
                               "tr": ""
                             }
                           }
@@ -9032,7 +9032,7 @@
                             "checkValue": "tel",
                             "message": {
                               "el": "... πρέπει να είναι αριθμός τηλεφώνου ...",
-                              "en": "The investor telephone must have a telephone number format. For example “+44 1234 567”",
+                              "en": "The investor phone must have a phone number format. For example “+44 1234 567”",
                               "tr": ""
                             }
                           }
@@ -9043,7 +9043,7 @@
                             "checkValue": "15",
                             "message": {
                               "el": ".... πρέπει να είναι 15 χαρακτήρες ή λιγότεροι",
-                              "en": "The investor telephone must be 15 characters or less",
+                              "en": "The investor phone must be 15 characters or less",
                               "tr": ""
                             }
                           }
@@ -9871,8 +9871,8 @@
                                     {
                                       "id": "table_declarations_phoneOfRepresenative",
                                       "key": {
-                                        "el": "Representative telephone number",
-                                        "en": "Representative telephone number",
+                                        "el": "Representative phone number",
+                                        "en": "Representative phone number",
                                         "tr": ""
                                       },
                                       "value": [
@@ -9981,8 +9981,8 @@
                                     {
                                       "id": "table_declarations_phoneOfInvestor",
                                       "key": {
-                                        "el": "Investor telephone number",
-                                        "en": "Investor telephone number",
+                                        "el": "Investor phone number",
+                                        "en": "Investor phone number",
                                         "tr": ""
                                       },
                                       "value": [
@@ -10480,7 +10480,7 @@
     },
     "applicant-details.phoneOfInvestor": {
       "el": "Τηλέφωνο επενδυτή",
-      "en": "Investor telephone number",
+      "en": "Investor phone number",
       "tr": ""
     },
     "applicant-details.investmentTarget": {
