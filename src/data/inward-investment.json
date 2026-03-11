@@ -1,3 +1,4 @@
+
 {
   "site": {
     "id": "inward-investment",
@@ -122,8 +123,8 @@
                 "params": {
                   "id": "instructions",
                   "text": {
-                    "el": "<p>Αυτή η πολιτική απορρήτου εξηγεί πώς SERVICE_OWNER χρησιμοποιεί πληροφορίες σχετικά με εσάς, για να διεκπεραιώσει την αίτησή σας.</p><h2>Τύποι πληροφοριών που συλλέγουμε και χρησιμοποιούμε</h2><p>Συλλέγουμε τις ακόλουθες πληροφορίες απευθείας από εσάς:</p><ul><li>διεύθυνση επικοινωνίας</li><li>διεύθυνση email</li><li>αριθμός τηλεφώνου</li></ul><p>Συλλέγουμε τις ακόλουθες πληροφορίες για εσάς από το CY Login:</p><ul><li>όνομα χρήστη στο Cy Login\r</li><li>διεύθυνση email</li><li>αριθμός ταυτότητας ή ARC</li></ul><p>Χρησιμοποιούμε τις ακόλουθες πληροφορίες για εσάς από τα δικά μας αρχεία:</p><ul><li>ονοματεπώνυμο\r</li><li>ημερομηνία γέννησης, φύλο, εθνικότητα και κοινότητα στην οποία ανήκετε\r</li><li>διεύθυνση επικοινωνίας και email\r(αν ισχύει)</li><li>αριθμός τηλεφώνου\r(αν ισχύει)</li><li>ημερομηνία θανάτου\r(αν ισχύει)</li><li>ονοματεπώνυμο, πατρικό επώνυμο, υπηκοότητα, τόπος και ημερομηνία γέννησης, φύλο, σχέση με αιτητή και ημερομηνία θανάτου για: παιδιά, γονείς, παππούδες, γιαγιάδες και εάν ο αιτητής είναι άρρενας, εγγόνια (αν ισχύει).</li></ul><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, συλλέγουμε επίσης αυτές τις πληροφορίες:</p><ul><li>ο βαθμός ικανοποίησής σας με τη χρήση της υπηρεσίας</li><li>η γνώμη και οι εισηγήσεις σας για το πώς μπορούμε να βελτιώσουμε την υπηρεσία.</li></ul><h2>Γιατί χρησιμοποιούμε τις πληροφορίες σας</h2><p>Συλλέγουμε και χρησιμοποιούμε τις πληροφορίες αυτές για την έκδοση του εγγράφου που επιλέξατε. Στην περίπτωση αίτησης, οι εξεταστές μας τις χρησιμοποιούν για να επεξεργαστούν την αίτησή σας.</p><p>Χωρίς πρόσβαση στις πληροφορίες αυτές, δεν μπορούμε να εκδώόσουμε το έγγραφο που επιλέξατε ή να επεξεργαστούμε την αίτησή σας.</p><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, θα τα χρησιμοποιήσουμε για να αξιολογήσουμε πώς αισθάνονται οι χρήστες για την εμπειρία τους από τη χρήση της υπηρεσίας. Αυτό γίνεται για να βρούμε και να προτεραιοποιήσουμε τομείς βελτίωσης και να πάρουμε ιδέες για νέες εξελίξεις.</p><h2>Πώς αποθηκεύονται οι προσωπικές σας πληροφορίες</h2><p>Οι πληροφορίες σας αποθηκεύονται με ασφάλεια σε διακομιστές με έδρα την Κύπρο.</p><h2>Τα δικαιώματά σας</h2><p>Επικοινωνήστε στο <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> εάν θέλετε:</p><ul><li>να λάβετε αντίγραφο των πληροφοριών που διατηρούνται για εσάς </li><li>να περιορίσετε την επεξεργασία των δεδομένων σας </li><li>να διορθώσετε ή να ενημερώσετε τις προσωπικές σας πληροφορίες </li><li>να υποβάλετε ένσταση για την επεξεργασία των προσωπικών σας πληροφοριών </li><li>να μεταφερθούν τα στοιχεία σας σε άλλο οργανισμό ή σε εσάς.</li></ul><h2>Παράπονα</h2><p>Μπορείτε να υποβάλετε παράπονο για τον τρόπο με τον οποίο χρησιμοποιήθηκαν οι προσωπικές σας πληροφορίες <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_gr/page1i_gr?opendocument\" target=\"_blank\">επικοινωνώντας με το Γραφείο του Επιτρόπου Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</a>.</p>",
-                    "en": "<p>This privacy policy explains how SERVICE_OWNER uses information about you, in order to process your application.</p><h2>Types of information we collect and use</h2><p>We collect the following information from you directly:</p><ul><li>postal address</li><li>email address</li><li>phone number</li></ul><p>We collect the following information about you from CY Login:</p><ul><li>CY Login user name</li><li>email address</li><li>ID or ARC number</li></ul><p>We use the following information about you from our own records:</p><ul><li>full name\r</li><li>date of birth, gender, nationality and community where you belong\r</li><li>postal and email address\r(if it applies)\r</li><li>phone number (if it applies)\r</li><li>date of death (if it applies)</li><li>full name, paternal surname, citizenship, place and date of birth, gender, relation to applicant and date of death for: children, parents, grandparents, and if the applicant is male, grandchildren (if it applies).</li></ul><p>If you leave feedback in Help us improve this service, we also collect this information:</p><ul><li>the degree of your satisfaction while using the service\r</li><li>your opinion and suggestions on how we could improve the service.</li></ul><h2>Why we use your information</h2><p>We collect and use this information to issue the document you selected. In case of an application, our examiners use it to process your application.</p><p>Without access to this information, we cannot issue the document you selected or process your application.</p><p>If you leave feedback in Help us improve this service, we will use it to evaluate how users feel about their experience using the service. This is so that we can identify and prioritize areas for improvement, and get ideas for new developments.</p><h2>How your personal information is stored</h2><p>Your information is stored securely on servers based in Cyprus.</p><h2>Your rights</h2><p>Contact <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> if you want to:</p><ul><li>get a copy of the information held about you </li><li>restrict the processing of your data</li><li>correct or update your personal information </li><li>object to the processing of your personal information</li><li>have your information transferred to another organisation or to you.</li></ul><h2>Complaints</h2><p>You can complain about the way your personal information has been used by <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_en/page1i_en?opendocument\" target=\"_blank\">contacting the Office of the Commissioner for Personal Data Protection</a>.</p>"
+                    "el": "<p>Αυτή η πολιτική απορρήτου εξηγεί πώς SERVICE_OWNER χρησιμοποιεί πληροφορίες σχετικά με εσάς, για να διεκπεραιώσει την αίτησή σας.</p><h2>Τύποι πληροφοριών που συλλέγουμε και χρησιμοποιούμε</h2><p>Συλλέγουμε τις ακόλουθες πληροφορίες απευθείας από εσάς:</p><ul><li>διεύθυνση επικοινωνίας</li><li>διεύθυνση email</li><li>αριθμός τηλεφώνου</li></ul><p>Συλλέγουμε τις ακόλουθες πληροφορίες για εσάς από το CY Login:</p><ul><li>όνομα χρήστη στο Cy Login\r</li><li>διεύθυνση email</li><li>αριθμός ταυτότητας ή ARC</li></ul><p>Χρησιμοποιούμε τις ακόλουθες πληροφορίες για εσάς από τα δικά μας αρχεία:</p><ul><li>ονοματεπώνυμο\r</li><li>ημερομηνία γέννησης, φύλο, εθνικότητα και κοινότητα στην οποία ανήκετε\r</li><li>διεύθυνση επικοινωνίας και email\r(αν ισχύει)</li><li>αριθμός τηλεφώνου\r(αν ισχύει)</li><li>ημερομηνία θανάτου\r(αν ισχύει)</li><li>ονοματεπώνυμο, πατρικό επώνυμο, υπηκοότητα, τόπος και ημερομηνία γέννησης, φύλο, σχέση με αιτητή και ημερομηνία θανάτου για: παιδιά, γονείς, παππούδες, γιαγιάδες και εάν ο αιτητής είναι άρρενας, εγγόνια (αν ισχύει).</li></ul><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, συλλέγουμε επίσης αυτές τις πληροφορίες:</p><ul><li>ο βαθμός ικανοποίησής σας με τη χρήση της υπηρεσίας</li><li>η γνώμη και οι εισηγήσεις σας για το πώς μπορούμε να βελτιώσουμε την υπηρεσία.</li></ul><h2>Γιατί χρησιμοποιούμε τις πληροφορίες σας</h2><p>Συλλέγουμε και χρησιμοποιούμε τις πληροφορίες αυτές για την έκδοση του εγγράφου που επιλέξατε. Στην περίπτωση αίτησης, οι εξεταστές μας τις χρησιμοποιούν για να επεξεργαστούν την αίτησή σας.</p><p>Χωρίς πρόσβαση στις πληροφορίες αυτές, δεν μπορούμε να εκδώόσουμε το έγγραφο που επιλέξατε ή να επεξεργαστούμε την αίτησή σας.</p><p>Αν αφήσετε σχόλια στο Βοηθήστε μας να βελτιώσουμε την υπηρεσία, θα τα χρησιμοποιήσουμε για να αξιολογήσουμε πώς αισθάνονται οι χρήστες για την εμπειρία τους από τη χρήση της υπηρεσίας. Αυτό γίνεται για να βρούμε και να προτεραιοποιήσουμε τομείς βελτίωσης και να πάρουμε ιδέες για νέες εξελίξεις.</p><h2>Πώς αποθηκεύονται οι προσωπικές σας πληροφορίες</h2><p>Οι πληροφορίες σας αποθηκεύονται με ασφάλεια σε διακομιστές με έδρα την Κύπρο.</p><h2>Τα δικαιώματά σας</h2><p>Επικοινωνήστε στο <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> εάν θέλετε:</p><ul><li>να λάβετε αντίγραφο των πληροφοριών που διατηρούνται για εσάς </li><li>να περιορίσετε την επεξεργασία των δεδομένων σας </li><li>να διορθώσετε ή να ενημερώσετε τις προσωπικές σας πληροφορίες </li><li>να υποβάλετε ένσταση για την επεξεργασία των προσωπικών σας πληροφοριών </li><li>να μεταφερθούν τα στοιχεία σας σε άλλο οργανισμό ή σε εσάς.</li></ul><h2>Παράπονα</h2><p>Μπορείτε να υποβάλετε παράπονο για τον τρόπο με τον οποίο χρησιμοποιήθηκαν οι προσωπικές σας πληροφορίες <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_gr/page1i_gr?opendocument\" target=\"_blank\">επικοινωνώντας με το Γραφείο του Επιτρόπου Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</a>.</p>",
+                    "en": "<p>This privacy policy explains how SERVICE_OWNER uses information about you, in order to process your application.</p><h2>Types of information we collect and use</h2><p>We collect the following information from you directly:</p><ul><li>postal address</li><li>email address</li><li>phone number</li></ul><p>We collect the following information about you from CY Login:</p><ul><li>CY Login user name</li><li>email address</li><li>ID or ARC number</li></ul><p>We use the following information about you from our own records:</p><ul><li>full name\r</li><li>date of birth, gender, nationality and community where you belong\r</li><li>postal and email address\r(if it applies)\r</li><li>phone number (if it applies)\r</li><li>date of death (if it applies)</li><li>full name, paternal surname, citizenship, place and date of birth, gender, relation to applicant and date of death for: children, parents, grandparents, and if the applicant is male, grandchildren (if it applies).</li></ul><p>If you leave feedback in Help us improve this service, we also collect this information:</p><ul><li>the degree of your satisfaction while using the service\r</li><li>your opinion and suggestions on how we could improve the service.</li></ul><h2>Why we use your information</h2><p>We collect and use this information to issue the document you selected. In case of an application, our examiners use it to process your application.</p><p>Without access to this information, we cannot issue the document you selected or process your application.</p><p>If you leave feedback in Help us improve this service, we will use it to evaluate how users feel about their experience using the service. This is so that we can identify and prioritize areas for improvement, and get ideas for new developments.</p><h2>How your personal information is stored</h2><p>Your information is stored securely on servers based in Cyprus.</p><h2>Your rights</h2><p>Contact <a href=\"mailto:XXXXX@papd.mof.gov.cy\" target=\"_blank\">XXXXX@papd.mof.gov.cy</a> if you want to:</p><ul><li>get a copy of the information held about you </li><li>restrict the processing of your data</li><li>correct or update your personal information </li><li>object to the processing of your personal information</li><li>have your information transferred to another organisation or to you.</li></ul><h2>Complaints</h2><p>You can complain about the way your personal information has been used by <a href=\"https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page1i_en/page1i_en?opendocument\" target=\"_blank\">contacting the Office of the Commissioner for Personal Data Protection</a>.</p>"
                   }
                 }
               }
@@ -9056,13 +9057,13 @@
                         "name": "investmentTarget",
                         "rows": 5,
                         "label": {
-                          "el": "Investment Target",
-                          "en": "Investment Target"
+                          "el": "Name of the target Company",
+                          "en": "Name of the target Company"
                         },
                         "isPageHeading": false,
                         "characterCount": {
                           "type": "char",
-                          "max": 300
+                          "max": 200
                         }
                       },
                       "validations": [
@@ -9083,7 +9084,7 @@
                             "checkValue": "textWide_EL_Latn",
                             "message": {
                               "el": "Εισαγάγετε .... με χαρακτήρες, αριθμούς και συνηθισμένα σημεία στίξης",
-                              "en": "Enter the investment target with Greek or Latin characters and common punctuation marks",
+                              "en": "Enter the name of the target Company with Greek or Latin characters and common punctuation marks",
                               "tr": ""
                             }
                           }
@@ -9091,10 +9092,10 @@
                         {
                           "check": "length",
                           "params": {
-                            "checkValue": "300",
+                            "checkValue": "200",
                             "message": {
-                              "el": ".... πρέπει να είναι 300 χαρακτήρες ή λιγότεροι",
-                              "en": "The investment target must be 300 characters or less",
+                              "el": ".... πρέπει να είναι 200 χαρακτήρες ή λιγότεροι",
+                              "en": "The name of the target Company must be 200 characters or less",
                               "tr": ""
                             }
                           }
@@ -10002,8 +10003,8 @@
                                     {
                                       "id": "table_declarations_investmentTarget",
                                       "key": {
-                                        "el": "Investment target",
-                                        "en": "Investment target",
+                                        "el": "Name of the target Company",
+                                        "en": "Name of the target Company",
                                         "tr": ""
                                       },
                                       "value": [
@@ -10325,8 +10326,8 @@
                       "params": {
                         "id": "instructions",
                         "text": {
-                          "el": "<h2>Investment details</h2><p><strong>Investor name</strong></p><p>%investorName%</p><p><strong>Investment target</strong></p><p>%ivestmentTarger%</p><h2>Next steps</h2>",
-                          "en": "<h2>Investment details</h2><p><strong>Investor name</strong></p><p>%investorName%</p><p><strong>Investment target</strong></p><p>%ivestmentTarger%</p><h2>Next steps</h2>"
+                          "el": "<h2>Investment details</h2><p><strong>Investor name</strong></p><p>%investorName%</p><p><strong>Name of the target Company</strong></p><p>%ivestmentTarger%</p><h2>Next steps</h2>",
+                          "en": "<h2>Investment details</h2><p><strong>Investor name</strong></p><p>%investorName%</p><p><strong>Name of the target Company</strong></p><p>%ivestmentTarger%</p><h2>Next steps</h2>"
                         }
                       }
                     },
@@ -10483,8 +10484,8 @@
       "tr": ""
     },
     "applicant-details.investmentTarget": {
-      "el": "Investment Target",
-      "en": "Investment Target",
+      "el": "Name of the target Company",
+      "en": "Name of the target Company",
       "tr": ""
     },
     "email-verification.otp": {
