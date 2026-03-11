@@ -38,14 +38,14 @@
     },
     "title": {
       "el": "Ειδοποίηση για εισερχόμενη επένδυση",
-      "en": "Foreign Direct Investments Screening",
+      "en": "Foreign Direct Investment Screening",
       "tr": ""
     },
     "headerTitle": {
       "title": {
         "el": "Ειδοποίηση για εισερχόμενη επένδυση",
-        "en": "Foreign Direct Investments Screening",
-        "tr": "Foreign Direct Investments Screening"
+        "en": "Foreign Direct Investment Screening",
+        "tr": "Foreign Direct Investment Screening"
       },
       "href": {
         "el": "/govcy-frontend-prototype/inward-investment",
