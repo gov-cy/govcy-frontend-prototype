@@ -2,15 +2,8 @@
 {
   "site": {
     "id": "inward-investment",
-    "lang": "el",
-    "languages": [
-      {
-        "code": "en",
-        "label": "EN",
-        "alt": "English language",
-        "href": "?lang=en"
-      }
-    ],
+    "lang": "en",
+    "languages": [],
     "footerLinks": [
       {
         "label": {
@@ -264,7 +257,7 @@
     },
     {
       "pageData": {
-        "url": "index",
+        "url": "",
         "title": {
           "el": "Email επικοινωνίας",
           "en": "Contact email",
