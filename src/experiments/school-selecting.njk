@@ -148,7 +148,10 @@
 
     <fieldset class="govcy-fieldset">
         <legend class="govcy-legend"><h2>Σχολεία</h2></legend>
-        <div class="govcy-form-control">
+        <div id="formControl" class="govcy-form-control">
+            <p id="in-error" class="govcy-d-none govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Σφάλμα:</span>Επιλέξτε τουλάχιστον εναν σχολείο
+            </p>
             <div class="govcy-checkbox">
                 <input class="govcy-checkbox-input" name="schoolChk" type="checkbox" id="school-1" value="1" aria-describedby="school-1-description">
                 <label class="govcy-label govcy-fw-bolder govcy-fs-5" for="school-1">1ο Δημοτικό Σχολείο Λευκωσίας</label>
@@ -158,9 +161,7 @@
                     <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
                 </p>
             </div>
-        </div>
-        <hr>
-        <div class="govcy-form-control">
+            <hr>
             <div class="govcy-checkbox">
                 <input class="govcy-checkbox-input" name="schoolChk" type="checkbox" id="school-2" value="1" aria-describedby="school-2-description">
                 <label class="govcy-label govcy-fw-bolder govcy-fs-5" for="school-2">2ο Δημοτικό Σχολείο Λευκωσίας</label>
@@ -170,9 +171,7 @@
                     <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
                 </p>
             </div>
-        </div>
-        <hr>
-        <div class="govcy-form-control">
+            <hr>
             <div class="govcy-checkbox">
                 <input class="govcy-checkbox-input" name="schoolChk" type="checkbox" id="school-3" value="1" aria-describedby="school-3-description">
                 <label class="govcy-label govcy-fw-bolder govcy-fs-5" for="school-3">3ο Δημοτικό Σχολείο Λευκωσίας</label>
@@ -185,7 +184,7 @@
         </div>
     </fieldset>
 
-<button type="submit" class="govcy-btn-primary">Συνέχεια</button>
+<button type="submit" class="govcy-btn-primary">Αποθήκευση και συνέχεια</button>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('DSFPrototypeForm');
@@ -207,6 +206,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function mockValidation() {
     document.getElementById("errorSummaryDiv").classList.remove("govcy-d-none");
+    document.getElementById("in-error").classList.remove("govcy-d-none");
+    document.getElementById("formControl").classList.add("govcy-form-control-error");
     window.location.href = "#errorSummary";
 }
 
