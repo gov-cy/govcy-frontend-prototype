@@ -1,0 +1,132 @@
+---js
+{
+  title: "Priority Order",
+    "pageData": {
+        "title": {"en": "Priority Order", "el": "Σειρά προτίμησης"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "max-width"
+    },
+    "site": {
+        "lang": "el",
+        "title" : {"en":"Experiments", "el":"Experiments"}, 
+        "headerTitle" : {"en":"Experiments", "el":"Experiments"},
+        "description" : {"en":"Service description", "el":"Περιγραφή υπηρεσίας"},
+        "isTesting" : true,
+        "url": "https://gov.cy",
+        "cdn": {
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist"
+        }   
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+{% block userName %}
+{{ 
+    govcyElement(
+        "userName",
+        {
+            "name":{"en":"George Smith","el":"Γιώργος Σμιθ"}
+            ,"signOutLink":"#"
+        }
+    ) 
+}}
+{% endblock %}
+{% block beforeMain %}
+{{ 
+    govcyElement(
+        "backLink",
+        {text:{en:"Back",el:"Πίσω"} ,href:"#"}
+    ) 
+}}
+{% endblock %}
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+<div class="govcy-step-indicator">
+    <ol class="govcy-step-indicator__segments">
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete">
+            <span class="govcy-step-indicator__label">
+                Επιλογή σχολείων <span class="govcy-visually-hidden">completed</span>
+            </span>
+        </li>
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step">
+            <span class="govcy-step-indicator__label">
+                Σειρά προτίμησης
+            </span>
+        </li>
+    </ol>
+</div>
+<div class="govcy-step-indicator__counter">
+    <span class="govcy-visually-hidden">Step </span>
+    <span class="govcy-step-indicator__current-counter">2</span> of 2
+</div>
+<h1>Σειρά προτίμησης</h1>
+
+<p>Καθορίστε τη σειρά προτίμησης χρησιμοποιώντας τα κουμπιά μετακίνησης ή να διαγράψετε ένα σχολείο από τη λίστα. Τα διπλά βέλη μετακινούν το σχολείο κατά 10 θέσεις. </p>
+
+<table class="govcy-table govcy-table-responsive-vertical">
+    <thead>
+        <tr>
+            <th>Σειρά</th>
+            <th>Σχολείο</th>
+            <th>Ενέργειες</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" class="govcy-fs-5">
+                <span class="govcy-d-md-none govcy-fw-bolder govcy-mr-2">Σειρά </span>1
+            </th>
+            <td>
+                <p class="govcy-fw-bolder govcy-fs-5">1ο Δημοτικό Σχολείο Λευκωσίας</p>
+                <p>
+                    <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
+                    <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
+                    <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία<br>
+                    <strong>Τηλέφωνο:</strong> <a href="tel:+35722123456">22 123456</a><br>
+                    <strong>Email:</strong>
+                    <a href="mailto:nsf@mof.gov.cy" target="_blank">nsf@mof.gov.cy</a>
+                </p>
+            </td>
+            <td>
+                <ul class="list-inline govcy-my-0">
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/10UP.png" alt="Δέκα πάνω"> <span class="govcy-visually-hidden"> 1ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/1Up.png" alt="Ένα πάνω"><span class="govcy-visually-hidden"> 1ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/10Down.png" alt="Δέκα κάτω"> <span class="govcy-visually-hidden"> 1ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/1Down.png" alt="Ένα κάτω"><span class="govcy-visually-hidden"> 1ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#">❌<span class="govcy-visually-hidden"> 1ο Δημοτικό Σχολείo Λευκωσίας</span></a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="govcy-fs-5">
+                <span class="govcy-d-md-none govcy-fw-bolder govcy-mr-2">Σειρά </span>2
+            </th>
+            <td>
+                <p class="govcy-fw-bolder govcy-fs-5">2ο Δημοτικό Σχολείο Λευκωσίας</p>
+                <p>
+                    <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
+                    <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
+                    <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία<br>
+                    <strong>Τηλέφωνο:</strong> <a href="tel:+35722123456">22 123456</a><br>
+                    <strong>Email:</strong>
+                    <a href="mailto:nsf@mof.gov.cy" target="_blank">nsf@mof.gov.cy</a>
+                </p>
+            </td>
+            <td>
+                <ul class="list-inline govcy-my-0">
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/10UP.png" alt="Δέκα πάνω"> <span class="govcy-visually-hidden"> 2ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/1Up.png" alt="Ένα πάνω"><span class="govcy-visually-hidden"> 2ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/10Down.png" alt="Δέκα κάτω"> <span class="govcy-visually-hidden"> 2ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#"><img class="govcy-img-ar-auto" src="../../img/1Down.png" alt="Ένα κάτω"><span class="govcy-visually-hidden"> 2ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                    <li class="list-inline-item"><a href="#">❌<span class="govcy-visually-hidden"> 2ο Δημοτικό Σχολείο Λευκωσίας</span></a></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+{{govcyElement("button",{text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+{% endcall %}
+{% endblock %}

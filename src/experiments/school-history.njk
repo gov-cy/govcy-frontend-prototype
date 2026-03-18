@@ -1,0 +1,120 @@
+---js
+{
+  title: "Priority Order",
+    "pageData": {
+        "title": {"en": "Application history", "el": "Ιστορικό αιτήσεων"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "max-width"
+    },
+    "site": {
+        "lang": "el",
+        "title" : {"en":"Experiments", "el":"Experiments"}, 
+        "headerTitle" : {"en":"Experiments", "el":"Experiments"},
+        "description" : {"en":"Service description", "el":"Περιγραφή υπηρεσίας"},
+        "isTesting" : true,
+        "url": "https://gov.cy",
+        "cdn": {
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist"
+        }   
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block userName %}
+{{ 
+    govcyElement(
+        "userName",
+        {
+            "name":{"en":"George Smith","el":"Γιώργος Σμιθ"}
+            ,"signOutLink":"#"
+        }
+    ) 
+}}
+{% endblock %}
+{% block beforeMain %}
+{{ 
+    govcyElement(
+        "backLink",
+        {text:{en:"Back",el:"Πίσω"} ,href:"#"}
+    ) 
+}}
+{% endblock %}
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+<h1>Ιστορικό αιτήσεων</h1>
+
+<p>Δείτε την κατάσταση των προηγούμενων αιτήσεών σας, ομαδοποιημένες ανά σχολικό έτος.</p>
+
+<h2>Σχολικό Έτος 2023-2024</h2>
+
+<table class="govcy-table govcy-table-responsive-vertical">
+    <thead>
+        <tr>
+            <th>Αριθμός εγγραφής</th>
+            <th>Ημερομηνία και Ώρα</th>
+            <th>Πλήθος</th>
+            <th>Κατάσταση</th>
+            <th>Ενέργειες</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Αριθμός εγγραφής</div>123456789</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ημερομηνία και Ώρα</div>12/10/2023 - 13:45</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Πλήθος</div>5 Σχολεία</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Κατάσταση</div><span class="govcy-tag govcy-tag-green">Εγκριθήκατε</span></td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                <ul class="list-inline govcy-my-0">
+                    <li class="list-inline-item"><a href="#">Προβολή<span class="govcy-visually-hidden"> 123456789</span></a></li>
+                    <li class="list-inline-item"><a href="#">Αλλαγή<span class="govcy-visually-hidden"> 123456789</span></a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Αριθμός εγγραφής</div>678902345</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ημερομηνία και Ώρα</div>10/10/2023 - 09:15</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Πλήθος</div>4 Σχολεία</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Κατάσταση</div><span class="govcy-tag govcy-tag-red">Δεν επιλεχθήκατε</span></td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                <ul class="list-inline govcy-my-0">
+                    <li class="list-inline-item"><a href="#">Προβολή<span class="govcy-visually-hidden"> 678902345</span></a></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2>Σχολικό Έτος 2022-2023</h2>
+
+<table class="govcy-table govcy-table-responsive-vertical">
+    <thead>
+        <tr>
+            <th>Αριθμός εγγραφής</th>
+            <th>Ημερομηνία και Ώρα</th>
+            <th>Πλήθος</th>
+            <th>Κατάσταση</th>
+            <th>Ενέργειες</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Αριθμός εγγραφής</div>8903456789</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ημερομηνία και Ώρα</div>12/10/2023 - 13:45</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Πλήθος</div>5 Σχολεία</td>
+            <td><div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Κατάσταση</div><span class="govcy-tag govcy-tag-gray">Αποσύρθηκε</span></td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Ενέργειες</div>
+                <ul class="list-inline govcy-my-0">
+                    <li class="list-inline-item"><a href="#">Προβολή<span class="govcy-visually-hidden"> 8903456789</span></a></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+{% endcall %}
+{% endblock %}

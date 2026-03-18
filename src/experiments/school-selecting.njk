@@ -1,0 +1,225 @@
+---js
+{
+  title: "Priority Order",
+    "pageData": {
+        "title": {"en": "Priority Order", "el": "Σειρά προτίμησης"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    },
+    "site": {
+        "lang": "el",
+        "title" : {"en":"Experiments", "el":"Experiments"}, 
+        "headerTitle" : {"en":"Experiments", "el":"Experiments"},
+        "description" : {"en":"Service description", "el":"Περιγραφή υπηρεσίας"},
+        "isTesting" : true,
+        "url": "https://gov.cy",
+        "cdn": {
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist"
+        }   
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block userName %}
+{{ 
+    govcyElement(
+        "userName",
+        {
+            "name":{"en":"George Smith","el":"Γιώργος Σμιθ"}
+            ,"signOutLink":"#"
+        }
+    ) 
+}}
+{% endblock %}
+{% block beforeMain %}
+{{ 
+    govcyElement(
+        "backLink",
+        {text:{en:"Back",el:"Πίσω"} ,href:"#"}
+    ) 
+}}
+{% endblock %}
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+<div id="errorSummaryDiv" class="govcy-d-none govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+    <h2 id="errorSummary" role="alert">Υπάρχει πρόβλημα</h2>
+    <p class="govcy-mb-0">
+        <a href="#school-1">Επιλέξτε τουλάχιστον εναν σχολείο</a>
+    </p>
+</div>
+<div class="govcy-step-indicator">
+    <ol class="govcy-step-indicator__segments">
+        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current" aria-current="step">
+            <span class="govcy-step-indicator__label">
+                Επιλογή σχολείων
+            </span>
+        </li>
+        <li class="govcy-step-indicator__segment">
+            <span class="govcy-step-indicator__label">
+                Σειρά προτίμησης <span class="govcy-visually-hidden">δεν ολοκληρώθηκε</span>
+            </span>
+        </li>
+    </ol>
+</div>
+<div class="govcy-step-indicator__counter">
+    <span class="govcy-visually-hidden">Step </span>
+    <span class="govcy-step-indicator__current-counter">1</span> of 2
+</div>
+<h1>Επιλογή σχολείων</h1>
+
+<p>Επιλέξτε τα σχολεία που θέλετε να εργαστείτε. Μπρείτε να επιλέξετε μέχρι 200.</p>
+
+<details class="govcy-details">
+    <summary class="govcy-details__summary">
+        <span class="govcy-details__summary-text">Φίλτρα αναζήτησης</span>
+    </summary>
+    <div class="govcy-details__text">
+<p>Μπορείτε να χρησιμοποιήσετε τα φίτρα αναζήτησης για να αναζητήσετε σχολεία.</p>
+
+<div class="govcy-form govcy-search-form">
+    <div class="govcy-row">
+        <div class="govcy-col-md-4">    
+            <div class="govcy-form-control">
+                <label class="govcy-label govcy-label-primary" for="school-filter">Σχολείο</label>
+                <input id="school-filter" name="school-filter" type="text" class="govcy-text-input">
+            </div>
+        </div>
+        <div class="govcy-col-md-4">     
+            <div class="govcy-form-control">
+                <label class="govcy-label govcy-label-primary" for="speciality-filter">Ειδικότητα</label>
+                <select class="govcy-select w-100" id="speciality-filter" name="speciality-filter">
+                    <option value="" selected="">None</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+        </div>
+        <div class="govcy-col-md-4">     
+            <div class="govcy-form-control">
+                <label class="govcy-label govcy-label-primary" for="district-filter">Επαρχία</label>
+                <select class="govcy-select w-100" id="district-filter" name="district-filter">
+                    <option value="" selected="">None</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="govcy-row">
+        <div class="govcy-col-md-4">   
+            <div class="govcy-form-control">
+                <label class="govcy-label govcy-label-primary" for="periods-filter">Περίοδοι Διδασκαλίας</label>
+                <select class="govcy-select w-100" id="periods-filter" name="periods-filter">
+                    <option value="" selected="">None</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+        </div>
+        <div class="govcy-col-md-4">    
+            <div class="govcy-form-control">
+                <label class="govcy-label govcy-label-primary" for="order-filter">Ταξινόμηση</label>
+                <select class="govcy-select w-100" id="order-filter" name="order-filter">
+                    <option value="" selected="">None</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="govcy-row">
+        <div class="govcy-col-12">
+            <button type="button" class="govcy-btn-secondary">Φιλτράρισμα</button>
+        </div>
+    </div>
+</div>
+    </div>
+</details>
+
+
+
+<table class="govcy-table govcy-table-responsive-vertical">
+    <thead>
+        <tr>
+            <th>Σχολείο</th>
+            <th id="option-header">Επιλογή</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p class="govcy-fw-bolder govcy-fs-5">1ο Δημοτικό Σχολείο Λευκωσίας</p>
+                <p>
+                    <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
+                    <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
+                    <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
+                </p>
+            </td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-mb-2">Επιλογή</div>
+                <div class="govcy-checkbox">
+                    <input class="govcy-checkbox-input" value="school-1" name="schoolChk" type="checkbox" id="school-1" aria-describedby="option-header">
+                    <label class="govcy-label" for="school-1"><span class="govcy-visually-hidden">1ο Δημοτικό Σχολείο Λευκωσίας</span></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <p class="govcy-fw-bolder govcy-fs-5">2ο Δημοτικό Σχολείο Λευκωσίας</p>
+                    <p>
+                    <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
+                    <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
+                    <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
+                </p>
+            </td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Επιλογή</div>
+                <div class="govcy-checkbox">
+                    <input class="govcy-checkbox-input" value="school-2" name="schoolChk" type="checkbox" id="school-2" aria-describedby="option-header">
+                    <label class="govcy-label" for="school-2"><span class="govcy-visually-hidden">2ο Δημοτικό Σχολείο Λευκωσίας</span></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<button type="submit" class="govcy-btn-primary">Συνέχεια</button>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('DSFPrototypeForm');
+
+  form.addEventListener('submit', function (e) {
+    const checkboxes = form.querySelectorAll('input[name="schoolChk"]');
+    
+    const isAnyChecked = Array.from(checkboxes).some(cb => cb.checked);
+
+    if (!isAnyChecked) {
+      e.preventDefault(); // stop form submission
+      mockValidation(); // show error summary and scroll to it
+    } else {
+      e.preventDefault(); // stop form submission
+      window.location.href = '../school-ordering'; // change to your actual error URL
+    }
+  });
+});
+
+
+function mockValidation() {
+    document.getElementById("errorSummaryDiv").classList.remove("govcy-d-none");
+    window.location.href = "#errorSummary";
+}
+
+</script>
+{% endcall %}
+{% endblock %}
