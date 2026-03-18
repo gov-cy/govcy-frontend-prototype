@@ -198,44 +198,52 @@
     </div>
 </details>
 
-    <fieldset class="govcy-fieldset">
-        <legend class="govcy-legend"><h2>Σχολεία</h2></legend>
-        <div class="govcy-form-control">
-            <div class="govcy-checkbox">
-                <input class="govcy-checkbox-input" name="schoolChk" type="checkbox" id="school-1" value="1" aria-describedby="school-1-description">
-                <label class="govcy-label govcy-fw-bolder govcy-fs-5" for="school-1">1ο Δημοτικό Σχολείο Λευκωσίας</label>
-                <p class="govcy-px-5" id="school-1-description" style="cursor: default;">
+
+
+<table class="govcy-table govcy-table-responsive-vertical">
+    <thead>
+        <tr>
+            <th>Σχολείο</th>
+            <th id="option-header">Επιλογή</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p class="govcy-fw-bolder govcy-fs-5">1ο Δημοτικό Σχολείο Λευκωσίας</p>
+                <p class="govcy-mb-0 govcy-mb-md-6">
                     <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
                     <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
                     <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
                 </p>
-            </div>
-        </div>
-        <hr>
-        <div class="govcy-form-control">
-            <div class="govcy-checkbox">
-                <input class="govcy-checkbox-input" name="schoolChk" type="checkbox" id="school-2" value="1" aria-describedby="school-2-description">
-                <label class="govcy-label govcy-fw-bolder govcy-fs-5" for="school-2">2ο Δημοτικό Σχολείο Λευκωσίας</label>
-                <p class="govcy-px-5" id="school-2-description" style="cursor: default;">
+            </td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-mb-2">Επιλογή</div>
+                <div class="govcy-checkbox">
+                    <input class="govcy-checkbox-input" value="school-1" name="schoolChk" type="checkbox" id="school-1" aria-describedby="option-header">
+                    <label class="govcy-label" for="school-1"><span class="govcy-visually-hidden">1ο Δημοτικό Σχολείο Λευκωσίας</span></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="govcy-fw-bolder govcy-fs-5">2ο Δημοτικό Σχολείο Λευκωσίας</p>
+                <p class="govcy-mb-0 govcy-mb-md-6">
                     <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
                     <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
                     <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
                 </p>
-            </div>
-        </div>
-        <hr>
-        <div class="govcy-form-control">
-            <div class="govcy-checkbox">
-                <input class="govcy-checkbox-input" name="schoolChk" type="checkbox" id="school-3" value="1" aria-describedby="school-3-description">
-                <label class="govcy-label govcy-fw-bolder govcy-fs-5" for="school-3">3ο Δημοτικό Σχολείο Λευκωσίας</label>
-                <p class="govcy-px-5" id="school-3-description" style="cursor: default;">
-                    <strong>Επαρχία:</strong> Λευκωσία | <strong>Ειδικότητα:</strong> Μαθηματικός<br>
-                    <strong>Ημερομηνίες:</strong> 15/10/2023 - 30/10/2023 (14 ημερά) | <strong>Περίοδοι:</strong> 27/29<br>
-                    <strong>Διεύθυνση:</strong> Λεωφόρος Μακαρίου 27, 1065 Λευκωσία
-                </p>
-            </div>
-        </div>
-    </fieldset>
+            </td>
+            <td>
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">Επιλογή</div>
+                <div class="govcy-checkbox">
+                    <input class="govcy-checkbox-input" value="school-2" name="schoolChk" type="checkbox" id="school-2" aria-describedby="option-header">
+                    <label class="govcy-label" for="school-2"><span class="govcy-visually-hidden">2ο Δημοτικό Σχολείο Λευκωσίας</span></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 <button type="submit" class="govcy-btn-primary">Συνέχεια</button>
 <script>
@@ -244,6 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   form.addEventListener('submit', function (e) {
     const checkboxes = form.querySelectorAll('input[name="schoolChk"]');
+    
     const isAnyChecked = Array.from(checkboxes).some(cb => cb.checked);
 
     if (!isAnyChecked) {
