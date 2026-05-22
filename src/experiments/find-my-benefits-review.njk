@@ -1,0 +1,163 @@
+---js
+{
+  title: "Αποτελέσματα έρευνας",
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τίτλός σελίδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }, 
+    "site": {
+        "lang": "el"
+    }
+}
+---
+{% extends '../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+{% from "../../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% block main %}
+{% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
+
+<h1>Επιδόματα βάση των πληροφοριών που δώσατε</h1>
+<p>Με βάση τις απατήσεις ... για τα πιο κάτω <strong>[12]</strong> επιδόματα. </p>
+<p>Disclaimer lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean euismod bibendum laoreet. Nullam id dolor id nibh ultricies volutpat. </p>
+{{ 
+    govcyElement(
+        "button",
+        {
+            text:{en:"Εκτύπωση",el:"Εκτύπωση"}, 
+            variant:"secondary"
+        }
+    ) 
+}}
+
+<style>
+    @media (max-width: 767.98px) {
+        .govcy-summary-list .govcy-summary-list-key {
+            font-size: 1rem !important;
+        }
+    }
+
+    .govcy-find-benefits-review-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .govcy-find-benefits-review-list li {
+        border-bottom: 1px solid #b1b4b6 !important;
+        margin-bottom: 1.5rem;
+    }
+    .govcy-find-benefits-review-list li:last-child {
+        border-bottom: 3px solid #31576F !important;
+        margin-bottom: 1.5rem;
+    }
+
+</style>
+
+<ol class="govcy-find-benefits-review-list">
+    <li>
+        <h3>Επίδομα τέκνου</h3>
+        <p>Περιγραφή επιδόματος ...</p>
+        <p><a href="#">Πηγαίνετε στο επίδομα </a></p>
+    </li>
+    <li>
+        <h3>Επίδομα τοκετού</h3>
+        <p>Περιγραφή επιδόματος ...</p>
+        <p><a href="#">Πηγαίνετε στο επίδομα </a></p>
+    </li>
+    <li>
+        <h3>Επίδομα μητρότητας</h3>
+        <p>Περιγραφή επιδόματος ...</p>
+        <p><a href="#">Πηγαίνετε στο επίδομα </a></p>
+    </li>
+</ol>
+
+
+<h2>Οι απαντήσεις σας</h2>
+<p><a href="#">Ξεκινήστε από την αρχή</a></p>
+
+{{ 
+    govcyElement(
+        "summaryList",
+        {
+            "items":[
+                {
+                    "key":{"en":"Ζείτε μόνιμα στην Κύπρο;","el":"Ζείτε μόνιμα στην Κύπρο;"},
+                    "value":
+                    [
+                        {"element":"textElement","params":{"text":{"en":"Ναι","el":"Ναι"}, "type":"span" } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Αλλαγή"},
+                            "href": "#",
+                            "visuallyHiddenText": {"en":"Ζείτε μόνιμα στην Κύπρο;","el":"Ζείτε μόνιμα στην Κύπρο;"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Ποιο από τα πιο κάτω περιγράφει καλύτερα την υπηκοότητα ή την άδεια διαμονής σας στην Κύπρο;","el":"Ποιο από τα πιο κάτω περιγράφει καλύτερα την υπηκοότητα ή την άδεια διαμονής σας στην Κύπρο;"},
+                    "value":
+                    [
+                        {"element":"textElement","params":{"text":{"en":"Πολίτης της Κυπριακής Δημοκρατίας","el":"Πολίτης της Κυπριακής Δημοκρατίας"}, "type":"span" } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Αλλαγή"},
+                            "href": "#",
+                            "visuallyHiddenText": {"en":"Ποιο από τα πιο κάτω περιγράφει καλύτερα την υπηκοότητα ή την άδεια διαμονής σας στην Κύπρο;","el":"Ποιο από τα πιο κάτω περιγράφει καλύτερα την υπηκοότητα ή την άδεια διαμονής σας στην Κύπρο;"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Ποια είναι η ηλικία σας;","el":"Ποια είναι η ηλικία σας;"},
+                    "value":
+                    [
+                        {"element":"textElement","params":{"text":{"en":"26–62","el":"26–62"}, "type":"span" } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Αλλαγή"},
+                            "href": "#",
+                            "visuallyHiddenText": {"en":"Ποια είναι η ηλικία σας;","el":"Ποια είναι η ηλικία σας;"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Έχετε αναγνωριστεί ως εκτοπισμένο άτομο (πρόσφυγας) από την Κυπριακή Δημοκρατία;","el":"Έχετε αναγνωριστεί ως εκτοπισμένο άτομο (πρόσφυγας) από την Κυπριακή Δημοκρατία;"},
+                    "value":
+                    [
+                        {"element":"textElement","params":{"text":{"en":"Ναι","el":"Ναι"}, "type":"span" } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Αλλαγή"},
+                            "href": "#",
+                            "visuallyHiddenText": {"en":"Έχετε αναγνωριστεί ως εκτοπισμένο άτομο (πρόσφυγας) από την Κυπριακή Δημοκρατία;","el":"Έχετε αναγνωριστεί ως εκτοπισμένο άτομο (πρόσφυγας) από την Κυπριακή Δημοκρατία;"}
+                        }
+                    ]
+                },
+                {
+                    "key":{"en":"Ποια από τα πιο κάτω περιγράφουν την εργασία ή τις σπουδές σας;","el":"Ποια από τα πιο κάτω περιγράφουν την εργασία ή τις σπουδές σας;"},
+                    "value":
+                    [
+                        {"element":"textElement","params":{"text":{"en":"Εργάζομαι","el":"Εργάζομαι"}, "type":"span" } }
+                    ],
+                    "actions":[
+                        {
+                            "text":{"en":"Change","el":"Αλλαγή"},
+                            "href": "#",
+                            "visuallyHiddenText": {"en":"Ποια από τα πιο κάτω περιγράφουν την εργασία ή τις σπουδές σας;","el":"Ποια από τα πιο κάτω περιγράφουν την εργασία ή τις σπουδές σας;"}
+                        }
+                    ]
+                }
+
+            ]
+        }
+    ) 
+}}
+
+<p>
+<a href="#">Βοηθήστε μας να βελτιώσουμε αυτή την υπηρεσία</a>
+</p>
+
+{% endcall %}
+{% endblock %}
