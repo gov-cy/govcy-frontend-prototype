@@ -18,17 +18,11 @@
 {% call govcyElement("form",{id:"DSFPrototypeForm"} ) %}
 
 <h1>Επιδόματα βάση των πληροφοριών που δώσατε</h1>
-<p>Με βάση τις απατήσεις ... για τα πιο κάτω <strong>[12]</strong> επιδόματα. </p>
-<p>Disclaimer lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean euismod bibendum laoreet. Nullam id dolor id nibh ultricies volutpat. </p>
-{{ 
-    govcyElement(
-        "button",
-        {
-            text:{en:"Εκτύπωση",el:"Εκτύπωση"}, 
-            variant:"secondary"
-        }
-    ) 
-}}
+<p>Με βάση τις απαντήσεις που δώσατε, μπορεί να δικαιούστε τα πιο κάτω <strong>[12]</strong> επιδόματα. </p>
+<h2>Σημείωση</h2>
+<p>Τα αποτελέσματα είναι ενδεικτικά,  βασίζονται στις πληροφορίες που δηλώσατε και δεν αποτελούν έγκιρση επιδοματος.  </p>
+<p>Η τελική αξιολόγηση γίνεται από την αρμόδια υπηρεσία κατά την υποβολή και εξέταση της αίτησής σας. Πριν υποβάλετε αίτηση, ελέγξτε τα πλήρη κριτήρια και τις προϋποθέσεις για κάθε επίδομα. </p>
+<h2>Πιθανά επίδοματα</h2>
 
 <style>
     @media (max-width: 767.98px) {
@@ -158,6 +152,54 @@
 <p>
 <a href="#">Βοηθήστε μας να βελτιώσουμε αυτή την υπηρεσία</a>
 </p>
+{{ 
+    govcyElement(
+        "button",
+        {
+            id:"printButton",
+            text:{en:"Εκτύπωση",el:"Εκτύπωση"}, 
+            variant:"secondary"
+        }
+    ) 
+}}
+
+<script>
+    document.getElementById("printButton").addEventListener("click", function() {
+        window.print();
+    });
+</script>
+
+<h2>Μοιραστείτε τα αποτελέσματά σας</h2>
+<p>Μπορείτε να μοιραστείτε τα αποτελέσματά σας με άλλο άτομο. Όταν ανοίξει τον σύνδεσμο, θα μπορεί να δει τα ίδια αποτελέσματα χωρίς να χρειαστεί να απαντήσει ξανά στις ερωτήσεις.</p>
+
+{{ 
+    govcyElement(
+        "share",
+        {
+            "text":{
+                "en":"Δες τα επιδόματα που μπορεί να δικαιούμαι https://url ",
+                "el":"Δες τα επιδόματα που μπορεί να δικαιούμαι https://url "
+            },
+            "title":{
+                "en":"Επιδόματα που μπορεί να δικαιούμαι",
+                "el":"Επιδόματα που μπορεί να δικαιούμαι"
+            },
+            "url":{
+                "en":"https://url",
+                "el":"https://url"
+            },
+            "previewTitle":{
+                "en":"Notification content",
+                "el":"Περιεχόμενο ειδοποίησης"
+            },
+            "hasShare":true,
+            "hasSms":true,
+            "hasEmail":true,
+            "hasPreview":true,
+            "hasCopy":true
+        }
+    ) 
+}}
 
 {% endcall %}
 {% endblock %}

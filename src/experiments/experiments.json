@@ -7,7 +7,7 @@
         "isTesting" : true,
         "url": "https://gov.cy",
         "cdn": {
-            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.2.0/dist"
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.3.0/dist"
         }   
     }
 }
