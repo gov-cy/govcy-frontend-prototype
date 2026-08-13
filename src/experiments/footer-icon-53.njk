@@ -42,7 +42,41 @@
     
     <style>
         .govcy-footer .govcy-footer-logo {
+            display: inline-block;
             height: 53px;
+        }
+
+        /* Keep the two footer sections on the same row */
+        .govcy-footer .govcy-container > .govcy-d-flex {
+            flex-wrap: nowrap;
+        }
+
+        /* Left section: use all available space and allow its contents to wrap */
+        .govcy-footer .govcy-container > .govcy-d-flex > .govcy-my-4:first-child {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+
+        /* Right gov.cy logo: don't shrink */
+        .govcy-footer .govcy-container > .govcy-d-flex > .govcy-my-4:last-child {
+            flex: 0 0 auto;
+            margin-left: 2rem;
+        }
+
+        /* On mobile, put the gov.cy logo on its own row */
+        @media (max-width: 768px) {
+            .govcy-footer .govcy-container > .govcy-d-flex {
+                flex-wrap: wrap;
+            }
+
+            .govcy-footer .govcy-container > .govcy-d-flex > .govcy-my-4:first-child,
+            .govcy-footer .govcy-container > .govcy-d-flex > .govcy-my-4:last-child {
+                flex: 0 0 100%;
+            }
+
+            .govcy-footer .govcy-container > .govcy-d-flex > .govcy-my-4:last-child {
+                margin-left: 0;
+            }
         }
     </style>
     
@@ -128,6 +162,11 @@
                                 <ul>
                                     <li><a href="/water-aerators/privacy-statement">Δήλωση απορρήτου</a></li>
                                     <li><a href="/water-aerators/cookie-policy">Cookies</a></li>
+                                    <li><a href="/water-aerators/accessibility-statement">Προσβασιμότητα</a></li>
+                                    <li><a href="/water-aerators/accessibility-statement">Προσβασιμότητα</a></li>
+                                    <li><a href="/water-aerators/accessibility-statement">Προσβασιμότητα</a></li>
+                                    <li><a href="/water-aerators/accessibility-statement">Προσβασιμότητα</a></li>
+                                    <li><a href="/water-aerators/accessibility-statement">Προσβασιμότητα</a></li>
                                     <li><a href="/water-aerators/accessibility-statement">Προσβασιμότητα</a></li>
                                 </ul>
                                 <div class="govcy-d-flex govcy-align-items-center govcy-flex-wrap">
