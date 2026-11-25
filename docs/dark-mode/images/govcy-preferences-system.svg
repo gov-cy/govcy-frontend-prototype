@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="162" viewBox="0 0 140 162" role="img">
+<title>Device setting appearance preview</title>
+<defs>
+  <clipPath id="rounded"><rect x="10" y="6" width="120" height="150" rx="16"/></clipPath>
+  <clipPath id="left"><rect x="10" y="6" width="60" height="150"/></clipPath>
+  <clipPath id="right"><rect x="70" y="6" width="60" height="150"/></clipPath>
+</defs>
+<g clip-path="url(#left)">
+<rect x="10" y="6" width="120" height="150" rx="16" fill="#F3F6FB"/>
+<!-- Small service header with abstract shield logo -->
+<path d="M29 23 L41 23 L41 36 Q35 42 29 36 Z" fill="#3A91ED"/>
+<path d="M35 26 L35 35 M31 30.5 L39 30.5" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+<!-- Form control preview -->
+<rect x="23" y="53" width="94" height="34" rx="9" fill="#FFFFFF"/>
+<path d="M36 64 V76 M30 70 H42" stroke="#292B2D" stroke-width="1.9" stroke-linecap="round"/>
+<path d="M52 70 H101" stroke="#292B2D" stroke-width="2" stroke-linecap="round"/>
+<path d="M27 104 H113 M27 120 H113 M27 136 H91" stroke="#3D4144" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#right)">
+<rect x="10" y="6" width="120" height="150" rx="16" fill="#292929"/>
+<!-- Small service header with abstract shield logo -->
+<path d="M29 23 L41 23 L41 36 Q35 42 29 36 Z" fill="#3A91ED"/>
+<path d="M35 26 L35 35 M31 30.5 L39 30.5" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+<!-- Form control preview -->
+<rect x="23" y="53" width="94" height="34" rx="9" fill="#191919"/>
+<path d="M36 64 V76 M30 70 H42" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round"/>
+<path d="M52 70 H101" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<path d="M27 104 H113 M27 120 H113 M27 136 H91" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

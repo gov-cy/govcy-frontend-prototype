@@ -1,0 +1,188 @@
+<h1>GOV.CY UDS v3.3.0 colour cascade audit</h1>
+<blockquote>
+<p>Experimental reference only. The generated CSS is a prototype overlay, not a production migration or accessibility approval.</p>
+</blockquote>
+<h2>Inputs and limits</h2>
+<ul>
+<li>Audited <code>/mnt/data/govcy.uds(2).css</code> (v3.3.0, full stylesheet).</li>
+<li>Semantic token values are from the live Figma Semantic Colours collection (78 variables).</li>
+<li>Reference CSS is additive and must load after the existing UDS CSS.</li>
+<li>Only selectors referring to GOV.CY components/utilities receive automated declaration overrides. Bootstrap/general selectors are analysed but intentionally not wholesale rewritten.</li>
+<li>Only literal CSS colours can be mapped automatically; gradients, embedded images, opacity, currentColor, and variable-derived colours need additional verification.</li>
+</ul>
+<h2>Audit counts</h2>
+<ul>
+<li>Top-level stylesheet rules: <strong>2794</strong>.</li>
+<li>Colour-bearing declarations (including Bootstrap custom-property definitions): <strong>1195</strong>.</li>
+<li>Declarations in selectors containing <code>govcy-</code>: <strong>298</strong>.</li>
+<li>Such GOVCY declarations marked <code>!important</code>: <strong>94</strong>.</li>
+<li>Other colour-bearing declarations marked <code>!important</code>: <strong>97</strong>.</li>
+<li>GOVCY colour declarations mapped to prototype overrides: <strong>277</strong>.</li>
+<li>GOVCY colour declarations not safely mapped: <strong>9</strong>.</li>
+<li>GOVCY declarations skipped as fixed/transparent/Bootstrap-derived: <strong>12</strong>.</li>
+<li>Figma semantic variables emitted: <strong>78</strong>; additional provisional CSS tokens: <strong>18</strong>.</li>
+</ul>
+<h2>Critical findings</h2>
+<ol>
+<li>Existing <code>.govcy-bg-*</code>, <code>.govcy-text-*</code> and <code>.govcy-br-*</code> utility classes contain <code>!important</code> rules. The reference retains <code>!important</code> where the original uses it.</li>
+<li>Existing <code>.govcy-text-primary</code> is brand blue, not the semantic body-text token; similar naming collisions exist for secondary and fixed-value utilities. These are treated as distinct prototype roles.</li>
+<li>Bootstrap ships its own <code>[data-bs-theme=dark]</code> palette (<code>--bs-body-bg: #212529</code>). The reference bridges basic Bootstrap page/link/border tokens to UDS but leaves full Bootstrap component harmonization for migration.</li>
+<li>CSS <code>background</code>, <code>border</code> shorthands, colour utilities and focus shadows need careful rule-by-rule review; automated matches are not proof of correct design semantics.</li>
+<li>Figma has no dedicated <code>background/button-success</code> base token; provisional mapping holds existing Light value in Dark and is flagged.</li>
+<li>CSS-only colour roles (info text/border, success text, muted dates, contextual table backgrounds) require Dark Mode contrast decisions.</li>
+<li>Some interactive states use fixed white foreground on dark backgrounds; prototype preserves existing Light values but requires dark accessibility testing.</li>
+<li>A CSS file can theme system and component colours but cannot implement preference persistence or early initialization; separate <code>GOVCY.Theme</code> JS is required.</li>
+</ol>
+<h2>Unmapped colour declarations requiring review</h2>
+<p>The following is generated from the full stylesheet. Long selector lists are abbreviated for readability.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Source line</th>
+<th>Selector (abbreviated)</th>
+<th>Declaration</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">18697</td>
+<td><code>.govcy-bg-outer-space</code></td>
+<td><code>background-color: rgb(71, 69, 69)</code></td>
+<td>no-approved-semantic-match: rgb(71, 69, 69)</td>
+</tr>
+<tr>
+<td style="text-align:right">18709</td>
+<td><code>.govcy-bg-main-shade-0</code></td>
+<td><code>background-color: rgb(46, 82, 104)</code></td>
+<td>no-approved-semantic-match: rgb(46, 82, 104)</td>
+</tr>
+<tr>
+<td style="text-align:right">18713</td>
+<td><code>.govcy-bg-main-shade-1</code></td>
+<td><code>background-color: rgb(204, 219, 226)</code></td>
+<td>no-approved-semantic-match: rgb(204, 219, 226)</td>
+</tr>
+<tr>
+<td style="text-align:right">30547</td>
+<td><code>.govcy-header .govcy-right-menu</code></td>
+<td><code>box-shadow: -5px 6px 5px 0px rgba(0, 0, 0, 0.09)</code></td>
+<td>no-approved-semantic-match: rgba(0, 0, 0, 0.09)</td>
+</tr>
+<tr>
+<td style="text-align:right">31327</td>
+<td><code>.govcy-text-input:focus, .govcy-text-area:focus</code></td>
+<td><code>box-shadow: 0 0 0 4pt #ffdd00</code></td>
+<td>no-approved-semantic-match: #ffdd00</td>
+</tr>
+<tr>
+<td style="text-align:right">31332</td>
+<td><code>.govcy-text-input-error, .govcy-text-area-error</code></td>
+<td><code>border-color: #d4351c</code></td>
+<td>no-approved-semantic-match: #d4351c</td>
+</tr>
+<tr>
+<td style="text-align:right">32226</td>
+<td><code>.govcy-tag-cyan</code></td>
+<td><code>background-color: #487d93</code></td>
+<td>no-approved-semantic-match: #487d93</td>
+</tr>
+<tr>
+<td style="text-align:right">32571</td>
+<td><code>.govcy-share .govcy-share__icon</code></td>
+<td><code>color: #75767b</code></td>
+<td>no-approved-semantic-match: #75767b</td>
+</tr>
+<tr>
+<td style="text-align:right">32586</td>
+<td><code>.govcy-share .govcy-share__toast</code></td>
+<td><code>box-shadow: rgba(0, 0, 0, 0.15) 0 8px 16px</code></td>
+<td>no-approved-semantic-match: rgba(0, 0, 0, 0.15)</td>
+</tr>
+</tbody>
+</table>
+<h2>Rules for production migration</h2>
+<ul>
+<li>Integrate CSS variables into source SCSS/CSS rules instead of shipping a permanent large override layer.</li>
+<li>Keep Light Mode unchanged and run snapshot/visual regression comparison against v3.3.0.</li>
+<li>Preserve existing utility <code>!important</code> contract; do not add <code>!important</code> as a global theme-switching strategy.</li>
+<li>Confirm token purpose for each selector and colour; same literal hex does not prove same meaning.</li>
+<li>Review native controls, Bootstrap link and form variables, SVG data images, focus ring shadows, tables and status colours separately.</li>
+<li>Validate generated CSS with a real-browser test page including all UDS components and states, Chrome/Firefox/Safari and WCAG contrast.</li>
+<li>Prevent FOUC with early theme initialization in the HTML head; defaults remain Light with no saved preference.</li>
+<li>Ensure JS theme module coexists with generated UDS bundle reassigning global <code>GOVCY</code>.</li>
+</ul>
+<h2>Second-pass audit — screenshot and test HTML (24 November 2026)</h2>
+<p>The first audit only iterated top-level CSS qualified rules. A recursive scan
+through <code>@media</code> rules establishes <strong>761 colour-bearing declarations</strong>, of
+which <strong>617 contain GOV.CY selectors</strong>, including <strong>329 in media queries</strong>.
+There are <strong>408 <code>!important</code> colour declarations involving GOV.CY selectors</strong>
+when nested breakpoints are counted (many of these are repeated responsive utility classes).
+The original 277 mapped overrides are therefore <strong>not a complete enumeration of
+colour-related declarations</strong>.</p>
+<h3>Confirmed issues and corrections</h3>
+<table>
+<thead>
+<tr>
+<th>Source / element</th>
+<th>Issue</th>
+<th>New reference override</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.govcy-form .govcy-form-control .govcy-hint</code></td>
+<td>First pass merged shared hint/error selector and chose error semantic token for both</td>
+<td>Explicit <code>--govcy-text-hint</code></td>
+</tr>
+<tr>
+<td><code>.govcy-input-error-msg</code></td>
+<td>Must remain an error, distinct from hint text</td>
+<td><code>--govcy-text-error</code></td>
+</tr>
+<tr>
+<td><code>.govcy-text-input-error, .govcy-text-area-error</code></td>
+<td>Unmapped by first pass</td>
+<td><code>--govcy-border-error</code></td>
+</tr>
+<tr>
+<td><code>.govcy-step-indicator__segment--current .govcy-step-indicator__label</code></td>
+<td>First pass mapped current status to default</td>
+<td><code>--govcy-progress-current</code></td>
+</tr>
+<tr>
+<td>Step indicator segment bars (<code>::after</code>)</td>
+<td>First pass used background-step-number for all states</td>
+<td>Corresponding default/completed/current progress tokens</td>
+</tr>
+<tr>
+<td><code>.govcy-step-indicator__current-counter</code> in responsive media queries</td>
+<td>Entire rules omitted by first scan</td>
+<td><code>--govcy-progress-current</code> for border and background, white text</td>
+</tr>
+<tr>
+<td>Mobile navigation in <code>@media screen and (max-width: 767px)</code></td>
+<td>Nested original declarations omitted</td>
+<td>Responsive navigation background/text/border overrides</td>
+</tr>
+</tbody>
+</table>
+<h3>Remaining review work</h3>
+<ul>
+<li>Responsive breakpoint utility classes (particularly <code>govcy-bg-*</code>, <code>govcy-text-*</code>, <code>govcy-br-*</code>) may contain repeated <code>!important</code> declarations; test these explicitly rather than overriding all of Bootstrap indiscriminately.</li>
+<li>Embedded SVG/base64 assets, icons and footer imagery have not been migrated.</li>
+<li>High-specificity selectors with compound pseudo-classes need browser-computed-style verification.</li>
+<li>The generated rule mapper can assign the wrong semantic role even when a colour value looks plausible; verify all interactive states in the browser.</li>
+<li><strong>Do not treat syntax validation as visual, accessibility or regression validation.</strong></li>
+</ul>
+<p>The updated reference CSS is a <em>corrected second-pass prototype</em>, not a proven exhaustive production migration.</p>
+<h2>Third-pass cascade adjustment — mobile menu</h2>
+<p>The browser test identified mobile navigation menu link colours that were still
+overridden by UDS v3.3.0 <code>color: #474545 !important</code> declarations.
+The experimental reference now adds <code>!important</code> to <strong>theme-specific colour
+declarations</strong> that consume <code>--govcy-*</code> tokens (not the tokens themselves) and
+adds explicit mobile default/hover/focus colour rules. The focus state retains
+dark text over the existing yellow focus highlight.</p>
+<p>This is intentional for the <strong>standalone prototype overlay only</strong>; the
+production implementation should change source declarations in place and
+preserve only existing utilities' <code>!important</code> cascade contract.</p>

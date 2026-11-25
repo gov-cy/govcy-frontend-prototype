@@ -1,0 +1,2201 @@
+/*!
+ * UDS dark theme reference — EXPERIMENTAL; NOT FOR PRODUCTION
+ * Source: govcy.uds.css v3.3.0; semantic values: Figma UDS Semantic Colours
+ * Load AFTER the original govcy.uds.css (same version).
+ * No production or Figma files were modified.
+ * Light Mode is untouched; no theme attribute resolves to Light.
+ * Dark selectors are rooted to html[data-bs-theme="dark"].
+ * CAUTION: This prototype cannot guarantee component completeness or WCAG conformance.
+ */
+
+/* Approved Figma semantic variables (78) */
+:root {
+  --govcy-background-accordion-header: #E6E6E7;
+  --govcy-background-button-danger: #D4351C;
+  --govcy-background-button-danger-hover: #AA1D13;
+  --govcy-background-button-primary: #31576F;
+  --govcy-background-button-primary-hover: #254355;
+  --govcy-background-button-secondary: #D0D1D3;
+  --govcy-background-button-secondary-hover: #A6A8AA;
+  --govcy-background-button-success-hover: #274E13;
+  --govcy-background-calendar: #EBF1F3;
+  --govcy-background-calendar-hover: #FFFFFF;
+  --govcy-background-calendar-selected: #1D70B8;
+  --govcy-background-cookies-banner: #F5F8F9;
+  --govcy-background-footer: #EBF1F3;
+  --govcy-background-funding-logo: #FFFFFF;
+  --govcy-background-header: #31576F;
+  --govcy-background-header-user: #2E5268;
+  --govcy-background-info: #487D93;
+  --govcy-background-input: #FFFFFF;
+  --govcy-background-modal-backdrop: #000000;
+  --govcy-background-navigation: #EBF1F3;
+  --govcy-background-navigation-dropdown: #DAE5EA;
+  --govcy-background-navigation-hover: #DAE5EA;
+  --govcy-background-page: #FFFFFF;
+  --govcy-background-pagination-hover: #DAE5EA;
+  --govcy-background-phase-banner-default: #31576F;
+  --govcy-background-phase-banner-light: #FFFFFF;
+  --govcy-background-select-selected: #6D6E70;
+  --govcy-background-step-number: #E6E6E7;
+  --govcy-background-success: #00703C;
+  --govcy-background-tabs-inactive: #E6E6E7;
+  --govcy-background-tag-blue: #2E5268;
+  --govcy-background-tag-dark-green: #274E13;
+  --govcy-background-tag-default: #1D70B8;
+  --govcy-background-tag-gray: #E6E6E7;
+  --govcy-background-tag-green: #00703C;
+  --govcy-background-tag-orange: #D4351C;
+  --govcy-background-tag-purple: #4C2C92;
+  --govcy-background-tag-red: #AA1D13;
+  --govcy-background-tag-yellow: #FFDD00;
+  --govcy-border-accordion: #BBBCBF;
+  --govcy-border-brand-accent: #FFAD2D;
+  --govcy-border-button-focus: #272525;
+  --govcy-border-calendar: #BBBCBF;
+  --govcy-border-calendar-hover: #1D70B8;
+  --govcy-border-error: #D4351C;
+  --govcy-border-input: #272525;
+  --govcy-border-link-focus: #272525;
+  --govcy-border-modal: #BBBCBF;
+  --govcy-border-navigation: #BBBCBF;
+  --govcy-border-standard: #BBBCBF;
+  --govcy-border-step-connector: #B1B4B6;
+  --govcy-border-step-indicator: #BBBCBF;
+  --govcy-border-summary-list: #E6E6E7;
+  --govcy-border-tabs: #DEE2E6;
+  --govcy-focus-indicator: #FFDD00;
+  --govcy-foreground-phase-banner-accent: #31576F;
+  --govcy-progress-completed: #254355;
+  --govcy-progress-current: #1D70B8;
+  --govcy-progress-default: #A6A8AA;
+  --govcy-text-button-danger: #FFFFFF;
+  --govcy-text-button-on-color: #FFFFFF;
+  --govcy-text-button-secondary: #272525;
+  --govcy-text-calendar-selected: #FFFFFF;
+  --govcy-text-error: #D4351C;
+  --govcy-text-focus: #272525;
+  --govcy-text-header: #FFFFFF;
+  --govcy-text-header-hover: #31576F;
+  --govcy-text-hint: #6D6E70;
+  --govcy-text-inverse: #FFFFFF;
+  --govcy-text-link: #1D70B8;
+  --govcy-text-link-active: #272525;
+  --govcy-text-link-danger-hover: #942514;
+  --govcy-text-link-hover: #003078;
+  --govcy-text-link-visited: #4C2C92;
+  --govcy-text-navigation: #474545;
+  --govcy-text-pagination-disabled: #666666;
+  --govcy-text-primary: #272525;
+  --govcy-text-secondary: #474545;
+}
+:root[data-bs-theme="dark"] {
+  --govcy-background-accordion-header: #3B454A;
+  --govcy-background-button-danger: #FF9494;
+  --govcy-background-button-danger-hover: #FFB3B3;
+  --govcy-background-button-primary: #3E6F8E;
+  --govcy-background-button-primary-hover: #31576F;
+  --govcy-background-button-secondary: #A6A8AA;
+  --govcy-background-button-secondary-hover: #D0D1D3;
+  --govcy-background-button-success-hover: #218650;
+  --govcy-background-calendar: #3B454A;
+  --govcy-background-calendar-hover: #272525;
+  --govcy-background-calendar-selected: #1D70B8;
+  --govcy-background-cookies-banner: #3B454A;
+  --govcy-background-footer: #3B454A;
+  --govcy-background-funding-logo: #FFFFFF;
+  --govcy-background-header: #31576F;
+  --govcy-background-header-user: #254355;
+  --govcy-background-info: #426F83;
+  --govcy-background-input: #272525;
+  --govcy-background-modal-backdrop: #000000;
+  --govcy-background-navigation: #3B454A;
+  --govcy-background-navigation-dropdown: #3B454A;
+  --govcy-background-navigation-hover: #505A5F;
+  --govcy-background-page: #272525;
+  --govcy-background-pagination-hover: #3B454A;
+  --govcy-background-phase-banner-default: #31576F;
+  --govcy-background-phase-banner-light: #FFFFFF;
+  --govcy-background-select-selected: #505A5F;
+  --govcy-background-step-number: #3B454A;
+  --govcy-background-success: #147F49;
+  --govcy-background-tabs-inactive: #3B454A;
+  --govcy-background-tag-blue: #2E5268;
+  --govcy-background-tag-dark-green: #274E13;
+  --govcy-background-tag-default: #1D70B8;
+  --govcy-background-tag-gray: #E6E6E7;
+  --govcy-background-tag-green: #00703C;
+  --govcy-background-tag-orange: #D4351C;
+  --govcy-background-tag-purple: #4C2C92;
+  --govcy-background-tag-red: #AA1D13;
+  --govcy-background-tag-yellow: #FFDD00;
+  --govcy-border-accordion: #9CA8AE;
+  --govcy-border-brand-accent: #FFAD2D;
+  --govcy-border-button-focus: #272525;
+  --govcy-border-calendar: #9CA8AE;
+  --govcy-border-calendar-hover: #85BCFF;
+  --govcy-border-error: #FF9494;
+  --govcy-border-input: #BBBBBF;
+  --govcy-border-link-focus: #FFFFFF;
+  --govcy-border-modal: #9CA8AE;
+  --govcy-border-navigation: #9CA8AE;
+  --govcy-border-standard: #9CA8AE;
+  --govcy-border-step-connector: #9CA8AE;
+  --govcy-border-step-indicator: #9CA8AE;
+  --govcy-border-summary-list: #BBBCBF;
+  --govcy-border-tabs: #9CA8AE;
+  --govcy-focus-indicator: #FFDD00;
+  --govcy-foreground-phase-banner-accent: #31576F;
+  --govcy-progress-completed: #9CA8AE;
+  --govcy-progress-current: #4DA3FF;
+  --govcy-progress-default: #6D6E70;
+  --govcy-text-button-danger: #272525;
+  --govcy-text-button-on-color: #FFFFFF;
+  --govcy-text-button-secondary: #272525;
+  --govcy-text-calendar-selected: #FFFFFF;
+  --govcy-text-error: #FF9494;
+  --govcy-text-focus: #272525;
+  --govcy-text-header: #FFFFFF;
+  --govcy-text-header-hover: #FFFFFF;
+  --govcy-text-hint: #EBF1F3;
+  --govcy-text-inverse: #272525;
+  --govcy-text-link: #4DA3FF;
+  --govcy-text-link-active: #FFFFFF;
+  --govcy-text-link-danger-hover: #FFB3B3;
+  --govcy-text-link-hover: #7CC0FF;
+  --govcy-text-link-visited: #B388FF;
+  --govcy-text-navigation: #FFFFFF;
+  --govcy-text-pagination-disabled: #A6A8AA;
+  --govcy-text-primary: #FFFFFF;
+  --govcy-text-secondary: #DDDDDD;
+}
+
+/* CSS-only provisional mapping tokens; design review required */
+:root {
+  --govcy-background-button-success: #00703C; /* Dark value provisional: button-success not a distinct Figma semantic token */
+  --govcy-text-info: #487D93; /* Dark value provisional: info utility contrast */
+  --govcy-border-info: #487D93; /* Dark value provisional: info border */
+  --govcy-text-success: #00703C; /* Dark value provisional: success utility contrast */
+  --govcy-border-single-line: #999999; /* Dark value provisional: header/footer separator */
+  --govcy-text-tag-on-light: #272525; /* Fixed text on light tags */
+  --govcy-text-tag-on-dark: #FFFFFF; /* Fixed text on dark tags */
+  --govcy-text-calendar-muted: #5D5D52; /* Dark value provisional: previous/next month muted date */
+  --govcy-background-table-primary: #D6DDE2; /* Dark value provisional: table primary contextual background */
+  --govcy-background-table-success: #CCE2D8; /* Dark value provisional: table success contextual background */
+  --govcy-background-table-info: #DAE5E9; /* Dark value provisional: table info contextual background */
+  --govcy-background-table-danger: #F6D7D2; /* Dark value provisional: table danger contextual background */
+  --govcy-background-utility-primary: #31576F; /* Fixed brand utility: mapping needs review */
+  --govcy-background-utility-secondary: #FFAD2D; /* Fixed brand accent utility */
+  --govcy-text-utility-primary: #31576F; /* Brand utility (different from semantic body text); Dark contrast pending */
+  --govcy-text-utility-secondary: #FFAD2D; /* Brand utility (different from semantic secondary text) */
+  --govcy-border-utility-primary: #31576F; /* Brand utility border */
+  --govcy-border-utility-secondary: #FFAD2D; /* Brand utility border */
+}
+:root[data-bs-theme="dark"] {
+  --govcy-background-button-success: #00703C; /* TODO: Dark value provisional: button-success not a distinct Figma semantic token */
+  --govcy-text-info: #487D93; /* TODO: Dark value provisional: info utility contrast */
+  --govcy-border-info: #487D93; /* TODO: Dark value provisional: info border */
+  --govcy-text-success: #00703C; /* TODO: Dark value provisional: success utility contrast */
+  --govcy-border-single-line: #999999; /* TODO: Dark value provisional: header/footer separator */
+  --govcy-text-tag-on-light: #272525; /* TODO: Fixed text on light tags */
+  --govcy-text-tag-on-dark: #FFFFFF; /* TODO: Fixed text on dark tags */
+  --govcy-text-calendar-muted: #5D5D52; /* TODO: Dark value provisional: previous/next month muted date */
+  --govcy-background-table-primary: #D6DDE2; /* TODO: Dark value provisional: table primary contextual background */
+  --govcy-background-table-success: #CCE2D8; /* TODO: Dark value provisional: table success contextual background */
+  --govcy-background-table-info: #DAE5E9; /* TODO: Dark value provisional: table info contextual background */
+  --govcy-background-table-danger: #F6D7D2; /* TODO: Dark value provisional: table danger contextual background */
+  --govcy-background-utility-primary: #31576F; /* TODO: Fixed brand utility: mapping needs review */
+  --govcy-background-utility-secondary: #FFAD2D; /* TODO: Fixed brand accent utility */
+  --govcy-text-utility-primary: #31576F; /* TODO: Brand utility (different from semantic body text); Dark contrast pending */
+  --govcy-text-utility-secondary: #FFAD2D; /* TODO: Brand utility (different from semantic secondary text) */
+  --govcy-border-utility-primary: #31576F; /* TODO: Brand utility border */
+  --govcy-border-utility-secondary: #FFAD2D; /* TODO: Brand utility border */
+}
+
+/* Bootstrap bridge. Inspect Bootstrap components separately; do not rely on its stock dark palette. */
+:root[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --bs-body-bg: var(--govcy-background-page) !important;
+  --bs-body-color: var(--govcy-text-primary) !important;
+  --bs-border-color: var(--govcy-border-standard) !important;
+  --bs-link-color: var(--govcy-text-link) !important;
+  --bs-link-hover-color: var(--govcy-text-link-hover) !important;
+  --bs-secondary-color: var(--govcy-text-secondary) !important;
+}
+:root[data-bs-theme="dark"] body {
+  background-color: var(--govcy-background-page) !important;
+  color: var(--govcy-text-primary) !important;
+}
+:root[data-bs-theme="dark"] a:not([class]),
+:root[data-bs-theme="dark"] a.govcy-link {
+  color: var(--govcy-text-link) !important;
+}
+:root[data-bs-theme="dark"] a:not([class]):visited,
+:root[data-bs-theme="dark"] a.govcy-link:visited {
+  color: var(--govcy-text-link-visited) !important;
+}
+:root[data-bs-theme="dark"] a:not([class]):hover,
+:root[data-bs-theme="dark"] a.govcy-link:hover {
+  color: var(--govcy-text-link-hover) !important;
+}
+:root[data-bs-theme="dark"] a:not([class]):focus,
+:root[data-bs-theme="dark"] a.govcy-link:focus {
+  background-color: var(--govcy-focus-indicator) !important;
+  color: var(--govcy-text-focus) !important;
+}
+
+/* UDS selector-level overrides derived from original colour declarations. */
+/* Each comment points to an approximate source line in v3.3.0. */
+/* source L16951: border-color */
+:root[data-bs-theme="dark"] .govcy-br-primary {
+  border-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L16955: border-color */
+:root[data-bs-theme="dark"] .govcy-br-secondary {
+  border-color: var(--govcy-border-utility-secondary) !important;
+}
+
+/* source L16959: border-color */
+:root[data-bs-theme="dark"] .govcy-br-success {
+  border-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L16963: border-color */
+:root[data-bs-theme="dark"] .govcy-br-standard {
+  border-color: var(--govcy-border-standard) !important;
+}
+
+/* source L16967: border-color */
+:root[data-bs-theme="dark"] .govcy-br-danger {
+  border-color: var(--govcy-border-error) !important;
+}
+
+/* source L16971: border-color */
+:root[data-bs-theme="dark"] .govcy-br-info {
+  border-color: var(--govcy-border-info) !important;
+}
+
+/* source L16975: border-color */
+:root[data-bs-theme="dark"] .govcy-br-input {
+  border-color: var(--govcy-border-input) !important;
+}
+
+/* source L17143: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-primary {
+  border-top-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17147: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-secondary {
+  border-top-color: var(--govcy-border-utility-secondary) !important;
+}
+
+/* source L17151: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-success {
+  border-top-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17155: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-standard {
+  border-top-color: var(--govcy-border-standard) !important;
+}
+
+/* source L17159: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-danger {
+  border-top-color: var(--govcy-border-error) !important;
+}
+
+/* source L17163: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-info {
+  border-top-color: var(--govcy-border-info) !important;
+}
+
+/* source L17167: border-top-color */
+:root[data-bs-theme="dark"] .govcy-br-top-input {
+  border-top-color: var(--govcy-border-input) !important;
+}
+
+/* source L17175: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-primary {
+  border-right-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17179: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-secondary {
+  border-right-color: var(--govcy-border-utility-secondary) !important;
+}
+
+/* source L17183: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-success {
+  border-right-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17187: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-standard {
+  border-right-color: var(--govcy-border-standard) !important;
+}
+
+/* source L17191: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-danger {
+  border-right-color: var(--govcy-border-error) !important;
+}
+
+/* source L17195: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-info {
+  border-right-color: var(--govcy-border-info) !important;
+}
+
+/* source L17199: border-right-color */
+:root[data-bs-theme="dark"] .govcy-br-right-input {
+  border-right-color: var(--govcy-border-input) !important;
+}
+
+/* source L17207: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-primary {
+  border-bottom-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17211: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-secondary {
+  border-bottom-color: var(--govcy-border-utility-secondary) !important;
+}
+
+/* source L17215: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-success {
+  border-bottom-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17219: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-standard {
+  border-bottom-color: var(--govcy-border-standard) !important;
+}
+
+/* source L17223: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-danger {
+  border-bottom-color: var(--govcy-border-error) !important;
+}
+
+/* source L17227: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-info {
+  border-bottom-color: var(--govcy-border-info) !important;
+}
+
+/* source L17231: border-bottom-color */
+:root[data-bs-theme="dark"] .govcy-br-bottom-input {
+  border-bottom-color: var(--govcy-border-input) !important;
+}
+
+/* source L17239: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-primary {
+  border-left-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17243: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-secondary {
+  border-left-color: var(--govcy-border-utility-secondary) !important;
+}
+
+/* source L17247: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-success {
+  border-left-color: var(--govcy-border-utility-primary) !important;
+}
+
+/* source L17251: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-standard {
+  border-left-color: var(--govcy-border-standard) !important;
+}
+
+/* source L17255: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-danger {
+  border-left-color: var(--govcy-border-error) !important;
+}
+
+/* source L17259: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-info {
+  border-left-color: var(--govcy-border-info) !important;
+}
+
+/* source L17263: border-left-color */
+:root[data-bs-theme="dark"] .govcy-br-left-input {
+  border-left-color: var(--govcy-border-input) !important;
+}
+
+/* source L18645: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-primary {
+  background-color: var(--govcy-background-utility-primary) !important;
+}
+
+/* source L18649: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-secondary {
+  background-color: var(--govcy-background-utility-secondary) !important;
+}
+
+/* source L18653: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-success {
+  background-color: var(--govcy-background-success) !important;
+}
+
+/* source L18657: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-info {
+  background-color: var(--govcy-background-info) !important;
+}
+
+/* source L18661: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-danger {
+  background-color: var(--govcy-background-button-danger) !important;
+}
+
+/* source L18665: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-light {
+  background-color: var(--govcy-background-footer) !important;
+}
+
+/* source L18669: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-dark {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L18673: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-white {
+  background-color: var(--govcy-background-funding-logo) !important;
+}
+
+/* source L18677: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-gray {
+  background-color: var(--govcy-background-tag-gray) !important;
+}
+
+/* source L18681: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-blue {
+  background-color: var(--govcy-background-tag-default) !important;
+}
+
+/* source L18685: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-sub-menu {
+  background-color: var(--govcy-background-header-user) !important;
+}
+
+/* source L18689: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-body {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L18693: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-hint {
+  background-color: var(--govcy-text-hint) !important;
+}
+
+/* source L18701: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-light-gray {
+  background-color: var(--govcy-background-footer) !important;
+}
+
+/* source L18705: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-dark-gray {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L18717: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-main-shade-2 {
+  background-color: var(--govcy-background-navigation-hover) !important;
+}
+
+/* source L18721: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-main-shade-3 {
+  background-color: var(--govcy-background-footer) !important;
+}
+
+/* source L18725: background-color */
+:root[data-bs-theme="dark"] .govcy-bg-main-shade-4 {
+  background-color: var(--govcy-background-cookies-banner) !important;
+}
+
+/* source L18729: background-color */
+:root[data-bs-theme="dark"] .govcy-table-primary {
+  background-color: var(--govcy-background-table-primary) !important;
+}
+
+/* source L18737: background-color */
+:root[data-bs-theme="dark"] .govcy-table-success {
+  background-color: var(--govcy-background-table-success) !important;
+}
+
+/* source L18741: background-color */
+:root[data-bs-theme="dark"] .govcy-table-info {
+  background-color: var(--govcy-background-table-info) !important;
+}
+
+/* source L18745: background-color */
+:root[data-bs-theme="dark"] .govcy-table-danger {
+  background-color: var(--govcy-background-table-danger) !important;
+}
+
+/* source L18749: background-color */
+:root[data-bs-theme="dark"] .govcy-table-light {
+  background-color: var(--govcy-background-footer) !important;
+}
+
+/* source L18753: background-color */
+:root[data-bs-theme="dark"] .govcy-table-dark {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L18777: color */
+:root[data-bs-theme="dark"] .govcy-text-primary {
+  color: var(--govcy-text-utility-primary) !important;
+}
+
+/* source L18781: color */
+:root[data-bs-theme="dark"] .govcy-text-secondary {
+  color: var(--govcy-text-utility-secondary) !important;
+}
+
+/* source L18785: color */
+:root[data-bs-theme="dark"] .govcy-text-success {
+  color: var(--govcy-text-success) !important;
+}
+
+/* source L18789: color */
+:root[data-bs-theme="dark"] .govcy-text-danger {
+  color: var(--govcy-text-error) !important;
+}
+
+/* source L18793: color */
+:root[data-bs-theme="dark"] .govcy-text-info {
+  color: var(--govcy-text-info) !important;
+}
+
+/* source L18797: color */
+:root[data-bs-theme="dark"] .govcy-text-body {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L18801: color */
+:root[data-bs-theme="dark"] .govcy-text-dark {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L18805: color */
+:root[data-bs-theme="dark"] .govcy-text-white {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30132: color */
+:root[data-bs-theme="dark"] .danger.govcy-link:hover,
+:root[data-bs-theme="dark"] .danger.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .danger.govcy-link-no-visited-state:hover {
+  color: var(--govcy-text-link-danger-hover) !important;
+}
+
+/* source L30135: border-color */
+:root[data-bs-theme="dark"] .govcy-link:visited,
+:root[data-bs-theme="dark"] .govcy-link-inverse:visited,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:visited {
+  border-color: var(--govcy-text-link-visited) !important;
+}
+
+/* source L30136: color */
+:root[data-bs-theme="dark"] .govcy-link:visited,
+:root[data-bs-theme="dark"] .govcy-link-inverse:visited,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:visited {
+  color: var(--govcy-text-link-visited) !important;
+}
+
+/* source L30139: border-color */
+:root[data-bs-theme="dark"] .govcy-link:active,
+:root[data-bs-theme="dark"] .govcy-link-inverse:active,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:active {
+  border-color: var(--govcy-border-link-focus) !important;
+}
+
+/* source L30140: color */
+:root[data-bs-theme="dark"] .govcy-link:active,
+:root[data-bs-theme="dark"] .govcy-link-inverse:active,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:active {
+  color: var(--govcy-text-link-active) !important;
+}
+
+/* source L30144: background-color */
+:root[data-bs-theme="dark"] .govcy-link:focus,
+:root[data-bs-theme="dark"] .govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30145: box-shadow */
+:root[data-bs-theme="dark"] .govcy-link:focus,
+:root[data-bs-theme="dark"] .govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:focus {
+  box-shadow: 0 -2px var(--govcy-focus-indicator), 0 3px var(--govcy-border-button-focus) !important;
+}
+
+/* source L30146: color */
+:root[data-bs-theme="dark"] .govcy-link:focus,
+:root[data-bs-theme="dark"] .govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L30207: color */
+:root[data-bs-theme="dark"] .govcy-alert-error p > a,
+:root[data-bs-theme="dark"] .govcy-alert-error p > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-alert-error p > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-alert-error p > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li a,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li .govcy-link,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li .govcy-link-no-visited-state {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L30217: color */
+:root[data-bs-theme="dark"] .govcy-alert-error p > a:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error p > .govcy-link:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error p > .govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error p > .govcy-link-no-visited-state:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li a:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li .govcy-link:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li .govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .govcy-alert-error ul li .govcy-link-no-visited-state:hover {
+  color: var(--govcy-text-link-hover) !important;
+}
+
+/* source L30231: color */
+:root[data-bs-theme="dark"] .govcy-alert-notification .govcy-alert-notification-header {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30235: color */
+:root[data-bs-theme="dark"] .govcy-alert-notification .govcy-alert-notification-body p a,
+:root[data-bs-theme="dark"] .govcy-alert-notification .govcy-alert-notification-body p .govcy-link,
+:root[data-bs-theme="dark"] .govcy-alert-notification .govcy-alert-notification-body p .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-alert-notification .govcy-alert-notification-body p .govcy-link-no-visited-state {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L30240: color */
+:root[data-bs-theme="dark"] .govcy-alert-completed-notification {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30268: border-bottom */
+:root[data-bs-theme="dark"] .govcy-article-part-warning {
+  border-bottom: 1px solid var(--govcy-border-brand-accent) !important;
+}
+
+/* source L30269: background-color */
+:root[data-bs-theme="dark"] .govcy-article-part-warning {
+  background-color: var(--govcy-background-footer) !important;
+}
+
+/* source L30277: color */
+:root[data-bs-theme="dark"] .govcy-btn:not(.disabled):not(:disabled):hover {
+  color: var(--govcy-text-inverse) !important;
+}
+
+/* source L30280: background-color */
+:root[data-bs-theme="dark"] .govcy-btn:not(.disabled):not(:disabled):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30283: color */
+:root[data-bs-theme="dark"] .govcy-btn:not(.disabled):not(:disabled):focus {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L30296: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-primary,
+:root[data-bs-theme="dark"] .govcy-btn-primary:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-primary:visited {
+  background-color: var(--govcy-background-button-primary) !important;
+}
+
+/* source L30297: color */
+:root[data-bs-theme="dark"] .govcy-btn-primary,
+:root[data-bs-theme="dark"] .govcy-btn-primary:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-primary:visited {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30302: color */
+:root[data-bs-theme="dark"] .govcy-btn-primary:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-primary:disabled:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-primary:visited:not(.disabled):not(:disabled):hover {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30307: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-primary:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-primary:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-primary:visited:not(.disabled):not(:disabled):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30310: color */
+:root[data-bs-theme="dark"] .govcy-btn-primary:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-primary:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-primary:visited:not(.disabled):not(:disabled):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L30315: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-primary:hover,
+:root[data-bs-theme="dark"] .govcy-btn-primary:disabled:hover,
+:root[data-bs-theme="dark"] .govcy-btn-primary:visited:hover {
+  background-color: var(--govcy-background-button-primary-hover) !important;
+}
+
+/* source L30322: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-secondary,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:visited {
+  background-color: var(--govcy-background-button-secondary) !important;
+}
+
+/* source L30323: color */
+:root[data-bs-theme="dark"] .govcy-btn-secondary,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:visited {
+  color: var(--govcy-text-button-secondary) !important;
+}
+
+/* source L30328: color */
+:root[data-bs-theme="dark"] .govcy-btn-secondary:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:disabled:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:visited:not(.disabled):not(:disabled):hover {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30333: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-secondary:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:visited:not(.disabled):not(:disabled):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30336: color */
+:root[data-bs-theme="dark"] .govcy-btn-secondary:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:visited:not(.disabled):not(:disabled):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L30341: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-secondary:hover,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:disabled:hover,
+:root[data-bs-theme="dark"] .govcy-btn-secondary:visited:hover {
+  background-color: var(--govcy-background-button-secondary-hover) !important;
+}
+
+/* source L30348: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-success,
+:root[data-bs-theme="dark"] .govcy-btn-success:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-success:visited {
+  background-color: var(--govcy-background-button-success) !important;
+}
+
+/* source L30349: color */
+:root[data-bs-theme="dark"] .govcy-btn-success,
+:root[data-bs-theme="dark"] .govcy-btn-success:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-success:visited {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30354: color */
+:root[data-bs-theme="dark"] .govcy-btn-success:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-success:disabled:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-success:visited:not(.disabled):not(:disabled):hover {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30359: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-success:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-success:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-success:visited:not(.disabled):not(:disabled):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30362: color */
+:root[data-bs-theme="dark"] .govcy-btn-success:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-success:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-success:visited:not(.disabled):not(:disabled):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L30367: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-success:hover,
+:root[data-bs-theme="dark"] .govcy-btn-success:disabled:hover,
+:root[data-bs-theme="dark"] .govcy-btn-success:visited:hover {
+  background-color: var(--govcy-background-button-success-hover) !important;
+}
+
+/* source L30374: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-warning,
+:root[data-bs-theme="dark"] .govcy-btn-warning:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-warning:visited {
+  background-color: var(--govcy-background-button-danger) !important;
+}
+
+/* source L30375: color */
+:root[data-bs-theme="dark"] .govcy-btn-warning,
+:root[data-bs-theme="dark"] .govcy-btn-warning:disabled,
+:root[data-bs-theme="dark"] .govcy-btn-warning:visited {
+  color: var(--govcy-text-button-danger) !important;
+}
+
+/* source L30380: color */
+:root[data-bs-theme="dark"] .govcy-btn-warning:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-warning:disabled:not(.disabled):not(:disabled):hover,
+:root[data-bs-theme="dark"] .govcy-btn-warning:visited:not(.disabled):not(:disabled):hover {
+  color: var(--govcy-text-button-on-color) !important;
+}
+
+/* source L30385: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-warning:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-warning:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-warning:visited:not(.disabled):not(:disabled):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30388: color */
+:root[data-bs-theme="dark"] .govcy-btn-warning:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-warning:disabled:not(.disabled):not(:disabled):focus,
+:root[data-bs-theme="dark"] .govcy-btn-warning:visited:not(.disabled):not(:disabled):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L30393: background-color */
+:root[data-bs-theme="dark"] .govcy-btn-warning:hover,
+:root[data-bs-theme="dark"] .govcy-btn-warning:disabled:hover,
+:root[data-bs-theme="dark"] .govcy-btn-warning:visited:hover {
+  background-color: var(--govcy-background-button-danger-hover) !important;
+}
+
+/* source L30404: border-top */
+:root[data-bs-theme="dark"] .govcy-header-separator {
+  border-top: 1px solid var(--govcy-border-single-line) !important;
+}
+
+/* source L30408: background-color */
+:root[data-bs-theme="dark"] .govcy-header {
+  background-color: var(--govcy-background-header) !important;
+}
+
+/* source L30429: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-mainmenu ul.govcy-menu-items > li:before {
+  background-color: var(--govcy-border-navigation) !important;
+}
+
+/* source L30442: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-mainmenu ul.govcy-menu-items > li:last-child:after {
+  background-color: var(--govcy-border-navigation) !important;
+}
+
+/* source L30474: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-menu-items li:focus-within,
+:root[data-bs-theme="dark"] .govcy-header .govcy-menu-items li:focus,
+:root[data-bs-theme="dark"] .govcy-header .govcy-menu-items li:hover {
+  background-color: var(--govcy-background-navigation-hover) !important;
+}
+
+/* source L30499: background */
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu {
+  background: var(--govcy-background-navigation-dropdown) !important;
+}
+
+/* source L30509: border-bottom */
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li {
+  border-bottom: 1px solid var(--govcy-border-navigation) !important;
+}
+
+/* source L30517: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus-within,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:hover,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus-within,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:hover {
+  background-color: var(--govcy-background-header) !important;
+}
+
+/* source L30540: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus-within > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus-within > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus-within > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus-within > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:focus > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:hover > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:hover > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:hover > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-dropdown-menu li:hover > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus-within > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus-within > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus-within > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus-within > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:focus > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:hover > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:hover > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:hover > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-right-menu li:hover > .govcy-link-no-visited-state {
+  color: var(--govcy-text-header) !important;
+}
+
+/* source L30571: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-top-area {
+  background-color: var(--govcy-background-header-user) !important;
+}
+
+/* source L30573: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-top-area {
+  color: var(--govcy-text-header) !important;
+}
+
+/* source L30603: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-top-area ul li a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-top-area ul li .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-top-area ul li .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-top-area ul li .govcy-link-no-visited-state {
+  color: var(--govcy-text-header) !important;
+}
+
+/* source L30626: border-bottom */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area {
+  border-bottom: 4px solid var(--govcy-border-brand-accent) !important;
+}
+
+/* source L30650: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-navigation-container .govcy-service-name,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-navigation-container .govcy-service-name a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-navigation-container .govcy-service-name .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-navigation-container .govcy-service-name .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-navigation-container .govcy-service-name .govcy-link-no-visited-state {
+  color: var(--govcy-text-header) !important;
+}
+
+/* source L30664: border-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-navigation-container .govcy-logo:focus {
+  border-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30668: border-top */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-dropdown-menu li,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-right-menu li {
+  border-top: 1px solid var(--govcy-border-navigation) !important;
+}
+
+/* source L30677: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items .govcy-link-no-visited-state {
+  color: var(--govcy-text-navigation) !important;
+}
+
+/* source L30692: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li > span > .govcy-link-no-visited-state {
+  color: var(--govcy-text-header) !important;
+}
+
+/* source L30712: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus-within > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus-within > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus-within > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus-within > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:focus > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:hover > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:hover > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:hover > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-desktop-menu-only:hover > span > .govcy-link-no-visited-state {
+  color: var(--govcy-text-header-hover) !important;
+}
+
+/* source L30720: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li:focus-within,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li:focus,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li:hover {
+  background-color: var(--govcy-background-navigation-hover) !important;
+}
+
+/* source L30726: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search.open > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search.open > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search.open > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search.open > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:hover > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:hover > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:hover > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:hover > span > .govcy-link-no-visited-state {
+  background-color: var(--govcy-background-navigation-hover) !important;
+}
+
+/* source L30732: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link-no-visited-state {
+  color: var(--govcy-text-navigation) !important;
+}
+
+/* source L30733: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus-within > span > .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-menu-items > li.govcy-global-search:focus > span > .govcy-link-no-visited-state {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L30789: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search span a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search span .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search span .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search span .govcy-link-no-visited-state {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L30809: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search.open span a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search.open span .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search.open span .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search.open span .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus-within span a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus-within span .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus-within span .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus-within span .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus span a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus span .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus span .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:focus span .govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:hover span a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:hover span .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:hover span .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-main-area .govcy-global-search:hover span .govcy-link-no-visited-state {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L30842: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area {
+  background-color: var(--govcy-background-navigation) !important;
+}
+
+/* source L30846: background */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu {
+  background: var(--govcy-background-navigation) !important;
+}
+
+/* source L30852: color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu a,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-link,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-link-no-visited-state {
+  color: var(--govcy-text-navigation) !important;
+}
+
+/* source L30863: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-header-search-area {
+  background-color: var(--govcy-background-navigation-dropdown) !important;
+}
+
+/* source L30887: background */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-header-search-area .govcy-btn-search {
+  background: var(--govcy-background-button-primary) no-repeat center center url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM2MDlfMTE2ODMpIj4KPHBhdGggZD0iTTE2IDE0LjIzMjdMMTEuODkzMSAxMC4xMjUxQzEyLjYxNTcgOS4wNTQ0NSAxMy4wMDEyIDcuNzkyMDIgMTMgNi41MDAzNkMxMyAyLjkxNjM2IDEwLjA4NTEgMCA2LjUwMDM2IDBDMi45MTYzNiAwIDAgMi45MTYzNiAwIDYuNTAwMzZDMCAxMC4wODUxIDIuOTE2MzYgMTMuMDAwNyA2LjUwMDM2IDEzLjAwMDdDNy43OTIwNyAxMy4wMDIzIDkuMDU0NiAxMi42MTY3IDEwLjEyNTEgMTEuODkzOEwxNC4yMzEzIDE2TDE2IDE0LjIzMjdaTTYuNTAwMzYgMTFDNS4zMDcxNSAxMC45OTg4IDQuMTYzMTMgMTAuNTI0MyAzLjMxOTQgOS42ODA2QzIuNDc1NjcgOC44MzY4NyAyLjAwMTE2IDcuNjkyODUgMiA2LjQ5OTY0QzIuMDAxMzUgNS4zMDY0OCAyLjQ3NTkyIDQuMTYyNTggMy4zMTk2MSAzLjMxODg5QzQuMTYzMyAyLjQ3NTIgNS4zMDcyMSAyLjAwMDYyIDYuNTAwMzYgMS45OTkyN0M3LjY5MzUyIDIuMDAwNjIgOC44Mzc0MiAyLjQ3NTIgOS42ODExMSAzLjMxODg5QzEwLjUyNDggNC4xNjI1OCAxMC45OTk0IDUuMzA2NDggMTEuMDAwNyA2LjQ5OTY0QzEwLjk5OTQgNy42OTI3OSAxMC41MjQ4IDguODM2NyA5LjY4MTExIDkuNjgwMzlDOC44Mzc0MiAxMC41MjQxIDcuNjkzNTIgMTAuOTk4NyA2LjUwMDM2IDExWiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zNjA5XzExNjgzIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=);
+}
+
+/* source L30890: background-color */
+:root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-header-search-area .govcy-btn-search:hover {
+  background-color: var(--govcy-background-button-primary-hover) !important;
+}
+
+/* source L31150: color */
+:root[data-bs-theme="dark"] .govcy-hint {
+  color: var(--govcy-text-hint) !important;
+}
+
+/* source L31156: background */
+:root[data-bs-theme="dark"] .govcy-footer {
+  background: var(--govcy-background-footer) !important;
+}
+
+/* source L31158: border-top */
+:root[data-bs-theme="dark"] .govcy-footer {
+  border-top: 4px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31178: color */
+:root[data-bs-theme="dark"] .govcy-footer ul li a,
+:root[data-bs-theme="dark"] .govcy-footer ul li .govcy-link,
+:root[data-bs-theme="dark"] .govcy-footer ul li .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-footer ul li .govcy-link-no-visited-state {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L31181: border-top */
+:root[data-bs-theme="dark"] .govcy-footer .govcy-footer-separator {
+  border-top: 1px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31187: border-bottom */
+:root[data-bs-theme="dark"] .govcy-footer .govcy-footer-column h3,
+:root[data-bs-theme="dark"] .govcy-footer .govcy-footer-column .h3,
+:root[data-bs-theme="dark"] .govcy-footer .govcy-footer-column .govcy-h3 {
+  border-bottom: 1px solid var(--govcy-border-standard) !important;
+}
+
+/* Dark Mode footer emblem */
+[data-bs-theme="dark"] .govcy-footer .govcy-footer-logo {
+  content: url("../images/govcy-footer-logo-dark.svg") !important;
+}
+
+/* source L31208: background */
+:root[data-bs-theme="dark"] .govcy-form.govcy-search-form {
+  background: var(--govcy-background-cookies-banner) !important;
+}
+
+/* source L31243: border-left */
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control-error {
+  border-left: 4px solid var(--govcy-border-error) !important;
+}
+
+/* source L31250: border-left */
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control-hint {
+  border-left: 4px solid var(--govcy-text-hint) !important;
+}
+
+/* source L31255: color */
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control label,
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control .govcy-label-primary {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L31266: color */
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control .govcy-hint,
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control .govcy-input-error-msg {
+  color: var(--govcy-text-error) !important;
+}
+
+/* source L31271: color */
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control .govcy-input-error-msg {
+  color: var(--govcy-text-error) !important;
+}
+
+/* source L31426: box-shadow */
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-checkbox-input:focus + label::before,
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-radio-input:focus + label::before,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-checkbox-input:focus + label::before,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-radio-input:focus + label::before {
+  box-shadow: 0 0 0 4px var(--govcy-focus-indicator) !important;
+}
+
+/* source L31441: border */
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-checkbox-input + label::before,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-checkbox-input + label::before {
+  border: 2px solid var(--govcy-border-input) !important;
+}
+
+/* source L31453: border */
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-checkbox-input + label::after,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-checkbox-input + label::after {
+  border: solid var(--govcy-border-input) !important;
+}
+
+/* source L31467: border */
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-radio-input + label::before,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-radio-input + label::before {
+  border: 2px solid var(--govcy-border-input) !important;
+}
+
+/* source L31478: background-color */
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-radio-input + label::after,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-radio-input + label::after {
+  background-color: var(--govcy-text-primary) !important;
+}
+
+/* source L31479: border */
+:root[data-bs-theme="dark"] .govcy-checkbox .govcy-radio-input + label::after,
+:root[data-bs-theme="dark"] .govcy-radio .govcy-radio-input + label::after {
+  border: solid var(--govcy-border-input) !important;
+}
+
+/* source L31508: border */
+:root[data-bs-theme="dark"] .govcy-file-upload:focus {
+  border: 3px solid var(--govcy-border-input) !important;
+}
+
+/* source L31510: box-shadow */
+:root[data-bs-theme="dark"] .govcy-file-upload:focus {
+  box-shadow: 0 0 0 4pt var(--govcy-focus-indicator) !important;
+}
+
+/* source L31520: border-color */
+:root[data-bs-theme="dark"] .govcy-table > thead,
+:root[data-bs-theme="dark"] .govcy-table > tbody > tr {
+  border-color: var(--govcy-border-standard) !important;
+}
+
+/* source L31527: color */
+:root[data-bs-theme="dark"] .govcy-caption {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L31606: background */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state {
+  background: var(--govcy-background-page) !important;
+}
+
+/* source L31607: color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L31612: color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:hover {
+  color: var(--govcy-text-link-hover) !important;
+}
+
+/* source L31613: background */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:hover {
+  background: var(--govcy-background-pagination-hover) !important;
+}
+
+/* source L31614: background-color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:hover {
+  background-color: var(--govcy-background-pagination-hover) !important;
+}
+
+/* source L31615: border */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:active,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:hover {
+  border: 2px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31619: background */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:focus-within,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:focus-within,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:focus-within {
+  background: var(--govcy-focus-indicator) !important;
+}
+
+/* source L31622: color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link:focus-within,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-inverse:focus-within,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.govcy-link-no-visited-state:focus-within {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L31625: background */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state {
+  background: var(--govcy-background-header) !important;
+}
+
+/* source L31626: color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L31628: border */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state {
+  border: 2px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31632: background-color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state:hover {
+  background-color: var(--govcy-background-pagination-hover) !important;
+}
+
+/* source L31633: color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state:hover {
+  color: var(--govcy-text-link-hover) !important;
+}
+
+/* source L31634: border */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse:hover,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state:hover {
+  border: 2px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31638: color */
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state:focus,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link:focus-within,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-inverse:focus-within,
+:root[data-bs-theme="dark"] .dataTables_wrapper > .dataTables_paginate .paginate_button.current.govcy-link-no-visited-state:focus-within {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L31649: border */
+:root[data-bs-theme="dark"] .dataTables_wrapper .govcy-table.dataTable > tbody th:focus-visible,
+:root[data-bs-theme="dark"] .dataTables_wrapper .govcy-table.dataTable > thead th:focus-visible,
+:root[data-bs-theme="dark"] .dataTables_wrapper .govcy-table.dataTable > tbody td:focus-visible {
+  border: 3px solid var(--govcy-focus-indicator) !important;
+}
+
+/* source L31691: color */
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:visited {
+  color: var(--govcy-text-link-visited) !important;
+}
+
+/* source L31694: color */
+:root[data-bs-theme="dark"] .govcy-link-no-visited-state:visited:focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L31699: color */
+:root[data-bs-theme="dark"] .govcy-link-inverse,
+:root[data-bs-theme="dark"] .govcy-link-inverse:visited {
+  color: var(--govcy-text-link-visited) !important;
+}
+
+/* source L31703: color */
+:root[data-bs-theme="dark"] a.govcy-sign-out,
+:root[data-bs-theme="dark"] .govcy-sign-out.govcy-link,
+:root[data-bs-theme="dark"] .govcy-sign-out.govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-sign-out.govcy-link-inverse {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L31738: color */
+:root[data-bs-theme="dark"] .govcy-details__summary {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L31750: border-color */
+:root[data-bs-theme="dark"] .govcy-details__summary::before {
+  border-color: var(--govcy-border-input) !important;
+}
+
+/* source L31774: background-color */
+:root[data-bs-theme="dark"] .govcy-details__summary:focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L31775: box-shadow */
+:root[data-bs-theme="dark"] .govcy-details__summary:focus {
+  box-shadow: 0 -2px var(--govcy-focus-indicator), 0 4px var(--govcy-border-button-focus) !important;
+}
+
+/* source L31776: color */
+:root[data-bs-theme="dark"] .govcy-details__summary:focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L31789: border-left */
+:root[data-bs-theme="dark"] .govcy-details__text {
+  border-left: 5px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31797: border-color */
+:root[data-bs-theme="dark"] .govcy-details[open] > .govcy-details__summary::before {
+  border-color: var(--govcy-border-input) !important;
+}
+
+/* source L31811: background-color */
+:root[data-bs-theme="dark"] .govcy-select {
+  background-color: var(--govcy-background-input) !important;
+}
+
+/* source L31821: border-color */
+:root[data-bs-theme="dark"] .govcy-select {
+  border-color: var(--govcy-border-input) !important;
+}
+
+/* source L31822: color */
+:root[data-bs-theme="dark"] .govcy-select {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L31825: border-color */
+:root[data-bs-theme="dark"] .govcy-select-error {
+  border-color: var(--govcy-border-error) !important;
+}
+
+/* source L31829: outline */
+:root[data-bs-theme="dark"] .govcy-select:focus {
+  outline: 4pt solid var(--govcy-focus-indicator) !important;
+}
+
+/* source L31869: background-color */
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button,
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:not(.collapsed) {
+  background-color: var(--govcy-background-accordion-header) !important;
+}
+
+/* source L31870: color */
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button,
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:not(.collapsed) {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L31874: background-color */
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:focus,
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:not(.collapsed):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L31876: color */
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:focus,
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:not(.collapsed):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L31877: border-color */
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:focus,
+:root[data-bs-theme="dark"] .govcy-accordion .govcy-accordion-item .govcy-accordion-header .govcy-accordion-button:not(.collapsed):focus {
+  border-color: var(--govcy-border-accordion) !important;
+}
+
+/* source L31894: background-color */
+:root[data-bs-theme="dark"] .govcy-accordion.govcy-accordion-steps .govcy-accordion-item .govcy-accordion-step {
+  background-color: var(--govcy-background-step-number) !important;
+}
+
+/* source L31905: background-color */
+:root[data-bs-theme="dark"] .govcy-accordion.govcy-accordion-steps .govcy-accordion-item .govcy-accordion-step.govcy-accordion-step-conditional {
+  background-color: var(--govcy-background-step-number) !important;
+}
+
+/* source L31906: border */
+:root[data-bs-theme="dark"] .govcy-accordion.govcy-accordion-steps .govcy-accordion-item .govcy-accordion-step.govcy-accordion-step-conditional {
+  border: var(--bs-accordion-border-width) solid var(--govcy-border-step-connector) !important;
+}
+
+/* source L31914: border-left */
+:root[data-bs-theme="dark"] .govcy-accordion.govcy-accordion-steps .govcy-accordion-item:not(:last-child):after {
+  border-left: solid 1px var(--govcy-border-step-connector) !important;
+}
+
+/* source L31923: color */
+:root[data-bs-theme="dark"] a.govcy-back-link,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-inverse {
+  color: var(--govcy-text-link) !important;
+}
+
+/* source L31932: color */
+:root[data-bs-theme="dark"] a.govcy-back-link:visited,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link:visited,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-no-visited-state:visited,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-inverse:visited {
+  color: var(--govcy-text-link-visited) !important;
+}
+
+/* source L31948: color */
+:root[data-bs-theme="dark"] .govcy-breadcrumb .govcy-breadcrumb-item .govcy-breadcrumb-link,
+:root[data-bs-theme="dark"] .govcy-breadcrumb .govcy-breadcrumb-item .govcy-breadcrumb-link:visited {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L31961: border-left */
+:root[data-bs-theme="dark"] .govcy-inset-text {
+  border-left: 4px solid var(--govcy-border-standard) !important;
+}
+
+/* source L31970: color */
+:root[data-bs-theme="dark"] .govcy-character-count .govcy-character-remaining-counter {
+  color: var(--govcy-text-hint) !important;
+}
+
+/* source L31973: color */
+:root[data-bs-theme="dark"] .govcy-character-count .govcy-character-more-counter {
+  color: var(--govcy-text-error) !important;
+}
+
+/* source L31993: outline */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year:not([disabled]):hover {
+  outline: 2px solid var(--govcy-border-calendar-hover) !important;
+}
+
+/* source L31994: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year:not([disabled]):hover {
+  background-color: var(--govcy-background-calendar-hover) !important;
+}
+
+/* source L32010: outline */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year:not([disabled]):focus {
+  outline: 2px solid var(--govcy-focus-indicator) !important;
+}
+
+/* source L32012: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year:not([disabled]):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L32013: color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year:not([disabled]):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L32018: color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--current-month:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]) {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L32032: border */
+:root[data-bs-theme="dark"] .govcy-date-picker.govcy-date-picker--active .govcy-date-picker__button:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__button:not([disabled]):focus {
+  border: 4px solid var(--govcy-focus-indicator) !important;
+}
+
+/* source L32033: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker.govcy-date-picker--active .govcy-date-picker__button:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__button:not([disabled]):focus {
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* source L32039: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__button:focus {
+  background-color: var(--govcy-background-calendar) !important;
+}
+
+/* source L32043: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar {
+  background-color: var(--govcy-background-calendar) !important;
+}
+
+/* source L32050: border */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar {
+  border: 1px solid var(--govcy-border-calendar) !important;
+}
+
+/* source L32076: color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--next-month:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--previous-month:not([disabled]) {
+  color: var(--govcy-text-calendar-muted) !important;
+}
+
+/* source L32101: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year {
+  background-color: var(--govcy-background-calendar) !important;
+}
+
+/* source L32109: outline */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--focused {
+  outline: 2px solid var(--govcy-border-calendar-hover) !important;
+}
+
+/* source L32110: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--focused {
+  background-color: var(--govcy-background-calendar-hover) !important;
+}
+
+/* source L32116: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__cell {
+  background-color: var(--govcy-background-calendar) !important;
+}
+
+/* source L32155: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year {
+  background-color: var(--govcy-background-calendar) !important;
+}
+
+/* source L32165: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection {
+  background-color: var(--govcy-background-calendar) !important;
+}
+
+/* source L32175: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year--selected:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month--selected:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--selected:not([disabled]) {
+  background-color: var(--govcy-background-calendar-selected) !important;
+}
+
+/* source L32176: color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year--selected:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month--selected:not([disabled]),
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--selected:not([disabled]) {
+  color: var(--govcy-text-calendar-selected) !important;
+}
+
+/* source L32182: color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year--selected:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month--selected:not([disabled]):hover,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date--selected:not([disabled]):hover {
+  color: var(--govcy-text-calendar-selected) !important;
+}
+
+/* source L32186: outline */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year--focused,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month--focused {
+  outline: 2px solid var(--govcy-border-calendar-hover) !important;
+}
+
+/* source L32187: background-color */
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year--focused,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month--focused {
+  background-color: var(--govcy-background-calendar-hover) !important;
+}
+
+/* source L32201: background-color */
+:root[data-bs-theme="dark"] .govcy-tag {
+  background-color: var(--govcy-background-tag-default) !important;
+}
+
+/* source L32206: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-gray {
+  background-color: var(--govcy-background-tag-gray) !important;
+}
+
+/* source L32210: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-green {
+  background-color: var(--govcy-background-tag-green) !important;
+}
+
+/* source L32214: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-darkgreen {
+  background-color: var(--govcy-background-tag-green) !important;
+}
+
+/* source L32218: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-purple {
+  background-color: var(--govcy-background-tag-purple) !important;
+}
+
+/* source L32222: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-yellow {
+  background-color: var(--govcy-background-tag-yellow) !important;
+}
+
+/* source L32230: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-red {
+  background-color: var(--govcy-background-tag-red) !important;
+}
+
+/* source L32234: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-blue {
+  background-color: var(--govcy-background-tag-blue) !important;
+}
+
+/* source L32238: background-color */
+:root[data-bs-theme="dark"] .govcy-tag-orange {
+  background-color: var(--govcy-background-tag-orange) !important;
+}
+
+/* source L32243: color */
+:root[data-bs-theme="dark"] .govcy-tag-gray,
+:root[data-bs-theme="dark"] .govcy-tag-yellow {
+  color: var(--govcy-text-tag-on-light) !important;
+}
+
+/* source L32252: background-color */
+:root[data-bs-theme="dark"] .govcy-phase-banner .govcy-tag {
+  background-color: var(--govcy-background-tag-default) !important;
+}
+
+/* source L32254: border */
+:root[data-bs-theme="dark"] .govcy-phase-banner .govcy-tag {
+  border: 1px solid var(--govcy-foreground-phase-banner-accent) !important;
+}
+
+/* source L32257: background-color */
+:root[data-bs-theme="dark"] .govcy-phase-banner.govcy-phase-banner-light .govcy-tag {
+  background-color: var(--govcy-background-tag-default) !important;
+}
+
+/* source L32258: color */
+:root[data-bs-theme="dark"] .govcy-phase-banner.govcy-phase-banner-light .govcy-tag {
+  color: var(--govcy-text-tag-on-dark) !important;
+}
+
+/* source L32259: border-color */
+:root[data-bs-theme="dark"] .govcy-phase-banner.govcy-phase-banner-light .govcy-tag {
+  border-color: var(--govcy-foreground-phase-banner-accent) !important;
+}
+
+/* source L32268: border-bottom */
+:root[data-bs-theme="dark"] .govcy-tabs {
+  border-bottom: 1px solid var(--govcy-border-tabs) !important;
+}
+
+/* source L32279: background-color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link {
+  background-color: var(--govcy-background-tabs-inactive) !important;
+}
+
+/* source L32281: color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L32284: color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L32287: background-color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active {
+  background-color: var(--govcy-background-tabs-inactive) !important;
+}
+
+/* source L32288: border-color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active {
+  border-color: var(--govcy-border-tabs) var(--govcy-border-tabs) var(--govcy-border-tabs) !important;
+}
+
+/* source L32293: background-color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link:focus,
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active:focus {
+  background-color: var(--govcy-background-tabs-inactive) !important;
+}
+
+/* source L32295: color */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link:focus,
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active:focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L32299: border-left */
+:root[data-bs-theme="dark"] .govcy-tab-content {
+  border-left: 1px solid var(--govcy-border-tabs) !important;
+}
+
+/* source L32300: border-right */
+:root[data-bs-theme="dark"] .govcy-tab-content {
+  border-right: 1px solid var(--govcy-border-tabs) !important;
+}
+
+/* source L32301: border-bottom */
+:root[data-bs-theme="dark"] .govcy-tab-content {
+  border-bottom: 1px solid var(--govcy-border-tabs) !important;
+}
+
+/* source L32318: border-bottom */
+:root[data-bs-theme="dark"] .govcy-summary-list:not(.govcy-summary-list-no-border) .govcy-summary-list-row {
+  border-bottom: 1px solid var(--govcy-border-summary-list) !important;
+}
+
+/* source L32388: border-bottom */
+:root[data-bs-theme="dark"] dl.govcy-summary-list-row-internal,
+:root[data-bs-theme="dark"] tr.govcy-summary-list-row-internal {
+  border-bottom: 1px solid var(--govcy-border-summary-list) !important;
+}
+
+/* source L32389: border-color */
+:root[data-bs-theme="dark"] dl.govcy-summary-list-row-internal,
+:root[data-bs-theme="dark"] tr.govcy-summary-list-row-internal {
+  border-color: var(--govcy-border-summary-list) !important;
+}
+
+/* source L32406: border */
+:root[data-bs-theme="dark"] .govcy-warning-text .govcy-warning-text-icon {
+  border: 3px solid var(--govcy-border-input) !important;
+}
+
+/* source L32407: background-color */
+:root[data-bs-theme="dark"] .govcy-warning-text .govcy-warning-text-icon {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L32409: color */
+:root[data-bs-theme="dark"] .govcy-warning-text .govcy-warning-text-icon {
+  color: var(--govcy-text-inverse) !important;
+}
+
+/* source L32416: color */
+:root[data-bs-theme="dark"] .govcy-warning-text .govcy-warning-text-message {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* source L32423: border-bottom */
+:root[data-bs-theme="dark"] hr.govcy-line {
+  border-bottom: 1px solid var(--govcy-border-input) !important;
+}
+
+/* source L32430: border-bottom */
+:root[data-bs-theme="dark"] hr.govcy-line-no-bottom {
+  border-bottom: 1px solid var(--govcy-border-input) !important;
+}
+
+/* source L32446: background-color */
+:root[data-bs-theme="dark"] .govcy-cookie-consent-banner {
+  background-color: var(--govcy-background-cookies-banner) !important;
+}
+
+/* source L32481: background-color */
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment::after {
+  background-color: var(--govcy-background-step-number) !important;
+}
+
+/* source L32492: background-color */
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--complete::after {
+  background-color: var(--govcy-background-step-number) !important;
+}
+
+/* source L32496: background-color */
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--current::after {
+  background-color: var(--govcy-background-step-number) !important;
+}
+
+/* source L32504: color */
+:root[data-bs-theme="dark"] .govcy-step-indicator__label {
+  color: var(--govcy-progress-default) !important;
+}
+
+/* source L32510: color */
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--complete .govcy-step-indicator__label {
+  color: var(--govcy-progress-completed) !important;
+}
+
+/* source L32514: color */
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--current .govcy-step-indicator__label {
+  color: var(--govcy-progress-default) !important;
+}
+
+/* source L32574: color */
+:root[data-bs-theme="dark"] .govcy-share a:focus .govcy-share__icon,
+:root[data-bs-theme="dark"] .govcy-share .govcy-link:focus .govcy-share__icon,
+:root[data-bs-theme="dark"] .govcy-share .govcy-link-no-visited-state:focus .govcy-share__icon,
+:root[data-bs-theme="dark"] .govcy-share .govcy-link-inverse:focus .govcy-share__icon {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* source L32584: background-color */
+:root[data-bs-theme="dark"] .govcy-share .govcy-share__toast {
+  background-color: var(--govcy-background-page) !important;
+}
+
+/* source L32585: border */
+:root[data-bs-theme="dark"] .govcy-share .govcy-share__toast {
+  border: 1px solid var(--govcy-border-standard) !important;
+}
+
+
+
+/* === Second-pass selector and responsive audit (2026-11-24) ===
+ * These precise rules correct ambiguities in the automated first-pass mapping.
+ * In particular, neighbouring hint and error text must use different tokens.
+ * They deliberately override earlier generated dark rules; migrate into the
+ * original source selectors when implementing production theme support.
+ */
+
+/* Hints must remain informational even inside error form controls.
+ * The original CSS grouped .govcy-hint and .govcy-input-error-msg
+ * in one declaration with the hint colour; they have separate semantics. */
+:root[data-bs-theme="dark"] .govcy-hint,
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control .govcy-hint,
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control-error .govcy-hint,
+:root[data-bs-theme="dark"] .govcy-checkbox span.govcy-hint,
+:root[data-bs-theme="dark"] .govcy-radio span.govcy-hint {
+  color: var(--govcy-text-hint) !important;
+}
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control .govcy-input-error-msg,
+:root[data-bs-theme="dark"] .govcy-input-error-msg {
+  color: var(--govcy-text-error) !important;
+}
+
+/* Invalid inputs: explicit text-input and textarea error variants.
+ * Source v3.3.0: .govcy-text-input-error, .govcy-text-area-error. */
+:root[data-bs-theme="dark"] .govcy-text-input-error,
+:root[data-bs-theme="dark"] .govcy-text-area-error {
+  border-color: var(--govcy-border-error) !important;
+}
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control-error {
+  border-left-color: var(--govcy-border-error) !important;
+}
+:root[data-bs-theme="dark"] .govcy-form .govcy-form-control-hint {
+  border-left-color: var(--govcy-text-hint) !important;
+}
+
+/* The step line and its label have the SAME semantic progress status.
+ * The first pass incorrectly mapped all step bars to step-number background,
+ * and the current label to default progress text. */
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment::after {
+  background-color: var(--govcy-progress-default) !important;
+}
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--complete::after {
+  background-color: var(--govcy-progress-completed) !important;
+}
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--current::after {
+  background-color: var(--govcy-progress-current) !important;
+}
+:root[data-bs-theme="dark"] .govcy-step-indicator__label {
+  color: var(--govcy-progress-default) !important;
+}
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--complete .govcy-step-indicator__label {
+  color: var(--govcy-progress-completed) !important;
+}
+:root[data-bs-theme="dark"] .govcy-step-indicator__segment--current .govcy-step-indicator__label {
+  color: var(--govcy-progress-current) !important;
+}
+
+/* Inactive step labels */
+[data-bs-theme="dark"]
+.govcy-step-indicator__segment:not(.govcy-step-indicator__segment--complete):not(.govcy-step-indicator__segment--current)
+.govcy-step-indicator__label {
+  color: var(--govcy-text-hint) !important;
+}
+
+/* Responsive step counters were excluded by the top-level first-pass scan. */
+@media (min-width: 0px) {
+  :root[data-bs-theme="dark"] .govcy-step-indicator__current-counter {
+    border-color: var(--govcy-progress-current) !important;
+    background: var(--govcy-progress-current) !important;
+    color: var(--govcy-text-inverse) !important;
+  }
+}
+@media (min-width: 768px) {
+  :root[data-bs-theme="dark"] .govcy-step-indicator__current-counter {
+    border-color: var(--govcy-progress-current) !important;
+    background: var(--govcy-progress-current) !important;
+    color: var(--govcy-text-inverse) !important;
+  }
+}
+
+/* Mobile header/navigation overrides: preserve the original media scope. */
+@media screen and (max-width: 767px) {
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-header-search-area,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items {
+    background-color: var(--govcy-background-navigation) !important;
+  }
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items {
+    background: var(--govcy-background-navigation) !important;
+  }
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li a {
+    color: var(--govcy-text-navigation) !important;
+  }
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu.open,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-header-contact-area,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area ul.govcy-menu-items.govcy-header-language-area.govcy-mobile-menu-only {
+    border-color: var(--govcy-border-navigation) !important;
+  }
+}
+
+/* EXPERIMENTAL cascade bridge: mobile menu states.
+ * Original UDS v3.3.0 mobile menu uses !important for menu item text.
+ * Production migration should replace its literal values with variables in source.
+ */
+@media screen and (max-width: 767px) {
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li a,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li .govcy-link,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li .govcy-link-inverse,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li .govcy-link-no-visited-state {
+    color: var(--govcy-text-navigation) !important;
+  }
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li:hover a,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li:hover .govcy-link,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li:hover .govcy-link-inverse,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li:hover .govcy-link-no-visited-state {
+    color: var(--govcy-text-navigation) !important;
+  }
+  /* Yellow keyboard focus uses dark text to maintain contrast. */
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li a:focus,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li a:focus-visible,
+  :root[data-bs-theme="dark"] .govcy-header .govcy-header-menu-area .govcy-mainmenu .govcy-menu-items li:hover a:focus {
+    color: var(--govcy-text-focus) !important;
+  }
+}
+
+/* ==========================================================================
+   Prototype correction: navigation links, directional icons, focus states.
+   The original UDS bundle remains unchanged. These are dark-mode overrides.
+   ========================================================================== */
+:root[data-bs-theme="dark"] a.govcy-back-link,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-no-visited-state,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-inverse,
+:root[data-bs-theme="dark"] a.govcy-back-link:visited,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link:visited,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-no-visited-state:visited,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-inverse:visited {
+  color: var(--govcy-text-primary) !important;
+}
+
+/* Original SVG uses fixed #272525. A currentColor mask follows dark/focus text. */
+:root[data-bs-theme="dark"] a.govcy-back-link::before,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link::before,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-no-visited-state::before,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-inverse::before {
+  content: "" !important;
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background: currentColor !important;
+  -webkit-mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15"%3E%3Cpath d="M7 1L1 7.5L7 14" fill="none" stroke="black" stroke-width="1"/%3E%3C/svg%3E') center / contain no-repeat;
+  mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15"%3E%3Cpath d="M7 1L1 7.5L7 14" fill="none" stroke="black" stroke-width="1"/%3E%3C/svg%3E') center / contain no-repeat;
+}
+
+/* UDS breadcrumb uses an embedded SVG as a Bootstrap divider fallback. */
+:root[data-bs-theme="dark"] .govcy-breadcrumb {
+  --bs-breadcrumb-item-active-color: var(--govcy-text-primary);
+  --bs-breadcrumb-divider-color: var(--govcy-text-primary);
+}
+:root[data-bs-theme="dark"] .govcy-breadcrumb .govcy-breadcrumb-item + .govcy-breadcrumb-item::before {
+  content: "" !important;
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  padding-top: 0;
+  margin-top: 0.2rem;
+  background-color: var(--govcy-text-primary) !important;
+  -webkit-mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15"%3E%3Cpath d="M1 14L7 7.5L1 1" fill="none" stroke="black" stroke-width="1"/%3E%3C/svg%3E') center / contain no-repeat;
+  mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15"%3E%3Cpath d="M1 14L7 7.5L1 1" fill="none" stroke="black" stroke-width="1"/%3E%3C/svg%3E') center / contain no-repeat;
+}
+
+/* Focus: dark text on the unchanged yellow focus highlight. Explicit rules
+   must follow generic / visited rules in the experimental overlay. */
+:root[data-bs-theme="dark"] a.govcy-back-link:focus,
+:root[data-bs-theme="dark"] a.govcy-back-link:focus-visible,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link:focus,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-no-visited-state:focus,
+:root[data-bs-theme="dark"] .govcy-back-link.govcy-link-inverse:focus,
+:root[data-bs-theme="dark"] .govcy-breadcrumb .govcy-breadcrumb-item .govcy-breadcrumb-link:focus,
+:root[data-bs-theme="dark"] .govcy-breadcrumb .govcy-breadcrumb-item .govcy-breadcrumb-link:focus-visible {
+  color: var(--govcy-text-focus) !important;
+  background-color: var(--govcy-focus-indicator) !important;
+}
+
+/* Specificity bridge for existing focused components with yellow backgrounds. */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link:focus,
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active:focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__date:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year-selection:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-month:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__next-year-chunk:not([disabled]):focus,
+:root[data-bs-theme="dark"] .govcy-date-picker .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):focus {
+  color: var(--govcy-text-focus) !important;
+}
+
+/* Restore yellow focus backgrounds where the first-pass tokenisation used a
+   generic inactive-tab background. */
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link:focus,
+:root[data-bs-theme="dark"] .govcy-tabs .govcy-tab-item .govcy-tab-link.active:focus {
+  background-color: var(--govcy-focus-indicator) !important;
+  color: var(--govcy-text-focus) !important;
+}
